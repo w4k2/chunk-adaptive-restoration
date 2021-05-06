@@ -1,4 +1,4 @@
-from fhdsdm import FHDSDM
+from detectors import FHDSDM
 from strlearn.streams import StreamGenerator
 from strlearn.evaluators import TestThenTrain
 from sklearn.neural_network import MLPClassifier
