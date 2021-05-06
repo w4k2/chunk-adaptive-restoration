@@ -1,4 +1,5 @@
 from detectors import FHDSDM
+from evaluators import DriftEvaluator
 from strlearn.streams import StreamGenerator
 from strlearn.evaluators import TestThenTrain
 from sklearn.neural_network import MLPClassifier
@@ -7,12 +8,12 @@ import matplotlib.pyplot as plt
 
 
 def run():
-
-    stream = StreamGenerator(n_chunks=1000, chunk_size=200, n_drifts=5, recurring=True)
+    chunk_size = 200
+    stream = StreamGenerator(n_chunks=1000, chunk_size=chunk_size, n_drifts=5, recurring=True)
     clf = MLPClassifier()
     metrics = [accuracy_score]
     evaluator = TestThenTrain(metrics)
-    detector = FHDSDM(batch_size=200)
+    detector = FHDSDM(batch_size=chunk_size)
 
     evaluator.process(stream, clf)
 
@@ -34,6 +35,10 @@ def run():
         if detector.stabilization_detected():
             print("Stabilization detected, batch:", i)
             plt.axvline(i, 0, 1, color='g')
+
+    drift_evaulator = DriftEvaluator(chunk_size, evaluator.scores[0, :, 0])
+    print('restoration_time = ', drift_evaulator.restoration_time(reduction=None))
+    print('max_performance_loss = ', drift_evaulator.max_performance_loss(reduction=None))
 
     plt.show()
 

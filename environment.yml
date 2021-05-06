@@ -1,0 +1,12 @@
+name: concept-drift-evaluation
+channels:
+  - defaults
+dependencies:
+  - python=3.8.5
+  - numpy
+  - scikit-learn
+  - pip
+  - matplotlib
+  - tqdm
+  - pip:
+    - stream-learn
