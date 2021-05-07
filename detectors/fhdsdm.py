@@ -17,12 +17,11 @@ class FHDSDM:
         self._batch_counter = 0
         self._stabilization_threshold = 100
 
-    def add_element(self, batch_prediction):
-
+    def add_element(self, p_t):
+        """ add accuracy of predictions for one chunk
+        """
         self._drift_phase = False
         self._stabilization_phase = False
-
-        p_t = batch_prediction  # .count(True) / self._window_size
 
         if self._drift_started:
             diff = math.fabs(self._p_max - p_t)
@@ -52,3 +51,12 @@ class FHDSDM:
     def stabilization_detected(self):
         return self._stabilization_phase
 
+    @property
+    def batch_size(self):
+        return self._window_size
+
+    @batch_size.setter
+    def batch_size(self, value):
+        self._window_size = value
+        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
+        self._epsilon_s = self._epsilon
