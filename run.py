@@ -11,11 +11,12 @@ import numpy as np
 
 def run():
     chunk_size = 1000
-    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True)
+    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=42)
     clf = MLPClassifier()
     detector = FHDSDM(batch_size=chunk_size)
-    scores = test_then_train(stream, clf, detector, accuracy_score)
     drift_evaulator = DriftEvaluator(chunk_size, metrics=[RestorationTime(reduction=None), MaxPerformanceLoss(reduction=None)])
+
+    scores, drift_indices, stabilization_indices = test_then_train(stream, clf, detector, accuracy_score)
 
     plt.figure()
     plt.plot(scores, label='accuracy_score')
@@ -25,17 +26,13 @@ def run():
     plt.xlabel('Chunk')
     print(scores)
 
-    detector = FHDSDM(batch_size=chunk_size)
-    for i, score in enumerate(scores):
-        detector.add_element(score)
-        if detector.change_detected():
-            print("Change detected, batch:", i)
-            plt.axvline(i, 0, 1, color='r')
-        if detector.stabilization_detected():
-            print("Stabilization detected, batch:", i)
-            plt.axvline(i, 0, 1, color='g')
+    for i in drift_indices:
+        plt.axvline(i, 0, 1, color='r')
+    for i in stabilization_indices:
+        plt.axvline(i, 0, 1, color='g')
 
-    restoration_time, max_performance_loss = drift_evaulator.evaluate(scores)
+    restoration_time = RestorationTime(reduction=None)(scores, drift_indices, stabilization_indices)
+    max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, drift_indices, stabilization_indices)
     print('restoration_time = ', restoration_time)
     print('max_performance_loss = ', max_performance_loss)
 
@@ -72,10 +69,11 @@ class VariableChunkStream:
 
 def test_then_train(stream, clf, detector, metric):
     scores = []
+    drift_indices = []
+    stabilization_indices = []
 
     variable_size_stream = VariableChunkStream(stream)
-    i = 0
-    for X, y in variable_size_stream:
+    for i, (X, y) in enumerate(variable_size_stream):
         # Test
         if stream.previous_chunk is not None:
             y_pred = clf.predict(X)
@@ -83,19 +81,21 @@ def test_then_train(stream, clf, detector, metric):
             scores.append(score)
             detector.add_element(score)
             if detector.change_detected():
-                variable_size_stream.chunk_size = 200
-                detector.batch_size = 200
+                variable_size_stream.chunk_size = 50
+                detector.batch_size = 50
                 print("Change detected, batch:", i)
+                drift_indices.append(i)
             elif detector.stabilization_detected():
                 variable_size_stream.chunk_size = 1000
                 detector.batch_size = 500
                 print("Stabilization detected, batch:", i)
+                stabilization_indices.append(i)
         # Train
         clf.partial_fit(X, y, stream.classes_)
         i += 1
     print()
 
-    return np.array(scores)
+    return np.array(scores), drift_indices, stabilization_indices
 
 
 if __name__ == "__main__":
