@@ -9,14 +9,14 @@ class FHDSDM:
         self._delta = delta
         self._window_size = batch_size
         self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
-        self._epsilon_s = 0.05  # self._epsilon
-        print('epislon_s = ', self._epsilon_s)
+        self._epsilon_s = self._epsilon
+        print('epsilon_s = ', self._epsilon_s)
 
         self._p_max = 0
         self._drift_phase = False
         self._drift_started = False
         self._stabilization_phase = False
-        self._window = collections.deque([], maxlen=10)
+        self._window = collections.deque([], maxlen=200)
 
     def add_element(self, p_t):
         """ add accuracy of predictions for one chunk
@@ -26,7 +26,8 @@ class FHDSDM:
 
         self._window.append(p_t)
         if self._drift_started:
-            diff = max(abs(min(self._window) - p_t), abs(max(self._window) - p_t))
+            # diff = max(abs(min(self._window) - p_t), abs(max(self._window) - p_t))
+            diff = abs(min(self._window) - max(self._window))
             print('stabilization diff = ', diff)
             if diff < self._epsilon_s:
                 self._stabilization_phase = True
@@ -40,7 +41,6 @@ class FHDSDM:
             self._drift_started = True
             self._drift_phase = True
             self._p_max = 0
-            self._batch_counter = 0
 
     def change_detected(self):
         return self._drift_phase

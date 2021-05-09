@@ -1,19 +1,23 @@
-from detectors import FHDSDM
-from evaluators import DriftEvaluator
-from strlearn.streams import StreamGenerator
-from strlearn.evaluators import TestThenTrain
-from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score
-from evaluators.metrics import MaxPerformanceLoss, RestorationTime
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.metrics import accuracy_score
+from sklearn.neural_network import MLPClassifier
+from sklearn.naive_bayes import GaussianNB
+from strlearn.classifiers import ASC
+from strlearn.evaluators import TestThenTrain
+from strlearn.streams import StreamGenerator
+
+from detectors import FHDSDM
+from evaluators import DriftEvaluator
+from evaluators.metrics import MaxPerformanceLoss, RestorationTime
 
 
 def run():
     chunk_size = 200
     drift_chunk_size = 100
     stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=1410)
-    clf = MLPClassifier(solver='adam')
+    # clf = MLPClassifier(solver='adam')
+    clf = ASC(GaussianNB())
     detector = FHDSDM(batch_size=chunk_size)
     drift_evaulator = DriftEvaluator(chunk_size, metrics=[RestorationTime(reduction=None), MaxPerformanceLoss(reduction=None)])
 
@@ -80,16 +84,16 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size)
             scores.append(score)
             detector.add_element(score)
             if detector.change_detected():
-                new_size = max(int(variable_size_stream.chunk_size * 0.5), drift_chunk_size)
-                variable_size_stream.chunk_size = new_size
-                detector.batch_size = new_size
+                # new_size = max(int(variable_size_stream.chunk_size * 0.5), drift_chunk_size)
+                # variable_size_stream.chunk_size = new_size
+                # detector.batch_size = new_size
                 # variable_size_stream.chunk_size = drift_chunk_size
                 # detector.batch_size = drift_chunk_size
                 print("Change detected, batch:", i)
                 drift_indices.append(i)
             elif detector.stabilization_detected():
-                variable_size_stream.chunk_size = chunk_size
-                detector.batch_size = chunk_size
+                # variable_size_stream.chunk_size = chunk_size
+                # detector.batch_size = chunk_size
                 print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i)
         # Train
