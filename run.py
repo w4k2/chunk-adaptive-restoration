@@ -10,9 +10,9 @@ import numpy as np
 
 
 def run():
-    chunk_size = 1000
+    chunk_size = 200
     drift_chunk_size = 100
-    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=42)
+    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=1410)
     clf = MLPClassifier(solver='adam')
     detector = FHDSDM(batch_size=chunk_size)
     drift_evaulator = DriftEvaluator(chunk_size, metrics=[RestorationTime(reduction=None), MaxPerformanceLoss(reduction=None)])
