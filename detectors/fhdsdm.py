@@ -1,5 +1,6 @@
 import math
 import collections
+import numpy as np
 
 
 class FHDSDM:
@@ -9,14 +10,14 @@ class FHDSDM:
         self._delta = delta
         self._window_size = batch_size
         self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
-        self._epsilon_s = self._epsilon
+        self._epsilon_s = 0.001
         print('epsilon_s = ', self._epsilon_s)
 
         self._p_max = 0
         self._drift_phase = False
         self._drift_started = False
         self._stabilization_phase = False
-        self._window = collections.deque([], maxlen=200)
+        self._window = collections.deque([], maxlen=30)
 
     def add_element(self, p_t):
         """ add accuracy of predictions for one chunk
@@ -26,8 +27,11 @@ class FHDSDM:
 
         self._window.append(p_t)
         if self._drift_started:
-            # diff = max(abs(min(self._window) - p_t), abs(max(self._window) - p_t))
-            diff = abs(min(self._window) - max(self._window))
+            diff = max(abs(min(self._window) - p_t), abs(max(self._window) - p_t))
+            diff = np.array(self._window).var()
+            # diff = abs(min(self._window) - max(self._window))
+            # print('min diff = ', abs(min(self._window) - p_t))
+            # print('max diff = ', abs(max(self._window) - p_t))
             print('stabilization diff = ', diff)
             if diff < self._epsilon_s:
                 self._stabilization_phase = True

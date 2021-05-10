@@ -3,7 +3,8 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
-from strlearn.classifiers import ASC
+from sklearn.tree import DecisionTreeClassifier
+from strlearn.ensembles import AUE, AWE, OnlineBagging, SEA, WAE
 from strlearn.evaluators import TestThenTrain
 from strlearn.streams import StreamGenerator
 
@@ -15,13 +16,16 @@ from evaluators.metrics import MaxPerformanceLoss, RestorationTime
 def run():
     chunk_size = 200
     drift_chunk_size = 100
-    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=1410)
+    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=42)
     # clf = MLPClassifier(solver='adam')
-    clf = ASC(GaussianNB())
+    # clf = AWE(GaussianNB())
+    # clf = OnlineBagging(GaussianNB())
+    clf = SEA(GaussianNB())
     detector = FHDSDM(batch_size=chunk_size)
     drift_evaulator = DriftEvaluator(chunk_size, metrics=[RestorationTime(reduction=None), MaxPerformanceLoss(reduction=None)])
 
-    scores, drift_indices, stabilization_indices = test_then_train(stream, clf, detector, accuracy_score, chunk_size, drift_chunk_size)
+    scores, drift_indices, stabilization_indices = test_then_train(stream, clf, detector, accuracy_score, chunk_size, drift_chunk_size,
+                                                                   use_different_chunk_size=False)
 
     plt.figure()
     plt.plot(scores, label='accuracy_score')
@@ -70,10 +74,11 @@ class VariableChunkStream:
         self.chunk_size = new_size
 
 
-def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size):
+def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, use_different_chunk_size=False):
     scores = []
     drift_indices = []
     stabilization_indices = []
+    drift_phase = False
 
     variable_size_stream = VariableChunkStream(stream)
     for i, (X, y) in enumerate(variable_size_stream):
@@ -83,19 +88,29 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size)
             score = metric(y, y_pred)
             scores.append(score)
             detector.add_element(score)
+            if drift_phase:
+                if use_different_chunk_size:
+                    variable_size_stream.chunk_size = min(int(variable_size_stream.chunk_size * 1.1), chunk_size)
+                    # variable_size_stream.chunk_size = int(variable_size_stream.chunk_size * 1.1)
             if detector.change_detected():
-                # new_size = max(int(variable_size_stream.chunk_size * 0.5), drift_chunk_size)
-                # variable_size_stream.chunk_size = new_size
-                # detector.batch_size = new_size
-                # variable_size_stream.chunk_size = drift_chunk_size
-                # detector.batch_size = drift_chunk_size
+                drift_phase = True
+                if use_different_chunk_size:
+                    variable_size_stream.chunk_size = drift_chunk_size
+                    detector.batch_size = drift_chunk_size
+
                 print("Change detected, batch:", i)
                 drift_indices.append(i)
+                # if type(clf) == MLPClassifier:
+                #     clf._optimizer.learning_rate = drift_chunk_size / chunk_size * clf._optimizer.learning_rate
             elif detector.stabilization_detected():
-                # variable_size_stream.chunk_size = chunk_size
-                # detector.batch_size = chunk_size
+                drift_phase = False
+                if use_different_chunk_size:
+                    variable_size_stream.chunk_size = chunk_size
+                    detector.batch_size = chunk_size
                 print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i)
+                # if type(clf) == MLPClassifier:
+                #     clf._optimizer.learning_rate = 0.001
         # Train
         clf.partial_fit(X, y, stream.classes_)
         i += 1
