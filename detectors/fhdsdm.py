@@ -1,14 +1,17 @@
 import math
 import collections
 import numpy as np
+import scipy
 
 
 class FHDSDM:
 
-    def __init__(self, batch_size=100, delta=0.000001):
+    def __init__(self, window_size=100, delta=0.000001):
 
         self._delta = delta
-        self._window_size = batch_size
+        self._window_size = window_size
+        self._window_drift = collections.deque([], maxlen=window_size)
+        self._window_stabilization = collections.deque([], maxlen=30)
         self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
         self._epsilon_s = 0.001
         print('epsilon_s = ', self._epsilon_s)
@@ -17,31 +20,33 @@ class FHDSDM:
         self._drift_phase = False
         self._drift_started = False
         self._stabilization_phase = False
-        self._window = collections.deque([], maxlen=30)
 
-    def add_element(self, p_t):
+    def add_element(self, batch_preds):
         """ add accuracy of predictions for one chunk
         """
         self._drift_phase = False
         self._stabilization_phase = False
 
-        self._window.append(p_t)
+        acc = sum(batch_preds) / batch_preds.shape[0]
+        self._window_stabilization.append(acc)
         if self._drift_started:
-            diff = max(abs(min(self._window) - p_t), abs(max(self._window) - p_t))
-            diff = np.array(self._window).var()
-            # diff = abs(min(self._window) - max(self._window))
-            # print('min diff = ', abs(min(self._window) - p_t))
-            # print('max diff = ', abs(max(self._window) - p_t))
+            diff = np.array(self._window_stabilization).var()
             print('stabilization diff = ', diff)
             if diff < self._epsilon_s:
                 self._stabilization_phase = True
                 self._drift_started = False
 
-        if self._p_max < p_t:
-            self._p_max = p_t
-        drift_started = (self._p_max - p_t) >= self._epsilon
+        drift_started = False
+        for p in batch_preds:
+            self._window_drift.append(p)
+            if len(self._window_drift) < self._window_size:
+                continue
+            p_t = sum(self._window_drift) / len(self._window_drift)
+            if self._p_max < p_t:
+                self._p_max = p_t
+            drift_started = drift_started or (self._p_max - p_t) >= self._epsilon
 
-        if drift_started:
+        if drift_started and not self._drift_started:
             self._drift_started = True
             self._drift_phase = True
             self._p_max = 0

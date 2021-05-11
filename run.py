@@ -14,31 +14,35 @@ from evaluators.metrics import MaxPerformanceLoss, RestorationTime
 
 
 def run():
-    chunk_size = 200
-    drift_chunk_size = 100
-    stream = StreamGenerator(n_chunks=5000, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=42)
-    # clf = MLPClassifier(solver='adam')
+    chunk_size = 1000
+    drift_chunk_size = 30
+    sl_stream = StreamGenerator(n_chunks=300, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=42)
+    stream = StreamWrapper(sl_stream)
+    variable_size_stream = VariableChunkStream(stream)
+    clf = MLPClassifier(solver='adam')
+    # clf = AUE(GaussianNB())
     # clf = AWE(GaussianNB())
     # clf = OnlineBagging(GaussianNB())
-    clf = SEA(GaussianNB())
-    detector = FHDSDM(batch_size=chunk_size)
+    # clf = SEA(GaussianNB())
+    detector = FHDSDM(window_size=1000)
     drift_evaulator = DriftEvaluator(chunk_size, metrics=[RestorationTime(reduction=None), MaxPerformanceLoss(reduction=None)])
 
-    scores, drift_indices, stabilization_indices = test_then_train(stream, clf, detector, accuracy_score, chunk_size, drift_chunk_size,
-                                                                   use_different_chunk_size=False)
+    scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, accuracy_score, chunk_size, drift_chunk_size,
+                                                                                use_different_chunk_size=False)
 
     plt.figure()
-    plt.plot(scores, label='accuracy_score')
+    x_sample = np.cumsum(chunk_sizes)
+    plt.plot(x_sample, scores, label='accuracy_score')
 
     plt.ylim(0, 1)
     plt.ylabel('Accuracy')
-    plt.xlabel('Chunk')
+    plt.xlabel('Samples')
     print(scores)
 
     for i in drift_indices:
-        plt.axvline(i, 0, 1, color='r')
+        plt.axvline(x_sample[i], 0, 1, color='r')
     for i in stabilization_indices:
-        plt.axvline(i, 0, 1, color='g')
+        plt.axvline(x_sample[i], 0, 1, color='g')
 
     restoration_time = RestorationTime(reduction=None)(scores, drift_indices, stabilization_indices)
     max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, drift_indices, stabilization_indices)
@@ -46,6 +50,31 @@ def run():
     print('max_performance_loss = ', max_performance_loss)
 
     plt.show()
+
+
+class StreamWrapper:
+    def __init__(self, base_stream):
+        self.base_stream = base_stream
+
+    def __next__(self):
+        while not self.base_stream.is_dry():
+            X, y = self.base_stream.get_chunk()
+            yield X, y
+
+    def __iter__(self):
+        return next(self)
+
+    @property
+    def chunk_size(self):
+        return self.base_stream.chunk_size
+
+    @property
+    def n_features(self):
+        return self.base_stream.n_features
+
+    @property
+    def classes(self):
+        return self.base_stream.classes_
 
 
 class VariableChunkStream:
@@ -58,8 +87,8 @@ class VariableChunkStream:
     def __next__(self):
         X_buffer = np.zeros((0, self.base_stream.n_features))
         y_buffer = np.zeros((0,))
-        while not self.base_stream.is_dry():
-            X, y = self.base_stream.get_chunk()
+
+        for X, y in self.base_stream:
             X_buffer = np.concatenate((X_buffer, X), axis=0)
             y_buffer = np.concatenate((y_buffer, y), axis=0)
             while X_buffer.shape[0] >= self.chunk_size:
@@ -73,29 +102,35 @@ class VariableChunkStream:
     def change_chunk_size(self, new_size):
         self.chunk_size = new_size
 
+    @property
+    def classes(self):
+        return self.base_stream.classes
+
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, use_different_chunk_size=False):
     scores = []
+    chunk_sizes = []
     drift_indices = []
     stabilization_indices = []
     drift_phase = False
 
-    variable_size_stream = VariableChunkStream(stream)
-    for i, (X, y) in enumerate(variable_size_stream):
+    for i, (X, y) in enumerate(stream):
         # Test
-        if stream.previous_chunk is not None:
+        if i > 0:
+            chunk_sizes.append(X.shape[0])
             y_pred = clf.predict(X)
             score = metric(y, y_pred)
             scores.append(score)
-            detector.add_element(score)
+            correct_preds = np.array(y == y_pred, dtype=float)
+            detector.add_element(correct_preds)
             if drift_phase:
                 if use_different_chunk_size:
-                    variable_size_stream.chunk_size = min(int(variable_size_stream.chunk_size * 1.1), chunk_size)
-                    # variable_size_stream.chunk_size = int(variable_size_stream.chunk_size * 1.1)
+                    stream.chunk_size = min(int(stream.chunk_size * 1.1), chunk_size)
+                    # stream.chunk_size = int(stream.chunk_size * 1.1)
             if detector.change_detected():
                 drift_phase = True
                 if use_different_chunk_size:
-                    variable_size_stream.chunk_size = drift_chunk_size
+                    stream.chunk_size = drift_chunk_size
                     detector.batch_size = drift_chunk_size
 
                 print("Change detected, batch:", i)
@@ -105,18 +140,18 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
             elif detector.stabilization_detected():
                 drift_phase = False
                 if use_different_chunk_size:
-                    variable_size_stream.chunk_size = chunk_size
+                    stream.chunk_size = chunk_size
                     detector.batch_size = chunk_size
                 print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i)
                 # if type(clf) == MLPClassifier:
                 #     clf._optimizer.learning_rate = 0.001
         # Train
-        clf.partial_fit(X, y, stream.classes_)
+        clf.partial_fit(X, y, stream.classes)
         i += 1
     print()
 
-    return np.array(scores), drift_indices, stabilization_indices
+    return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
 
 
 if __name__ == "__main__":
