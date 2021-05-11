@@ -1,7 +1,6 @@
 import math
 import collections
 import numpy as np
-import scipy
 
 
 class FHDSDM:
@@ -14,7 +13,7 @@ class FHDSDM:
         self._window_stabilization = collections.deque([], maxlen=30)
         self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
         self._epsilon_s = 0.001
-        print('epsilon_s = ', self._epsilon_s)
+        # print('epsilon_s = ', self._epsilon_s)
 
         self._p_max = 0
         self._drift_phase = False
@@ -31,7 +30,7 @@ class FHDSDM:
         self._window_stabilization.append(acc)
         if self._drift_started:
             diff = np.array(self._window_stabilization).var()
-            print('stabilization diff = ', diff)
+            # print('stabilization diff = ', diff)
             if diff < self._epsilon_s:
                 self._stabilization_phase = True
                 self._drift_started = False
