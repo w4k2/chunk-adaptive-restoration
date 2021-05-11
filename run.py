@@ -11,6 +11,7 @@ from strlearn.streams import StreamGenerator
 from detectors import FHDSDM
 from evaluators import DriftEvaluator
 from evaluators.metrics import MaxPerformanceLoss, RestorationTime
+from streams import VariableChunkStream, StreamWrapper
 
 
 def run():
@@ -30,19 +31,7 @@ def run():
     scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, accuracy_score, chunk_size, drift_chunk_size,
                                                                                 use_different_chunk_size=False)
 
-    plt.figure()
-    x_sample = np.cumsum(chunk_sizes)
-    plt.plot(x_sample, scores, label='accuracy_score')
-
-    plt.ylim(0, 1)
-    plt.ylabel('Accuracy')
-    plt.xlabel('Samples')
-    print(scores)
-
-    for i in drift_indices:
-        plt.axvline(x_sample[i], 0, 1, color='r')
-    for i in stabilization_indices:
-        plt.axvline(x_sample[i], 0, 1, color='g')
+    plot_results(scores, chunk_sizes, drift_indices, stabilization_indices)
 
     restoration_time = RestorationTime(reduction=None)(scores, drift_indices, stabilization_indices)
     max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, drift_indices, stabilization_indices)
@@ -50,61 +39,6 @@ def run():
     print('max_performance_loss = ', max_performance_loss)
 
     plt.show()
-
-
-class StreamWrapper:
-    def __init__(self, base_stream):
-        self.base_stream = base_stream
-
-    def __next__(self):
-        while not self.base_stream.is_dry():
-            X, y = self.base_stream.get_chunk()
-            yield X, y
-
-    def __iter__(self):
-        return next(self)
-
-    @property
-    def chunk_size(self):
-        return self.base_stream.chunk_size
-
-    @property
-    def n_features(self):
-        return self.base_stream.n_features
-
-    @property
-    def classes(self):
-        return self.base_stream.classes_
-
-
-class VariableChunkStream:
-    def __init__(self, base_stream, chunk_size=None):
-        self.base_stream = base_stream
-        self.chunk_size = chunk_size
-        if self.chunk_size is None:
-            self.chunk_size = base_stream.chunk_size
-
-    def __next__(self):
-        X_buffer = np.zeros((0, self.base_stream.n_features))
-        y_buffer = np.zeros((0,))
-
-        for X, y in self.base_stream:
-            X_buffer = np.concatenate((X_buffer, X), axis=0)
-            y_buffer = np.concatenate((y_buffer, y), axis=0)
-            while X_buffer.shape[0] >= self.chunk_size:
-                X_chunk, X_buffer = X_buffer[:self.chunk_size], X_buffer[self.chunk_size:]
-                y_chunk, y_buffer = y_buffer[:self.chunk_size], y_buffer[self.chunk_size:]
-                yield X_chunk, y_chunk
-
-    def __iter__(self):
-        return next(self)
-
-    def change_chunk_size(self, new_size):
-        self.chunk_size = new_size
-
-    @property
-    def classes(self):
-        return self.base_stream.classes
 
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, use_different_chunk_size=False):
@@ -123,10 +57,8 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
             scores.append(score)
             correct_preds = np.array(y == y_pred, dtype=float)
             detector.add_element(correct_preds)
-            if drift_phase:
-                if use_different_chunk_size:
-                    stream.chunk_size = min(int(stream.chunk_size * 1.1), chunk_size)
-                    # stream.chunk_size = int(stream.chunk_size * 1.1)
+            if drift_phase and use_different_chunk_size:
+                stream.chunk_size = min(int(stream.chunk_size * 1.1), chunk_size)
             if detector.change_detected():
                 drift_phase = True
                 if use_different_chunk_size:
@@ -152,6 +84,21 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
     print()
 
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
+
+
+def plot_results(scores, chunk_sizes, drift_indices, stabilization_indices):
+    plt.figure()
+    x_sample = np.cumsum(chunk_sizes)
+    plt.plot(x_sample, scores, label='accuracy_score')
+
+    plt.ylim(0, 1)
+    plt.ylabel('Accuracy')
+    plt.xlabel('Samples')
+
+    for i in drift_indices:
+        plt.axvline(x_sample[i], 0, 1, color='r')
+    for i in stabilization_indices:
+        plt.axvline(x_sample[i], 0, 1, color='g')
 
 
 if __name__ == "__main__":
