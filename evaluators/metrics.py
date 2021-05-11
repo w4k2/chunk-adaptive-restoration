@@ -12,8 +12,8 @@ class StreamMetric(abc.ABC):
         """
         self.reduction = reduction
 
-    def __call__(self, scores, drift_indices, stabilization_indices):
-        values = self.compute(scores, drift_indices, stabilization_indices)
+    def __call__(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        values = self.compute(scores, chunk_sizes, drift_indices, stabilization_indices)
         return self.reduce(values)
 
     @abc.abstractmethod
@@ -30,14 +30,14 @@ class StreamMetric(abc.ABC):
         elif self.reduction == None:
             return values
         else:
-            raise ValueError(f"Unknown reduction: {rediction}, expected one of ['avg', 'min', 'max', None]")
+            raise ValueError(f"Unknown reduction: {self.reduction}, expected one of ['avg', 'min', 'max', None]")
 
 
 class MaxPerformanceLoss(StreamMetric):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def compute(self, scores, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
         stb_indices = copy.deepcopy(stabilization_indices)
         stb_indices.insert(0, np.argmax(scores[:drift_indices[0]]))
         values = []
@@ -51,15 +51,7 @@ class MaxPerformanceLoss(StreamMetric):
         return values
 
 
-class RestorationTime(StreamMetric):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def compute(self, scores, drift_indices, stabilization_indices):
-        pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
-        values = [stabilization_idx - drift_idx for drift_idx, stabilization_idx in pairs]
-        return values
-
+class DriftStabilizationMixIn:
     def compute_drift_stabilization_pairs(self, drift_indices, stabilization_indices):
         pairs = []
         for i in range(len(drift_indices)-1):
@@ -72,3 +64,23 @@ class RestorationTime(StreamMetric):
                 pairs.append((drift_indices[-1], stabilization_indices[j]))
                 break
         return pairs
+
+
+class RestorationTime(StreamMetric, DriftStabilizationMixIn):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
+        values = [stabilization_idx - drift_idx for drift_idx, stabilization_idx in pairs]
+        return values
+
+
+class SamplewiseRestorationTime(StreamMetric, DriftStabilizationMixIn):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
+        values = [sum(chunk_sizes[drift_idx:stabilization_idx+1]) for drift_idx, stabilization_idx in pairs]
+        return values

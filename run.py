@@ -11,7 +11,7 @@ from scipy.ndimage.filters import gaussian_filter1d
 
 from detectors import FHDSDM
 from evaluators import DriftEvaluator
-from evaluators.metrics import MaxPerformanceLoss, RestorationTime
+from evaluators.metrics import MaxPerformanceLoss, SamplewiseRestorationTime
 from streams import VariableChunkStream, StreamWrapper
 
 
@@ -26,7 +26,7 @@ def run():
         break
 
 
-def experiment(clf, chunk_size=1000, drift_chunk_size=30, n_chunks=300, random_state=42, variable_chunk_size=False):
+def experiment(clf, chunk_size=1000, drift_chunk_size=100, n_chunks=300, random_state=42, variable_chunk_size=False):
     sl_stream = StreamGenerator(n_chunks=n_chunks, chunk_size=chunk_size, n_drifts=5, recurring=True, random_state=random_state)
     stream = StreamWrapper(sl_stream)
     variable_size_stream = VariableChunkStream(stream)
@@ -37,8 +37,8 @@ def experiment(clf, chunk_size=1000, drift_chunk_size=30, n_chunks=300, random_s
     plot_results(scores, chunk_sizes, drift_indices, stabilization_indices)
     plt.savefig(f'plots/classifer_{clf.__class__.__name__}_random_state_{random_state}_variable_chunk_size_{variable_chunk_size}.png')
 
-    restoration_time = RestorationTime(reduction=None)(scores, drift_indices, stabilization_indices)
-    max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, drift_indices, stabilization_indices)
+    restoration_time = SamplewiseRestorationTime(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
+    max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
     print('restoration_time = ', restoration_time)
     print('max_performance_loss = ', max_performance_loss)
 
