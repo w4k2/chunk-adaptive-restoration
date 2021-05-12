@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import math
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -26,7 +27,7 @@ configs = {
         'fhdsdm_epsilon_s': 0.001,
     },
     'insects': {
-        'chunk_size': 50,
+        'chunk_size': 100,
         'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
@@ -39,7 +40,7 @@ def run():
     stream_name = 'insects'
     cfg = configs[stream_name]
 
-    models = [MLPClassifier(), AUE(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
+    models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
     seeds = [1, ]  # 2, 4, 5, 9]  # 1, 2, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 1415, 1418, 1420, 1421, 1422, 1430, 1433, 1435, 1439, 1440, 1442, 1444, 1467
     for clf in models:
         for seed in seeds:
@@ -71,7 +72,7 @@ def experiment(clf, stream, cfg, variable_chunk_size=False):
                                                                                 variable_chunk_size=variable_chunk_size)
 
     plot_results(scores, chunk_sizes, drift_indices, stabilization_indices)
-    plt.savefig(f'plots/classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}.png')
+    plt.savefig(f'plots/insects_classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}_lr_01_change_lr.png')
 
     restoration_time = SamplewiseRestorationTime(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
     max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
@@ -97,25 +98,26 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
             detector.add_element(correct_preds)
             if drift_phase and variable_chunk_size:
                 stream.chunk_size = min(int(stream.chunk_size * 1.1), chunk_size)
+                if type(clf) == MLPClassifier:
+                    clf._optimizer.learning_rate = math.sqrt(stream.chunk_size / chunk_size) * clf._optimizer.learning_rate
             if detector.change_detected():
                 drift_phase = True
                 if variable_chunk_size:
                     stream.chunk_size = drift_chunk_size
                     detector.batch_size = drift_chunk_size
-
+                    if type(clf) == MLPClassifier:
+                        clf._optimizer.learning_rate = math.sqrt(drift_chunk_size / chunk_size) * clf._optimizer.learning_rate
                 print("Change detected, batch:", i)
                 drift_indices.append(i)
-                # if type(clf) == MLPClassifier:
-                #     clf._optimizer.learning_rate = drift_chunk_size / chunk_size * clf._optimizer.learning_rate
             elif detector.stabilization_detected():
                 drift_phase = False
                 if variable_chunk_size:
                     stream.chunk_size = chunk_size
                     detector.batch_size = chunk_size
+                    if type(clf) == MLPClassifier:
+                        clf._optimizer.learning_rate = 0.01
                 print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i)
-                # if type(clf) == MLPClassifier:
-                #     clf._optimizer.learning_rate = 0.001
         # Train
         clf.partial_fit(X, y, stream.classes)
         i += 1
@@ -127,7 +129,8 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
 def plot_results(scores, chunk_sizes, drift_indices, stabilization_indices):
     plt.figure(figsize=(22, 12))
     x_sample = np.cumsum(chunk_sizes)
-    scores_smooth = gaussian_filter1d(scores, sigma=1)
+    # scores_smooth = gaussian_filter1d(scores, sigma=1)
+    scores_smooth = scores
     plt.plot(x_sample, scores_smooth, label='accuracy_score')
 
     plt.ylim(0, 1)
