@@ -11,7 +11,7 @@ from strlearn.streams import StreamGenerator
 from scipy.ndimage.filters import gaussian_filter1d
 
 from detectors import FHDSDM
-from evaluators.metrics import MaxPerformanceLoss, SamplewiseRestorationTime
+from evaluators.metrics import MaxPerformanceLoss, SamplewiseStabilizationTime, RestorationTime, SamplewiseRestorationTime
 from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset
 
 
@@ -37,10 +37,10 @@ configs = {
 
 
 def run():
-    stream_name = 'insects'
+    stream_name = 'stream_learn'
     cfg = configs[stream_name]
 
-    models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
+    models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
     seeds = [1, ]  # 2, 4, 5, 9]  # 1, 2, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 1415, 1418, 1420, 1421, 1422, 1430, 1433, 1435, 1439, 1440, 1442, 1444, 1467
     for clf in models:
         for seed in seeds:
@@ -72,12 +72,21 @@ def experiment(clf, stream, cfg, variable_chunk_size=False):
                                                                                 variable_chunk_size=variable_chunk_size)
 
     plot_results(scores, chunk_sizes, drift_indices, stabilization_indices)
-    plt.savefig(f'plots/insects_classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}_lr_01_change_lr.png')
+    plt.savefig(f'plots/classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}.png')
 
-    restoration_time = SamplewiseRestorationTime(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
-    max_performance_loss = MaxPerformanceLoss(reduction=None)(scores, chunk_sizes, drift_indices, stabilization_indices)
-    print('restoration_time = ', restoration_time)
-    print('max_performance_loss = ', max_performance_loss)
+    metrics = [
+        SamplewiseStabilizationTime(reduction=None),
+        MaxPerformanceLoss(reduction=None),
+        SamplewiseRestorationTime(percentage=0.9, reduction=None),
+        SamplewiseRestorationTime(percentage=0.8, reduction=None),
+        SamplewiseRestorationTime(percentage=0.7, reduction=None),
+    ]
+    metrics_vales = [metric(scores, chunk_sizes, drift_indices, stabilization_indices) for metric in metrics]
+    print('stabilization_time = ', metrics_vales[0])
+    print('max_performance_loss = ', metrics_vales[1])
+    print('restoration_time 0.9 = ', metrics_vales[2])
+    print('restoration_time 0.8 = ', metrics_vales[3])
+    print('restoration_time 0.7 = ', metrics_vales[3])
 
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, variable_chunk_size=False):
@@ -129,8 +138,7 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
 def plot_results(scores, chunk_sizes, drift_indices, stabilization_indices):
     plt.figure(figsize=(22, 12))
     x_sample = np.cumsum(chunk_sizes)
-    # scores_smooth = gaussian_filter1d(scores, sigma=1)
-    scores_smooth = scores
+    scores_smooth = gaussian_filter1d(scores, sigma=1)
     plt.plot(x_sample, scores_smooth, label='accuracy_score')
 
     plt.ylim(0, 1)

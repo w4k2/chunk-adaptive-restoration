@@ -68,7 +68,7 @@ class DriftStabilizationMixIn:
         return pairs
 
 
-class RestorationTime(StreamMetric, DriftStabilizationMixIn):
+class StabilizationTime(StreamMetric, DriftStabilizationMixIn):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -78,11 +78,56 @@ class RestorationTime(StreamMetric, DriftStabilizationMixIn):
         return values
 
 
-class SamplewiseRestorationTime(StreamMetric, DriftStabilizationMixIn):
+class SamplewiseStabilizationTime(StreamMetric, DriftStabilizationMixIn):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
     def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
         pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
         values = [sum(chunk_sizes[drift_idx:stabilization_idx+1]) for drift_idx, stabilization_idx in pairs]
+        return values
+
+
+class RestorationTime(StreamMetric):
+    def __init__(self, *args, percentage=0.8, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._percentage = percentage
+        assert 0.0 < percentage <= 1.0, "percentage should be in (0.0, 1.0] interval"
+
+    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        values = []
+        for i, idx in enumerate(drift_indices):
+            score_before_drift = scores[idx-1-5]  # -5 is only for debugging
+            restoration_threshold = self._percentage * score_before_drift
+            next_drift_border = drift_indices[i+1] if i < len(drift_indices)-1 else len(scores)
+            restoration_time = None
+            for j in range(idx+1, next_drift_border):
+                if scores[j] >= restoration_threshold:
+                    restoration_time = j - idx
+                    break
+            values.append(restoration_time)
+        return values
+
+
+class SamplewiseRestorationTime(StreamMetric):
+    def __init__(self, percentage, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._percentage = percentage
+        assert 0.0 < percentage <= 1.0, "percentage should be in (0.0, 1.0] interval"
+
+    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        values = []
+        for i, idx in enumerate(drift_indices):
+            score_before_drift = scores[idx-1-5]  # -5 is only for debugging
+            print('score_before_drift = ', score_before_drift)
+            restoration_threshold = self._percentage * score_before_drift
+            print('restoration_threshold = ', restoration_threshold)
+            next_drift_border = drift_indices[i+1] if i < len(drift_indices)-1 else len(scores)
+            restoration_time = None
+            for j in range(idx+1, next_drift_border):
+                print('scores[j] = ', scores[j])
+                if scores[j] >= restoration_threshold:
+                    restoration_time = sum(chunk_sizes[idx:j+1])
+                    break
+            values.append(restoration_time)
         return values
