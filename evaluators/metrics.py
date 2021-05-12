@@ -38,6 +38,8 @@ class MaxPerformanceLoss(StreamMetric):
         super().__init__(*args, **kwargs)
 
     def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+        if len(drift_indices) == 0:
+            return []
         stb_indices = copy.deepcopy(stabilization_indices)
         stb_indices.insert(0, np.argmax(scores[:drift_indices[0]]))
         values = []

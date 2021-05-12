@@ -5,14 +5,14 @@ import numpy as np
 
 class FHDSDM:
 
-    def __init__(self, window_size=100, delta=0.000001):
+    def __init__(self, window_size_drift=100, window_size_stabilization=30, delta=0.000001, epsilon_s=0.001):
 
         self._delta = delta
-        self._window_size = window_size
-        self._window_drift = collections.deque([], maxlen=window_size)
-        self._window_stabilization = collections.deque([], maxlen=30)
-        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
-        self._epsilon_s = 0.001
+        self._window_size_drift = window_size_drift
+        self._window_drift = collections.deque([], maxlen=window_size_drift)
+        self._window_stabilization = collections.deque([], maxlen=window_size_stabilization)
+        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size_drift))
+        self._epsilon_s = epsilon_s
         # print('epsilon_s = ', self._epsilon_s)
 
         self._p_max = 0
@@ -38,7 +38,7 @@ class FHDSDM:
         drift_started = False
         for p in batch_preds:
             self._window_drift.append(p)
-            if len(self._window_drift) < self._window_size:
+            if len(self._window_drift) < self._window_size_drift:
                 continue
             p_t = sum(self._window_drift) / len(self._window_drift)
             if self._p_max < p_t:
@@ -58,10 +58,9 @@ class FHDSDM:
 
     @property
     def batch_size(self):
-        return self._window_size
+        return self._window_size_drift
 
     @batch_size.setter
     def batch_size(self, value):
-        self._window_size = value
-        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size))
-        # self._epsilon_s = self._epsilon
+        self._window_size_drift = value
+        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size_drift))
