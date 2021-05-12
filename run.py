@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math
+import copy
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -17,7 +18,7 @@ from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset
 
 configs = {
     'stream_learn': {
-        'chunk_size': 1000,
+        'chunk_size': 200,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -41,10 +42,11 @@ def run():
     cfg = configs[stream_name]
 
     models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
-    seeds = [1, ]  # 2, 4, 5, 9]  # 1, 2, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 1415, 1418, 1420, 1421, 1422, 1430, 1433, 1435, 1439, 1440, 1442, 1444, 1467
-    for clf in models:
+    seeds = [2, ]  # [ 1, 2, 4, 5, 9]  # 1, 2, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 1415, 1418, 1420, 1421, 1422, 1430, 1433, 1435, 1439, 1440, 1442, 1444, 1467
+    for model in models:
         for seed in seeds:
             for variable_chunk_size in [False, True]:
+                clf = copy.deepcopy(model)
                 stream = get_stream(stream_name, cfg, random_state=seed)
                 experiment(clf, stream, cfg, variable_chunk_size=variable_chunk_size)
         break
@@ -54,6 +56,7 @@ def get_stream(stream_name, cfg, random_state=42):
     if stream_name == 'stream_learn':
         sl_stream = StreamGenerator(n_chunks=cfg['n_chunks'], chunk_size=cfg['chunk_size'], n_drifts=cfg['n_drifts'], recurring=cfg['recurring'], random_state=random_state)
         stream = StreamWrapper(sl_stream)
+        print(stream.drift_sample_idx)
     elif stream_name == 'insects':
         stream = RecurringInsectsDataset(cfg['chunk_size'])
     else:
@@ -71,7 +74,7 @@ def experiment(clf, stream, cfg, variable_chunk_size=False):
     scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, accuracy_score, cfg['chunk_size'], cfg['drift_chunk_size'],
                                                                                 variable_chunk_size=variable_chunk_size)
 
-    plot_results(scores, chunk_sizes, drift_indices, stabilization_indices)
+    plot_results(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
     plt.savefig(f'plots/classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}.png')
 
     metrics = [
@@ -80,13 +83,17 @@ def experiment(clf, stream, cfg, variable_chunk_size=False):
         SamplewiseRestorationTime(percentage=0.9, reduction=None),
         SamplewiseRestorationTime(percentage=0.8, reduction=None),
         SamplewiseRestorationTime(percentage=0.7, reduction=None),
+        SamplewiseRestorationTime(percentage=0.6, reduction=None),
+        SamplewiseRestorationTime(percentage=0.5, reduction=None),
     ]
-    metrics_vales = [metric(scores, chunk_sizes, drift_indices, stabilization_indices) for metric in metrics]
+    metrics_vales = [metric(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices) for metric in metrics]
     print('stabilization_time = ', metrics_vales[0])
     print('max_performance_loss = ', metrics_vales[1])
     print('restoration_time 0.9 = ', metrics_vales[2])
     print('restoration_time 0.8 = ', metrics_vales[3])
-    print('restoration_time 0.7 = ', metrics_vales[3])
+    print('restoration_time 0.7 = ', metrics_vales[4])
+    print('restoration_time 0.6 = ', metrics_vales[5])
+    print('restoration_time 0.5 = ', metrics_vales[6])
 
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, variable_chunk_size=False):
@@ -135,19 +142,22 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
 
 
-def plot_results(scores, chunk_sizes, drift_indices, stabilization_indices):
+def plot_results(scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
     plt.figure(figsize=(22, 12))
     x_sample = np.cumsum(chunk_sizes)
     scores_smooth = gaussian_filter1d(scores, sigma=1)
+    # scores_smooth = scores
     plt.plot(x_sample, scores_smooth, label='accuracy_score')
 
     plt.ylim(0, 1)
     plt.ylabel('Accuracy')
     plt.xlabel('Samples')
 
-    for i in drift_indices:
+    for i in drift_sample_idx:
+        plt.axvline(i, 0, 1, color='c')
+    for i in drift_detections_idx:
         plt.axvline(x_sample[i], 0, 1, color='r')
-    for i in stabilization_indices:
+    for i in stabilization_idx:
         plt.axvline(x_sample[i], 0, 1, color='g')
 
 

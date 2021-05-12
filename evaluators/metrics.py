@@ -12,8 +12,8 @@ class StreamMetric(abc.ABC):
         """
         self.reduction = reduction
 
-    def __call__(self, scores, chunk_sizes, drift_indices, stabilization_indices):
-        values = self.compute(scores, chunk_sizes, drift_indices, stabilization_indices)
+    def __call__(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
+        values = self.compute(scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices)
         return self.reduce(values)
 
     @abc.abstractmethod
@@ -37,7 +37,7 @@ class MaxPerformanceLoss(StreamMetric):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         if len(drift_indices) == 0:
             return []
         stb_indices = copy.deepcopy(stabilization_indices)
@@ -72,7 +72,7 @@ class StabilizationTime(StreamMetric, DriftStabilizationMixIn):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
         values = [stabilization_idx - drift_idx for drift_idx, stabilization_idx in pairs]
         return values
@@ -82,7 +82,7 @@ class SamplewiseStabilizationTime(StreamMetric, DriftStabilizationMixIn):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         pairs = self.compute_drift_stabilization_pairs(drift_indices, stabilization_indices)
         values = [sum(chunk_sizes[drift_idx:stabilization_idx+1]) for drift_idx, stabilization_idx in pairs]
         return values
@@ -94,7 +94,7 @@ class RestorationTime(StreamMetric):
         self._percentage = percentage
         assert 0.0 < percentage <= 1.0, "percentage should be in (0.0, 1.0] interval"
 
-    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         values = []
         for i, idx in enumerate(drift_indices):
             score_before_drift = scores[idx-1-5]  # -5 is only for debugging
@@ -115,10 +115,11 @@ class SamplewiseRestorationTime(StreamMetric):
         self._percentage = percentage
         assert 0.0 < percentage <= 1.0, "percentage should be in (0.0, 1.0] interval"
 
-    def compute(self, scores, chunk_sizes, drift_indices, stabilization_indices):
+    def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
+        chunk_sizes_cumsum = np.cumsum(chunk_sizes)
         values = []
-        for i, idx in enumerate(drift_indices):
-            score_before_drift = scores[idx-1-5]  # -5 is only for debugging
+        for i, (sample_idx, idx) in enumerate(zip(drift_sample_idx, drift_indices)):
+            score_before_drift = scores[np.argmax(chunk_sizes_cumsum > sample_idx) - 1]  # -5 is only for debugging
             print('score_before_drift = ', score_before_drift)
             restoration_threshold = self._percentage * score_before_drift
             print('restoration_threshold = ', restoration_threshold)

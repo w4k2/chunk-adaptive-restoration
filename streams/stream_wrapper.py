@@ -23,3 +23,9 @@ class StreamWrapper:
     @property
     def classes(self):
         return self.base_stream.classes_
+
+    @property
+    def drift_sample_idx(self):
+        stream_len = self.base_stream.n_chunks * self.base_stream.chunk_size
+        concept_duration = stream_len // self.base_stream.n_drifts
+        return list(range(concept_duration // 2 - self.base_stream.chunk_size, stream_len, concept_duration))
