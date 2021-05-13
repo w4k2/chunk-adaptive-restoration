@@ -84,11 +84,11 @@ configs = {
         'n_drifts': 5,
         'recurring': False,
         'incremental': False,
-        'concept_sigmoid_spacing': 5.0,
+        'concept_sigmoid_spacing': 8.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
-        'random_state': 13,
+        'random_state': 2,
     },
     'stream_learn_nonrecurring_gradual_2': {
         'chunk_size': 500,

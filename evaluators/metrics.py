@@ -117,11 +117,12 @@ class SamplewiseRestorationTime(StreamMetric):
 
     def compute(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         chunk_sizes_cumsum = np.cumsum(chunk_sizes)
+        drift_chunk_idx = [np.argmax(chunk_sizes_cumsum > sample_idx) for sample_idx in drift_sample_idx]
         values = []
-        for i, (sample_idx, idx) in enumerate(zip(drift_sample_idx, drift_indices)):
-            score_before_drift = scores[np.argmax(chunk_sizes_cumsum > sample_idx) - 1]  # -5 is only for debugging
+        for i, idx in enumerate(drift_chunk_idx):
+            score_before_drift = scores[idx - 1]
             restoration_threshold = self._percentage * score_before_drift
-            next_drift_border = drift_indices[i+1] if i < len(drift_indices)-1 else len(scores)
+            next_drift_border = drift_chunk_idx[i+1] if i < len(drift_chunk_idx)-1 else len(scores)
             restoration_time = None
             for j in range(idx+1, next_drift_border):
                 if scores[j] >= restoration_threshold:

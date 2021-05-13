@@ -18,7 +18,7 @@ from config import configs
 
 
 def run():
-    stream_names = ['stream_learn_nonrecurring_gradual_1', ]  # 'insects_3']
+    stream_names = ['stream_learn_recurring_abrupt_3', ]  # 'insects_3']
 
     models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
     for stream_name in stream_names:
@@ -70,7 +70,6 @@ def experiment(clf, stream_name, variable_chunk_size=False):
         SamplewiseRestorationTime(percentage=0.8, reduction=None),
         SamplewiseRestorationTime(percentage=0.7, reduction=None),
         SamplewiseRestorationTime(percentage=0.6, reduction=None),
-        SamplewiseRestorationTime(percentage=0.5, reduction=None),
     ]
     metrics_vales = [metric(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices) for metric in metrics]
     print('stabilization_time = ', metrics_vales[0])
@@ -131,8 +130,8 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
 def plot_results(scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
     plt.figure(figsize=(22, 12))
     x_sample = np.cumsum(chunk_sizes)
-    scores_smooth = gaussian_filter1d(scores, sigma=1)
-    # scores_smooth = scores
+    # scores_smooth = gaussian_filter1d(scores, sigma=1)
+    scores_smooth = scores
     plt.plot(x_sample, scores_smooth, label='accuracy_score')
 
     plt.ylim(0, 1)
