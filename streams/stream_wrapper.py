@@ -26,6 +26,18 @@ class StreamWrapper:
 
     @property
     def drift_sample_idx(self):
-        stream_len = self.base_stream.n_chunks * self.base_stream.chunk_size
-        concept_duration = stream_len // self.base_stream.n_drifts
-        return list(range(concept_duration // 2 - self.base_stream.chunk_size, stream_len, concept_duration))
+        if self.base_stream.incremental or self.base_stream.concept_sigmoid_spacing is not None:
+            indexes = []
+            print(self.base_stream.concept_probabilities)
+            print(len(self.base_stream.concept_probabilities))
+            for i in range(1, len(self.base_stream.concept_probabilities)):
+                if self.base_stream.concept_probabilities[i-1] == 0 and self.base_stream.concept_probabilities[i] != 0:
+                    indexes.append(i)
+                elif self.base_stream.concept_probabilities[i-1] == 1 and self.base_stream.concept_probabilities[i] != 1:
+                    indexes.append(i)
+            print('drift sample indexes = ', indexes)
+        else:
+            stream_len = self.base_stream.n_chunks * self.base_stream.chunk_size
+            concept_duration = stream_len // self.base_stream.n_drifts
+            indexes = list(range(concept_duration // 2 - self.base_stream.chunk_size, stream_len, concept_duration))
+        return indexes

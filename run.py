@@ -18,9 +18,9 @@ from config import configs
 
 
 def run():
-    stream_names = ['stream_learn_recurring_abrupt_1', ]  # 'insects_3']
+    stream_names = ['stream_learn_nonrecurring_gradual_1', ]  # 'insects_3']
 
-    models = [AUE(GaussianNB()), OnlineBagging(GaussianNB()), MLPClassifier(learning_rate_init=0.01), AWE(GaussianNB()), SEA(GaussianNB())]
+    models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
     for stream_name in stream_names:
         for model in models:
             for variable_chunk_size in [False, True]:
@@ -31,9 +31,16 @@ def run():
 
 def get_stream(stream_name, cfg):
     if stream_name.startswith('stream_learn'):
-        sl_stream = StreamGenerator(n_chunks=cfg['n_chunks'], chunk_size=cfg['chunk_size'], n_drifts=cfg['n_drifts'], recurring=cfg['recurring'], random_state=cfg['random_state'])
+        sl_stream = StreamGenerator(
+            n_chunks=cfg['n_chunks'],
+            chunk_size=cfg['chunk_size'],
+            n_drifts=cfg['n_drifts'],
+            recurring=cfg['recurring'],
+            random_state=cfg['random_state'],
+            incremental=cfg['incremental'],
+            concept_sigmoid_spacing=cfg['concept_sigmoid_spacing'],
+        )
         stream = StreamWrapper(sl_stream)
-        print(stream.drift_sample_idx)
     elif stream_name.startswith('insects'):
         stream = RecurringInsectsDataset(cfg['chunk_size'], repetitions=cfg['n_drifts'])
     else:
