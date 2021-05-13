@@ -18,7 +18,7 @@ from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset
 
 configs = {
     'stream_learn': {
-        'chunk_size': 200,
+        'chunk_size': 100,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -33,15 +33,16 @@ configs = {
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
+        'n_drifts': 2,
     }
 }
 
 
 def run():
-    stream_name = 'stream_learn'
+    stream_name = 'insects'
     cfg = configs[stream_name]
 
-    models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
+    models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), SEA(GaussianNB())]
     seeds = [2, ]  # [ 1, 2, 4, 5, 9]  # 1, 2, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 1415, 1418, 1420, 1421, 1422, 1430, 1433, 1435, 1439, 1440, 1442, 1444, 1467
     for model in models:
         for seed in seeds:
@@ -58,7 +59,7 @@ def get_stream(stream_name, cfg, random_state=42):
         stream = StreamWrapper(sl_stream)
         print(stream.drift_sample_idx)
     elif stream_name == 'insects':
-        stream = RecurringInsectsDataset(cfg['chunk_size'])
+        stream = RecurringInsectsDataset(cfg['chunk_size'], repetitions=cfg['n_drifts'])
     else:
         raise ValueError(f"Invalid stream name: {stream_name}")
     return stream

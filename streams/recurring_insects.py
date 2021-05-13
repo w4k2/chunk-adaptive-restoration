@@ -9,10 +9,11 @@ from sklearn import preprocessing
 class RecurringInsectsDataset:
     def __init__(self, chunk_size, repetitions=2):
         self._chunk_size = chunk_size
-        self.x, self.y = self.load_insects(repetitions=2)
+        self._repetitions = repetitions
+        self.x, self.y = self.load_insects()
         self._classes = np.unique(self.y)
 
-    def load_insects(self, repetitions):
+    def load_insects(self):
         data = arff.loadarff('./streams/repository/INSECTS-incremental-reoccurring_balanced_norm.arff')
         df = pd.DataFrame(data[0])
         le = preprocessing.LabelEncoder()
@@ -39,7 +40,7 @@ class RecurringInsectsDataset:
         x = x1
         x = x + x2
         y = y1 + y2
-        for i in range(repetitions):
+        for i in range(self._repetitions):
             x = x + x1
             x = x + x2
             y = y + y1 + y2
@@ -69,3 +70,14 @@ class RecurringInsectsDataset:
     @property
     def classes(self):
         return self._classes
+
+    @property
+    def drift_sample_idx(self):
+        concepts_len = 45000+60000
+        drift_idx = [60000 - self._chunk_size, concepts_len - self._chunk_size]
+        for i in range(1, self._repetitions + 1):
+            drift_idx.append(60000 + concepts_len * i - self._chunk_size)
+            drift_idx.append(concepts_len + concepts_len * i - self._chunk_size)
+        drift_idx.pop()
+        print('drift_idx = ', drift_idx)
+        return drift_idx
