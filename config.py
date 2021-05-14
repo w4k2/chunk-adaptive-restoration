@@ -1,7 +1,7 @@
 configs = {
     'stream_learn_recurring_abrupt_1': {
         'chunk_size': 1000,
-        'drift_chunk_size': 30,
+        'drift_chunk_size': 100,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': True,

@@ -18,9 +18,9 @@ from config import configs
 
 
 def run():
-    stream_names = ['stream_learn_recurring_abrupt_3', ]  # 'insects_3']
+    stream_names = ['stream_learn_nonrecurring_incremental_1', ]  # 'insects_3']
 
-    models = [MLPClassifier(learning_rate_init=0.01), AUE(GaussianNB()), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
+    models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
     for stream_name in stream_names:
         for model in models:
             for variable_chunk_size in [False, True]:
@@ -78,7 +78,6 @@ def experiment(clf, stream_name, variable_chunk_size=False):
     print('restoration_time 0.8 = ', metrics_vales[3])
     print('restoration_time 0.7 = ', metrics_vales[4])
     print('restoration_time 0.6 = ', metrics_vales[5])
-    print('restoration_time 0.5 = ', metrics_vales[6])
 
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, variable_chunk_size=False):
