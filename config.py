@@ -217,7 +217,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.0001,
+        'fhdsdm_epsilon_s': 0.001,
         'random_state': 1,
     },
     'stream_learn_recurring_incremental_2': {
@@ -269,7 +269,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.0001,
+        'fhdsdm_epsilon_s': 0.001,
         'random_state': 1,
     },
     'stream_learn_nonrecurring_incremental_2': {
