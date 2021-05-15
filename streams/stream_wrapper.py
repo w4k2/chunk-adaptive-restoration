@@ -32,7 +32,7 @@ class StreamWrapper:
             for i in range(1, len(fall)):
                 if fall[i-1] == True and fall[i] == False:
                     indexes.append(i)
-            rise = self.base_stream.concept_probabilities < 0.001
+            rise = self.base_stream.concept_probabilities < 0.01
             for i in range(1, len(rise)):
                 if rise[i-1] == True and rise[i] == False:
                     indexes.append(i)

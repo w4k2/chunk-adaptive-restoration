@@ -22,10 +22,10 @@ from config_real import real_configs
 def run():
     args = parse_args()
     stream_names = [
-        # 'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
-        # 'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
+        'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
+        'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
         'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3',
-        # 'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
+        'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
         # 'usenet_1'
     ]
 
@@ -153,27 +153,20 @@ def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variabl
             detector.add_element(correct_preds)
             if drift_phase and variable_chunk_size:
                 stream.chunk_size = min(int(stream.chunk_size * 1.1), chunk_size)
-                if type(clf) == MLPClassifier:
-                    clf._optimizer.learning_rate = math.sqrt(stream.chunk_size / chunk_size) * clf._optimizer.learning_rate
             if detector.change_detected():
                 drift_phase = True
                 if variable_chunk_size:
                     stream.chunk_size = drift_chunk_size
-                    if type(clf) == MLPClassifier:
-                        clf._optimizer.learning_rate = math.sqrt(drift_chunk_size / chunk_size) * clf._optimizer.learning_rate
                 print("Change detected, batch:", i)
                 drift_indices.append(i-1)
             elif detector.stabilization_detected():
                 drift_phase = False
                 if variable_chunk_size:
                     stream.chunk_size = chunk_size
-                    if type(clf) == MLPClassifier:
-                        clf._optimizer.learning_rate = 0.01
                 print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i-1)
         # Train
         clf.partial_fit(X, y, stream.classes)
-        i += 1
     print()
 
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
