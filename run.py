@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 import copy
+import scipy.stats
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -18,15 +19,36 @@ from config import configs
 
 
 def run():
-    stream_names = ['stream_learn_recurring_abrupt_1', ]  # 'insects_3']
+    # ['stream_learn_recurring_abrupt_1', 'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', ]
+    stream_names = [
+        'stream_learn_recurring_abrupt_1', 'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
+        'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
+        'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3',
+        'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
+    ]
 
     models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
+    metrics_baseline = []
+    metrics_ours = []
     for stream_name in stream_names:
         for model in models:
             for variable_chunk_size in [False, True]:
                 clf = copy.deepcopy(model)
-                experiment(clf, stream_name, variable_chunk_size=variable_chunk_size)
+                metrics_vales = experiment(clf, stream_name, variable_chunk_size=variable_chunk_size)
+                if variable_chunk_size:
+                    metrics_ours.append(metrics_vales)
+                else:
+                    metrics_baseline.append(metrics_vales)
             break
+
+    metrics_baseline = np.stack(metrics_baseline, axis=0)
+    metrics_ours = np.stack(metrics_ours, axis=0)
+
+    stabilization_time_baseline = metrics_baseline[:, 0]
+    stabilization_time_ours = metrics_ours[:, 0]
+    print('stabilization_time_baseline = ', stabilization_time_baseline)
+    statistic, p_value = scipy.stats.wilcoxon(stabilization_time_baseline, stabilization_time_ours)
+    print('p_value = ', p_value)
 
 
 def get_stream(stream_name, cfg):
@@ -64,28 +86,31 @@ def experiment(clf, stream_name, variable_chunk_size=False):
     plt.savefig(f'plots/stream_{stream_name}_classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}.png')
 
     metrics = [
-        SamplewiseStabilizationTime(reduction=None),
-        MaxPerformanceLoss(reduction=None),
-        SamplewiseRestorationTime(percentage=0.9, reduction=None),
-        SamplewiseRestorationTime(percentage=0.8, reduction=None),
-        SamplewiseRestorationTime(percentage=0.7, reduction=None),
-        SamplewiseRestorationTime(percentage=0.6, reduction=None),
+        SamplewiseStabilizationTime(reduction='avg'),
+        MaxPerformanceLoss(reduction='avg'),
         SamplewiseRestorationTime(percentage=0.9, reduction='avg'),
         SamplewiseRestorationTime(percentage=0.8, reduction='avg'),
         SamplewiseRestorationTime(percentage=0.7, reduction='avg'),
         SamplewiseRestorationTime(percentage=0.6, reduction='avg'),
     ]
+    restoration_time_metrics = [
+        SamplewiseRestorationTime(percentage=0.9, reduction=None),
+        SamplewiseRestorationTime(percentage=0.8, reduction=None),
+        SamplewiseRestorationTime(percentage=0.7, reduction=None),
+        SamplewiseRestorationTime(percentage=0.6, reduction=None),
+
+    ]
     metrics_vales = [metric(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices) for metric in metrics]
     print('stabilization_time = ', metrics_vales[0])
     print('max_performance_loss = ', metrics_vales[1])
-    print('restoration_time 0.9 = ', metrics_vales[2])
-    print('restoration_time 0.8 = ', metrics_vales[3])
-    print('restoration_time 0.7 = ', metrics_vales[4])
-    print('restoration_time 0.6 = ', metrics_vales[5])
-    print('avg restoration_time 0.9 = ', metrics_vales[6])
-    print('avg restoration_time 0.8 = ', metrics_vales[7])
-    print('avg restoration_time 0.7 = ', metrics_vales[8])
-    print('avg restoration_time 0.6 = ', metrics_vales[9])
+    for m in restoration_time_metrics:
+        restoration_time = m(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
+        print(f'restoration_time {m._percentage} = ', restoration_time)
+    print('avg restoration_time 0.9 = ', metrics_vales[2])
+    print('avg restoration_time 0.8 = ', metrics_vales[3])
+    print('avg restoration_time 0.7 = ', metrics_vales[4])
+    print('avg restoration_time 0.6 = ', metrics_vales[5])
+    return np.array(metrics_vales)
 
 
 def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, variable_chunk_size=False):
