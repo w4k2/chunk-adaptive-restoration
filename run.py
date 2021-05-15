@@ -27,6 +27,7 @@ def run():
     metrics_baseline = []
     metrics_ours = []
     for stream_name in stream_names:
+        print(f'\n\n=================={stream_name}================\n\n')
         clf = get_model(args.model_name)
         metrics_vales = experiment(clf, stream_name, variable_chunk_size=False)
         metrics_baseline.append(metrics_vales)
@@ -95,7 +96,7 @@ def experiment(clf, stream_name, variable_chunk_size=False):
         window_size_stabilization=cfg['fhdsdm_window_size_stabilization'],
         epsilon_s=cfg['fhdsdm_epsilon_s']
     )
-    scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, accuracy_score, cfg['chunk_size'], cfg['drift_chunk_size'],
+    scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, cfg['chunk_size'], cfg['drift_chunk_size'],
                                                                                 variable_chunk_size=variable_chunk_size)
 
     plot_results(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
@@ -114,7 +115,6 @@ def experiment(clf, stream_name, variable_chunk_size=False):
         SamplewiseRestorationTime(percentage=0.8, reduction=None),
         SamplewiseRestorationTime(percentage=0.7, reduction=None),
         SamplewiseRestorationTime(percentage=0.6, reduction=None),
-
     ]
     metrics_vales = [metric(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices) for metric in metrics]
     print('stabilization_time = ', metrics_vales[0])
@@ -129,7 +129,7 @@ def experiment(clf, stream_name, variable_chunk_size=False):
     return np.array(metrics_vales)
 
 
-def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size, variable_chunk_size=False):
+def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variable_chunk_size=False):
     scores = []
     chunk_sizes = []
     drift_indices = []
@@ -141,8 +141,7 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
         if i > 0:
             chunk_sizes.append(X.shape[0])
             y_pred = clf.predict(X)
-            score = metric(y, y_pred)
-            scores.append(score)
+            scores.append(accuracy_score(y, y_pred))
             correct_preds = np.array(y == y_pred, dtype=float)
             detector.add_element(correct_preds)
             if drift_phase and variable_chunk_size:
@@ -153,7 +152,6 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
                 drift_phase = True
                 if variable_chunk_size:
                     stream.chunk_size = drift_chunk_size
-                    detector.batch_size = drift_chunk_size
                     if type(clf) == MLPClassifier:
                         clf._optimizer.learning_rate = math.sqrt(drift_chunk_size / chunk_size) * clf._optimizer.learning_rate
                 print("Change detected, batch:", i)
@@ -162,7 +160,6 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
                 drift_phase = False
                 if variable_chunk_size:
                     stream.chunk_size = chunk_size
-                    detector.batch_size = chunk_size
                     if type(clf) == MLPClassifier:
                         clf._optimizer.learning_rate = 0.01
                 print("Stabilization detected, batch:", i)

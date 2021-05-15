@@ -55,12 +55,3 @@ class FHDSDM:
 
     def stabilization_detected(self):
         return self._stabilization_phase
-
-    @property
-    def batch_size(self):
-        return self._window_size_drift
-
-    @batch_size.setter
-    def batch_size(self, value):
-        self._window_size_drift = value
-        self._epsilon = math.sqrt(math.log((1 / self._delta), math.e) / (2 * self._window_size_drift))

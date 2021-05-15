@@ -22,6 +22,8 @@ class StreamMetric(abc.ABC):
 
     def reduce(self, values):
         if self.reduction == 'avg':
+            if len(values) == 0:
+                return np.nan
             return sum(values) / len(values)
         elif self.reduction == 'max':
             return max(values)
