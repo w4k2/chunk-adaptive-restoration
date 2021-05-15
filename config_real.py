@@ -22,5 +22,13 @@ real_configs = {
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
         'n_drifts': 2,
-    }
+    },
+    'usenet_1': {
+        'chunk_size': 1000,
+        'drift_chunk_size': 30,
+        'fhdsdm_window_size_drift': 1000,
+        'fhdsdm_window_size_stabilization': 30,
+        'fhdsdm_epsilon_s': 0.001,
+        'n_drifts': 2,
+    },
 }

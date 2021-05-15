@@ -11,17 +11,22 @@ from scipy.ndimage.filters import gaussian_filter1d
 
 from detectors import FHDSDM
 from evaluators.metrics import MaxPerformanceLoss, SamplewiseStabilizationTime, RestorationTime, SamplewiseRestorationTime
-from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset
+from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset, RecurringUsenetDataset
 from config import configs
+from config_real import real_configs
+
+
+# configs = real_configs
 
 
 def run():
     args = parse_args()
     stream_names = [
-        'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
-        'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
+        # 'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
+        # 'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
         'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3',
-        'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
+        # 'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
+        # 'usenet_1'
     ]
 
     metrics_baseline = []
@@ -82,6 +87,8 @@ def get_stream(stream_name, cfg):
         stream = StreamWrapper(sl_stream)
     elif stream_name.startswith('insects'):
         stream = RecurringInsectsDataset(cfg['chunk_size'], repetitions=cfg['n_drifts'])
+    elif stream_name.startswith('usenet'):
+        stream = RecurringUsenetDataset(cfg['chunk_size'])
     else:
         raise ValueError(f"Invalid stream name: {stream_name}")
     return stream
@@ -173,7 +180,7 @@ def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variabl
 
 
 def plot_results(scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
-    plt.figure(figsize=(22, 12))
+    plt.figure(figsize=(22, 10))
     x_sample = np.cumsum(chunk_sizes)
     scores_smooth = gaussian_filter1d(scores, sigma=1)
     # scores_smooth = scores
