@@ -1,14 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math
-import copy
-import scipy.stats
+import argparse
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.tree import DecisionTreeClassifier
 from strlearn.ensembles import AUE, AWE, OnlineBagging, SEA, WAE
-from strlearn.evaluators import TestThenTrain
 from strlearn.streams import StreamGenerator
 from scipy.ndimage.filters import gaussian_filter1d
 
@@ -19,36 +16,55 @@ from config import configs
 
 
 def run():
-    # ['stream_learn_recurring_abrupt_1', 'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', ]
+    args = parse_args()
     stream_names = [
-        'stream_learn_recurring_abrupt_1', 'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
-        'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
+        'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3',
+        'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3',
         'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3',
         'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3',
     ]
 
-    models = [AUE(GaussianNB()), MLPClassifier(learning_rate_init=0.01), SEA(GaussianNB()), AWE(GaussianNB()), OnlineBagging(GaussianNB()), ]
     metrics_baseline = []
     metrics_ours = []
     for stream_name in stream_names:
-        for model in models:
-            for variable_chunk_size in [False, True]:
-                clf = copy.deepcopy(model)
-                metrics_vales = experiment(clf, stream_name, variable_chunk_size=variable_chunk_size)
-                if variable_chunk_size:
-                    metrics_ours.append(metrics_vales)
-                else:
-                    metrics_baseline.append(metrics_vales)
-            break
+        clf = get_model(args.model_name)
+        metrics_vales = experiment(clf, stream_name, variable_chunk_size=False)
+        metrics_baseline.append(metrics_vales)
 
+        clf = get_model(args.model_name)
+        metrics_vales = experiment(clf, stream_name, variable_chunk_size=True)
+        metrics_ours.append(metrics_vales)
+
+    """
+        metrics_baseline and metrics_ours are [NxM] matrixes
+        N is number of streams
+        M is number of metrics, 
+        order of metrics: SamplewiseStabilizationTime, MaxPerformanceLoss, SamplewiseRestorationTime 0.9, SamplewiseRestorationTime 0.8, SamplewiseRestorationTime 0.7, SamplewiseRestorationTime 0.6
+    """
     metrics_baseline = np.stack(metrics_baseline, axis=0)
     metrics_ours = np.stack(metrics_ours, axis=0)
 
-    stabilization_time_baseline = metrics_baseline[:, 0]
-    stabilization_time_ours = metrics_ours[:, 0]
-    print('stabilization_time_baseline = ', stabilization_time_baseline)
-    statistic, p_value = scipy.stats.wilcoxon(stabilization_time_baseline, stabilization_time_ours)
-    print('p_value = ', p_value)
+    np.save(f'results/{args.model_name}_baseline.npy', metrics_baseline)
+    np.save(f'results/{args.model_name}_ours.npy', metrics_ours)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model_name', choices=['aue', 'awe', 'sea', 'onlinebagging', 'mlp'], required=True)
+
+    args = parser.parse_args()
+    return args
+
+
+def get_model(model_name):
+    models = {
+        'aue': AUE(GaussianNB()),
+        'awe': AWE(GaussianNB()),
+        'sea': SEA(GaussianNB()),
+        'onlinebagging': OnlineBagging(GaussianNB()),
+        'mlp': MLPClassifier(learning_rate_init=0.01),
+    }
+    return models[model_name]
 
 
 def get_stream(stream_name, cfg):
@@ -141,7 +157,7 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
                     if type(clf) == MLPClassifier:
                         clf._optimizer.learning_rate = math.sqrt(drift_chunk_size / chunk_size) * clf._optimizer.learning_rate
                 print("Change detected, batch:", i)
-                drift_indices.append(i)
+                drift_indices.append(i-1)
             elif detector.stabilization_detected():
                 drift_phase = False
                 if variable_chunk_size:
@@ -150,7 +166,7 @@ def test_then_train(stream, clf, detector, metric, chunk_size, drift_chunk_size,
                     if type(clf) == MLPClassifier:
                         clf._optimizer.learning_rate = 0.01
                 print("Stabilization detected, batch:", i)
-                stabilization_indices.append(i)
+                stabilization_indices.append(i-1)
         # Train
         clf.partial_fit(X, y, stream.classes)
         i += 1
