@@ -53,31 +53,32 @@ def crop_to_three_decimal_places(number_str):
 
 
 if __name__ == '__main__':
-    model_name = 'aue'
-    metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
-    metrics_ours = np.load(f'results/{model_name}_ours.npy')
-    stream_names = [
-        'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_recurring_abrupt_4',
-        'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_4',
-        'stream_learn_recurring_gradual_1', 'stream_learn_recurring_gradual_2', 'stream_learn_recurring_gradual_3', 'stream_learn_recurring_gradual_4',
-        'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_gradual_4',
-        'stream_learn_recurring_incremental_1', 'stream_learn_recurring_incremental_2', 'stream_learn_recurring_incremental_3', 'stream_learn_recurring_incremental_4',
-        'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', 'stream_learn_nonrecurring_incremental_4',
-        'usenet_1'
-    ]
-    metrics_names = ['restoration time 0.9', 'restoration time 0.8', 'restoration time 0.7', 'restoration time 0.6']
+    for model_name in ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']:
+        metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
+        metrics_ours = np.load(f'results/{model_name}_ours.npy')
+        stream_names = [
+            'st-learn recurring abrupt 1',  'st-learn recurring abrupt 2', 'st-learn recurring abrupt 3', 'st-learn recurring abrupt 4',
+            'st-learn nonrecurring abrupt 1',  'st-learn nonrecurring abrupt 2', 'st-learn nonrecurring abrupt 3', 'st-learn nonrecurring abrupt 4',
+            'st-learn recurring gradual 1', 'st-learn recurring gradual 2', 'st-learn recurring gradual 3', 'st-learn recurring gradual 4',
+            'st-learn nonrecurring gradual 1', 'st-learn nonrecurring gradual 2', 'st-learn nonrecurring gradual 3', 'st-learn nonrecurring gradual 4',
+            'st-learn recurring incremental 1', 'st-learn recurring incremental 2', 'st-learn recurring incremental 3', 'st-learn recurring incremental 4',
+            'st-learn nonrecurring incremental 1', 'st-learn nonrecurring incremental 2', 'st-learn nonrecurring incremental 3', 'st-learn nonrecurring incremental 4',
+            'usenet',
+        ]
+        metrics_names = ['restoration time 0.9', 'restoration time 0.8', 'restoration time 0.7', 'restoration time 0.6']
 
-    table = [('stream_names',
-              'baseline restoration time 0.9', 'ours restoration time 0.9',
-              'baseline restoration time 0.8', 'ours restoration time 0.8',
-              'baseline restoration time 0.7', 'ours restoration time 0.7',
-              'baseline restoration time 0.6', 'ours restoration time 0.6'
-              )]
-    for name, baseline, ours in zip(stream_names, metrics_baseline[:, 2:], metrics_ours[:, 2:]):
-        row = [name]
-        for b, o in zip(baseline, ours):
-            row.append(b)
-            row.append(o)
-        table.append(row)
+        table = [(
+            'stream_names',
+            'baseline restoration time 0.9', 'ours restoration time 0.9',
+            'baseline restoration time 0.8', 'ours restoration time 0.8',
+            'baseline restoration time 0.7', 'ours restoration time 0.7',
+            'baseline restoration time 0.6', 'ours restoration time 0.6'
+        )]
+        for name, baseline, ours in zip(stream_names, metrics_baseline[:, 2:], metrics_ours[:, 2:]):
+            row = [name]
+            for b, o in zip(baseline, ours):
+                row.append(b)
+                row.append(o)
+            table.append(row)
 
-    save_tex_table(table, 'tabels/aue.tex', use_hline=False)
+        save_tex_table(table, f'tabels/{model_name}.tex', use_hline=False)
