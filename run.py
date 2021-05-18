@@ -30,15 +30,27 @@ def run():
 
     metrics_baseline = []
     metrics_ours = []
+    fig, axes = plt.subplots(3, 2)
+    fig.set_size_inches(18.5, 10.5)
+    axis_row = 0
     for stream_name in stream_names:
         print(f'\n\n=================={stream_name}================\n\n')
         clf = get_model(args.model_name)
-        metrics_vales = experiment(clf, stream_name, variable_chunk_size=False)
+        if stream_name[-1:] == '1' and 'nonrecurring' in stream_name:
+            axis = axes[axis_row][0]
+        else:
+            axis = None
+        metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
         metrics_baseline.append(metrics_vales)
 
         clf = get_model(args.model_name)
-        metrics_vales = experiment(clf, stream_name, variable_chunk_size=True)
+        if axis:
+            axis = axes[axis_row][1]
+            axis_row += 1
+        metrics_vales = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
         metrics_ours.append(metrics_vales)
+
+    fig.savefig(f'plots/classifer_{clf.__class__.__name__}.png')
 
     """
         metrics_baseline and metrics_ours are [NxM] matrixes
@@ -93,7 +105,7 @@ def get_stream(stream_name, cfg):
     return stream
 
 
-def experiment(clf, stream_name, variable_chunk_size=False):
+def experiment(clf, stream_name, variable_chunk_size=False, axis=None):
     cfg = configs[stream_name]
     stream = get_stream(stream_name, cfg)
     variable_size_stream = VariableChunkStream(stream)
@@ -105,8 +117,8 @@ def experiment(clf, stream_name, variable_chunk_size=False):
     scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, cfg['chunk_size'], cfg['drift_chunk_size'],
                                                                                 variable_chunk_size=variable_chunk_size)
 
-    plot_results(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
-    plt.savefig(f'plots/stream_{stream_name}_classifer_{clf.__class__.__name__}_variable_chunk_size_{variable_chunk_size}.png')
+    if axis:
+        plot_results(axis, scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
 
     metrics = [
         SamplewiseStabilizationTime(reduction='avg'),
@@ -171,23 +183,22 @@ def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variabl
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
 
 
-def plot_results(scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
-    plt.figure(figsize=(22, 10))
+def plot_results(axis, scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
     x_sample = np.cumsum(chunk_sizes)
     scores_smooth = gaussian_filter1d(scores, sigma=1)
     # scores_smooth = scores
-    plt.plot(x_sample, scores_smooth, label='accuracy_score')
+    axis.plot(x_sample, scores_smooth, label='accuracy_score')
 
-    plt.ylim(0, 1)
-    plt.ylabel('Accuracy')
-    plt.xlabel('Samples')
+    axis.set_ylim(0, 1)
+    axis.set_ylabel('Accuracy')
+    axis.set_xlabel('Samples')
 
     for i in drift_sample_idx:
-        plt.axvline(i, 0, 1, color='c')
+        axis.axvline(i, 0, 1, color='c')
     for i in drift_detections_idx:
-        plt.axvline(x_sample[i], 0, 1, color='r')
+        axis.axvline(x_sample[i], 0, 1, color='r')
     for i in stabilization_idx:
-        plt.axvline(x_sample[i], 0, 1, color='g')
+        axis.axvline(x_sample[i], 0, 1, color='g')
 
 
 if __name__ == "__main__":

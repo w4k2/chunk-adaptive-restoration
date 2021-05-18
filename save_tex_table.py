@@ -74,8 +74,8 @@ if __name__ == '__main__':
             'baseline restoration time 0.7', 'ours restoration time 0.7',
             'baseline restoration time 0.6', 'ours restoration time 0.6'
         )]
-        for name, baseline, ours in zip(stream_names, metrics_baseline[:, 2:], metrics_ours[:, 2:]):
-            row = [name]
+        for i, (name, baseline, ours) in enumerate(zip(stream_names, metrics_baseline[:, 2:], metrics_ours[:, 2:])):
+            row = [str(i+1)]
             for b, o in zip(baseline, ours):
                 row.append(b)
                 row.append(o)
