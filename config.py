@@ -319,4 +319,28 @@ configs = {
         'fhdsdm_epsilon_s': 0.001,
         'n_drifts': 2,
     },
+    'insects_abrupt': {
+        'chunk_size': 1000,
+        'drift_chunk_size': 100,
+        'fhdsdm_window_size_drift': 1000,
+        'fhdsdm_window_size_stabilization': 30,
+        'fhdsdm_epsilon_s': 0.001,
+        'n_drifts': 2,
+    },
+    'insects_gradual': {
+        'chunk_size': 1000,
+        'drift_chunk_size': 100,
+        'fhdsdm_window_size_drift': 1000,
+        'fhdsdm_window_size_stabilization': 30,
+        'fhdsdm_epsilon_s': 0.001,
+        'n_drifts': 2,
+    },
+    'insects_incremental': {
+        'chunk_size': 1000,
+        'drift_chunk_size': 100,
+        'fhdsdm_window_size_drift': 1000,
+        'fhdsdm_window_size_stabilization': 30,
+        'fhdsdm_epsilon_s': 0.001,
+        'n_drifts': 2,
+    },
 }

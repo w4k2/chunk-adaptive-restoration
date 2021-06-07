@@ -11,7 +11,7 @@ from scipy.ndimage.filters import gaussian_filter1d
 
 from detectors import FHDSDM
 from evaluators.metrics import MaxPerformanceLoss, SamplewiseStabilizationTime, RestorationTime, SamplewiseRestorationTime
-from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset, RecurringUsenetDataset
+from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset, RecurringUsenetDataset, InsectsDataset
 from config import configs
 from config_real import real_configs
 
@@ -24,7 +24,10 @@ def run():
         'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_gradual_4',
         'stream_learn_recurring_incremental_1', 'stream_learn_recurring_incremental_2', 'stream_learn_recurring_incremental_3', 'stream_learn_recurring_incremental_4',
         'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', 'stream_learn_nonrecurring_incremental_4',
-        'usenet_1',
+        # 'usenet_1',
+        'insects_abrupt',
+        'insects_gradual',
+        # 'insects_incremental',
     ]
 
     models_names = ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']
@@ -35,6 +38,9 @@ def run():
         'stream_learn_nonrecurring_gradual_1',
         'stream_learn_nonrecurring_incremental_1',
         'usenet_1',
+        'insects_abrupt',
+        'insects_gradual',
+        'insects_incremental',
     ]
     all_figures = dict()
     all_axes = dict()
@@ -105,8 +111,12 @@ def get_stream(stream_name, cfg):
             concept_sigmoid_spacing=cfg['concept_sigmoid_spacing'],
         )
         stream = StreamWrapper(sl_stream)
-    elif stream_name.startswith('insects'):
-        stream = RecurringInsectsDataset(cfg['chunk_size'], repetitions=cfg['n_drifts'])
+    elif stream_name == 'insects_abrupt':
+        stream = InsectsDataset('./streams/insects/INSECTS-abrupt_imbalanced_norm.arff', cfg['chunk_size'])
+    elif stream_name == 'insects_gradual':
+        stream = InsectsDataset('./streams/insects/INSECTS-gradual_imbalanced_norm.arff', cfg['chunk_size'])
+    elif stream_name == 'insects_incremental':
+        stream = InsectsDataset('./streams/insects/INSECTS-incremental_imbalanced_norm.arff', cfg['chunk_size'])
     elif stream_name.startswith('usenet'):
         stream = RecurringUsenetDataset(cfg['chunk_size'])
     else:
