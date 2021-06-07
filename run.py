@@ -17,7 +17,6 @@ from config_real import real_configs
 
 
 def run():
-    args = parse_args()
     stream_names = [
         'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_recurring_abrupt_4',
         'stream_learn_nonrecurring_abrupt_1',  'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_4',
@@ -28,29 +27,45 @@ def run():
         'usenet_1',
     ]
 
-    metrics_baseline = []
-    metrics_ours = []
-    fig, axes = plt.subplots(3, 2)
-    fig.set_size_inches(18.5, 10.5)
-    axis_row = 0
+    models_names = ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']
+    metrics_baseline = [[] for _ in models_names]
+    metrics_ours = [[] for _ in models_names]
+    streams_for_plotting = [
+        'stream_learn_nonrecurring_abrupt_1',
+        'stream_learn_nonrecurring_gradual_1',
+        'stream_learn_nonrecurring_incremental_1',
+        'usenet_1',
+    ]
+    all_figures = dict()
+    all_axes = dict()
+    for name in streams_for_plotting:
+        fig, axes = plt.subplots(len(models_names))
+        fig.set_size_inches(10.5, 10.5)
+        fig.tight_layout(pad=3.0)
+        all_figures[name] = fig
+        all_axes[name] = axes
+
     for stream_name in stream_names:
-        print(f'\n\n=================={stream_name}================\n\n')
-        clf = get_model(args.model_name)
-        if stream_name[-1:] == '1' and 'nonrecurring' in stream_name:
-            axis = axes[axis_row][0]
-        else:
+        for model_index, model_name in enumerate(models_names):
+            print(f'\n\n=================={stream_name}================\n\n')
+            clf = get_model(model_name)
             axis = None
-        metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
-        metrics_baseline.append(metrics_vales)
+            if stream_name in streams_for_plotting:
+                axis = all_axes[stream_name][model_index]
+                axis.set_title(clf.__class__.__name__)
 
-        clf = get_model(args.model_name)
-        if axis:
-            axis = axes[axis_row][1]
-            axis_row += 1
-        metrics_vales = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
-        metrics_ours.append(metrics_vales)
+            metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
+            metrics_baseline[model_index].append(metrics_vales)
 
-    fig.savefig(f'plots/classifer_{clf.__class__.__name__}.png')
+            clf = get_model(model_name)
+            if stream_name in streams_for_plotting:
+                axis = all_axes[stream_name][model_index]
+                axis.set_title(clf.__class__.__name__)
+            metrics_vales = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
+            metrics_ours[model_index].append(metrics_vales)
+
+    for name in streams_for_plotting:
+        all_figures[name].savefig(f'plots/stream_{name}.png')
 
     """
         metrics_baseline and metrics_ours are [NxM] matrixes
@@ -58,19 +73,13 @@ def run():
         M is number of metrics, 
         order of metrics: SamplewiseStabilizationTime, MaxPerformanceLoss, SamplewiseRestorationTime 0.9, SamplewiseRestorationTime 0.8, SamplewiseRestorationTime 0.7, SamplewiseRestorationTime 0.6
     """
-    metrics_baseline = np.stack(metrics_baseline, axis=0)
-    metrics_ours = np.stack(metrics_ours, axis=0)
 
-    np.save(f'results/{args.model_name}_baseline.npy', metrics_baseline)
-    np.save(f'results/{args.model_name}_ours.npy', metrics_ours)
+    for i in range(len(models_names)):
+        metrics_b = np.stack(metrics_baseline[i], axis=0)
+        metrics_o = np.stack(metrics_ours[i], axis=0)
 
-
-def parse_args():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', choices=['aue', 'awe', 'sea', 'onlinebagging', 'mlp'], required=True)
-
-    args = parser.parse_args()
-    return args
+        np.save(f'results/{models_names[i]}_baseline.npy', metrics_b)
+        np.save(f'results/{models_names[i]}_ours.npy', metrics_o)
 
 
 def get_model(model_name):
@@ -118,7 +127,7 @@ def experiment(clf, stream_name, variable_chunk_size=False, axis=None):
                                                                                 variable_chunk_size=variable_chunk_size)
 
     if axis:
-        plot_results(axis, scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
+        plot_results(axis, scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices, variable_chunk_size=variable_chunk_size)
 
     metrics = [
         SamplewiseStabilizationTime(reduction='avg'),
@@ -183,22 +192,24 @@ def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variabl
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
 
 
-def plot_results(axis, scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx):
+def plot_results(axis, scores, chunk_sizes, drift_sample_idx, drift_detections_idx, stabilization_idx, variable_chunk_size=False):
     x_sample = np.cumsum(chunk_sizes)
     scores_smooth = gaussian_filter1d(scores, sigma=1)
     # scores_smooth = scores
-    axis.plot(x_sample, scores_smooth, label='accuracy_score')
+    label = 'ours' if variable_chunk_size else 'baseline'
+    axis.plot(x_sample, scores_smooth, label=label)
+    axis.legend()
 
     axis.set_ylim(0, 1)
     axis.set_ylabel('Accuracy')
     axis.set_xlabel('Samples')
 
-    for i in drift_sample_idx:
-        axis.axvline(i, 0, 1, color='c')
-    for i in drift_detections_idx:
-        axis.axvline(x_sample[i], 0, 1, color='r')
-    for i in stabilization_idx:
-        axis.axvline(x_sample[i], 0, 1, color='g')
+    # for i in drift_sample_idx:
+    #     axis.axvline(i, 0, 1, color='c')
+    # for i in drift_detections_idx:
+    #     axis.axvline(x_sample[i], 0, 1, color='r')
+    # for i in stabilization_idx:
+    #     axis.axvline(x_sample[i], 0, 1, color='g')
 
 
 if __name__ == "__main__":
