@@ -64,6 +64,8 @@ if __name__ == '__main__':
             'st-learn recurring incremental 1', 'st-learn recurring incremental 2', 'st-learn recurring incremental 3', 'st-learn recurring incremental 4',
             'st-learn nonrecurring incremental 1', 'st-learn nonrecurring incremental 2', 'st-learn nonrecurring incremental 3', 'st-learn nonrecurring incremental 4',
             'usenet',
+            'insects_abrupt',
+            'insects_gradual',
         ]
         metrics_names = ['restoration time 0.9', 'restoration time 0.8', 'restoration time 0.7', 'restoration time 0.6']
 
