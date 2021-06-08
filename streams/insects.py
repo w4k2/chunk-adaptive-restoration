@@ -2,6 +2,8 @@ from scipy.io import arff
 from sklearn import preprocessing
 import pandas as pd
 import numpy as np
+from imblearn.over_sampling import RandomOverSampler
+from sklearn.utils import shuffle
 
 
 class InsectsDataset:
@@ -35,6 +37,9 @@ class InsectsDataset:
         while i < self.x.shape[0]:
             x_chunk = self.x[i:i+self._chunk_size]
             y_chunk = self.y[i:i+self._chunk_size]
+            ros = RandomOverSampler(random_state=42)
+            x_chunk, y_chunk = ros.fit_resample(x_chunk, y_chunk)
+            x_chunk, y_chunk = shuffle(x_chunk, y_chunk)
             yield x_chunk, y_chunk
             i += self._chunk_size
 

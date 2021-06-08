@@ -8,5 +8,6 @@ dependencies:
   - pip
   - matplotlib
   - tqdm
+  - imbalanced-learn
   - pip:
     - stream-learn

@@ -4,6 +4,7 @@ import random
 
 from scipy.io import arff
 from sklearn import preprocessing
+from imblearn.over_sampling import RandomOverSampler
 
 
 class RecurringInsectsDataset:
@@ -53,6 +54,8 @@ class RecurringInsectsDataset:
         while i < self.x.shape[0]:
             x_chunk = self.x[i:i+self._chunk_size]
             y_chunk = self.y[i:i+self._chunk_size]
+            ros = RandomOverSampler(random_state=42)
+            x_chunk, y_chunk = ros.fit_resample(x_chunk, y_chunk)
             yield x_chunk, y_chunk
             i += self._chunk_size
 
