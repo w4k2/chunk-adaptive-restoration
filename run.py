@@ -30,7 +30,7 @@ def run():
         # 'insects_incremental',
     ]
 
-    models_names = ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']
+    models_names = ['wae', 'aue', 'awe', 'sea', ]  # 'onlinebagging', 'mlp']
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
     streams_for_plotting = [
@@ -90,6 +90,7 @@ def run():
 
 def get_model(model_name):
     models = {
+        'wae': WAE(GaussianNB()),
         'aue': AUE(GaussianNB()),
         'awe': AWE(GaussianNB()),
         'sea': SEA(GaussianNB()),
