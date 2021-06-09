@@ -53,7 +53,7 @@ def crop_to_three_decimal_places(number_str):
 
 
 if __name__ == '__main__':
-    for model_name in ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']:
+    for model_name in ['wae', 'aue', 'awe', 'sea', ]:  # 'onlinebagging', 'mlp']:
         metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
         metrics_ours = np.load(f'results/{model_name}_ours.npy')
         stream_names = [

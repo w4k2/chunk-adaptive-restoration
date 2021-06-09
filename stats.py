@@ -4,7 +4,7 @@ from save_tex_table import *
 
 
 def main():
-    model_names = ['aue', 'awe', 'sea', 'onlinebagging', 'mlp']
+    model_names = ['wae', 'aue', 'awe', 'sea', ]  # 'onlinebagging', 'mlp']
 
     metrics_names = ['SamplewiseStabilizationTime', 'MaxPerformanceLoss', 'SamplewiseRestorationTime0.9',
                      'SamplewiseRestorationTime0.8', 'SamplewiseRestorationTime0.7', 'SamplewiseRestorationTime0.6']
