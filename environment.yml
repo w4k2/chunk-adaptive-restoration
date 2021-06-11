@@ -1,4 +1,4 @@
-name: concept-drift-evaluation
+name: chunk-adaptive-restoration
 channels:
   - defaults
 dependencies:
