@@ -19,18 +19,17 @@ def main():
         ['model name',
          'SRT(0.9) Statistic', 'SRT(0.9) p-value',
          'SRT(0.8) Statistic', 'SRT(0.8) p-value',
-         'SRT(0.7) Statistic', 'SRT(0.7) p-value',
-         'SRT(0.6) Statistic', 'SRT(0.6) p-value', ]
+         'SRT(0.7) Statistic', 'SRT(0.7) p-value', ]
     ]
     for model_name in model_names:
-        table.append([model_name])
+        table.append([model_name.upper()])
         print(f'===================model {model_name}===================')
         metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
         metrics_ours = np.load(f'results/{model_name}_ours.npy')
         for i, metric_name in enumerate(metrics_names):
             print(metric_name)
-            stabilization_time_baseline = metrics_baseline[:, i]
-            stabilization_time_ours = metrics_ours[:, i]
+            stabilization_time_baseline = metrics_baseline[:, i, 0]
+            stabilization_time_ours = metrics_ours[:, i, 0]
             statistic, p_value = scipy.stats.wilcoxon(stabilization_time_baseline, stabilization_time_ours)
             print('statistic = ', statistic)
             print('p_value = ', p_value)

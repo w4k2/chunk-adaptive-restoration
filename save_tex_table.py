@@ -53,7 +53,7 @@ def crop_to_three_decimal_places(number_str):
 
 
 if __name__ == '__main__':
-    for model_name in ['wae', 'aue', 'awe', 'sea', ]:  # 'onlinebagging', 'mlp']:
+    for model_name in ['wae', 'aue', 'awe', 'sea', ]:
         metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
         metrics_ours = np.load(f'results/{model_name}_ours.npy')
         stream_names = [
@@ -76,11 +76,11 @@ if __name__ == '__main__':
             'baseline restoration time 0.7', 'ours restoration time 0.7',
             'baseline restoration time 0.6', 'ours restoration time 0.6'
         )]
-        for i, (name, baseline, ours) in enumerate(zip(stream_names, metrics_baseline[:, 2:], metrics_ours[:, 2:])):
+        for i, (name, baseline, ours) in enumerate(zip(stream_names, metrics_baseline[:, 2:-1], metrics_ours[:, 2:-1])):
             row = [str(i+1)]
             for b, o in zip(baseline, ours):
-                row.append(b)
-                row.append(o)
+                row.append(f'{sanitize_float(b[0])}±{sanitize_float(b[1])}')
+                row.append(f'{sanitize_float(o[0])}±{sanitize_float(o[1])}')
             table.append(row)
 
         save_tex_table(table, f'tabels/{model_name}.tex', use_hline=False)

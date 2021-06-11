@@ -14,7 +14,7 @@ class StreamMetric(abc.ABC):
 
     def __call__(self, scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices):
         values = self.compute(scores, chunk_sizes, drift_sample_idx, drift_indices, stabilization_indices)
-        return self.reduce(values)
+        return self.reduce(values), self.variance(values)
 
     @abc.abstractmethod
     def compute(self, scores, drift_indices, stabilization_indices):
@@ -33,6 +33,9 @@ class StreamMetric(abc.ABC):
             return values
         else:
             raise ValueError(f"Unknown reduction: {self.reduction}, expected one of ['avg', 'min', 'max', None]")
+
+    def variance(self, values):
+        return np.std(values)
 
 
 class MaxPerformanceLoss(StreamMetric):

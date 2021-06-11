@@ -155,7 +155,7 @@ def experiment(clf, stream_name, variable_chunk_size=False, axis=None):
 
 class AccBasedChunkSize:
     def __init__(self) -> None:
-        self.acc = 0.0
+        self.acc = math.inf
         self.max_acc = 0.0
         self.min_acc = math.inf
 
@@ -163,7 +163,10 @@ class AccBasedChunkSize:
         # acc = max(1 / num_classes, prev_acc)
         self.max_acc = max(self.max_acc, prev_acc)
         self.min_acc = min(self.min_acc, prev_acc)
-        self.acc = 0.5 * self.acc + 0.5 * prev_acc
+        if self.acc == math.inf:
+            self.acc = prev_acc
+        else:
+            self.acc = 0.5 * self.acc + 0.5 * prev_acc
         if self.max_acc == self.min_acc:
             return max_chunk_size
         p = (self.acc - self.min_acc) / (self.max_acc - self.min_acc)

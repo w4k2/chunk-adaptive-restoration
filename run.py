@@ -27,10 +27,9 @@ def run():
         'usenet_1',
         'insects_abrupt',
         'insects_gradual',
-        # 'insects_incremental',
     ]
 
-    models_names = ['wae', 'aue', 'awe', 'sea', ]  # 'onlinebagging', 'mlp']
+    models_names = ['wae', 'aue', 'awe', 'sea']
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
     streams_for_plotting = [
@@ -74,9 +73,9 @@ def run():
         all_figures[name].savefig(f'plots/stream_{name}.png')
 
     """
-        metrics_baseline and metrics_ours are [NxM] matrixes
+        metrics_baseline and metrics_ours are [NxMx2] tensor (2 is for mean and std)
         N is number of streams
-        M is number of metrics, 
+        M is number of metrics,
         order of metrics: SamplewiseStabilizationTime, MaxPerformanceLoss, SamplewiseRestorationTime 0.9, SamplewiseRestorationTime 0.8, SamplewiseRestorationTime 0.7, SamplewiseRestorationTime 0.6
     """
 
