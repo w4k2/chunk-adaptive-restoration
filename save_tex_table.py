@@ -39,14 +39,14 @@ def sanitize(elem):
     return str(elem).replace("_", " ")
 
 
-def sanitize_float(number):
-    return crop_to_three_decimal_places(str(number))
+def sanitize_float(number, decimal_places=3):
+    return crop_to_decimal_places(str(number), decimal_places=decimal_places)
 
 
-def crop_to_three_decimal_places(number_str):
+def crop_to_decimal_places(number_str, decimal_places=3):
     dot_position = number_str.find('.')
     if number_str.count('e-') == 0:  # normal dot notation. not 1.0e-4
-        return number_str[:dot_position+4]
+        return number_str[:dot_position+decimal_places+1]
     else:
         e_position = number_str.find('e')
         return number_str[:dot_position+4] + number_str[e_position:]
@@ -79,8 +79,8 @@ if __name__ == '__main__':
         for i, (name, baseline, ours) in enumerate(zip(stream_names, metrics_baseline[:, 2:-1], metrics_ours[:, 2:-1])):
             row = [str(i+1)]
             for b, o in zip(baseline, ours):
-                row.append(f'{sanitize_float(b[0])}±{sanitize_float(b[1])}')
-                row.append(f'{sanitize_float(o[0])}±{sanitize_float(o[1])}')
+                row.append(f'{sanitize_float(b[0])}±{sanitize_float(b[1], decimal_places=1)}')
+                row.append(f'{sanitize_float(o[0])}±{sanitize_float(o[1], decimal_places=1)}')
             table.append(row)
 
         save_tex_table(table, f'tabels/{model_name}.tex', use_hline=False)
