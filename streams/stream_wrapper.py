@@ -16,6 +16,10 @@ class StreamWrapper:
     def chunk_size(self):
         return self.base_stream.chunk_size
 
+    @chunk_size.setter
+    def chunk_size(self, size):
+        self.base_stream.chunk_size = size
+
     @property
     def n_features(self):
         return self.base_stream.n_features
