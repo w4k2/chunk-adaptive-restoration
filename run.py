@@ -5,6 +5,8 @@ import argparse
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 from strlearn.ensembles import AUE, AWE, OnlineBagging, SEA, WAE
 from strlearn.streams import StreamGenerator
 from scipy.ndimage.filters import gaussian_filter1d
@@ -29,7 +31,13 @@ def run():
         'insects_gradual',
     ]
 
-    models_names = ['wae', 'aue', 'awe', 'sea']
+    models_names = ['wae', 'awe', 'sea']
+    base_model_name = 'svm'
+    base_models = {
+        'naive_bayes': GaussianNB,
+        'knn': KNeighborsClassifier,
+        'svm': lambda: SVC(probability=True),
+    }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
     streams_for_plotting = [
@@ -53,7 +61,7 @@ def run():
     for stream_name in stream_names:
         for model_index, model_name in enumerate(models_names):
             print(f'\n\n=================={stream_name}================\n\n')
-            clf = get_model(model_name)
+            clf = get_model(model_name, base_models[base_model_name])
             axis = None
             if stream_name in streams_for_plotting:
                 axis = all_axes[stream_name][model_index]
@@ -62,7 +70,7 @@ def run():
             metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
             metrics_baseline[model_index].append(metrics_vales)
 
-            clf = get_model(model_name)
+            clf = get_model(model_name, base_models[base_model_name])
             if stream_name in streams_for_plotting:
                 axis = all_axes[stream_name][model_index]
                 axis.set_title(clf.__class__.__name__)
@@ -70,7 +78,7 @@ def run():
             metrics_ours[model_index].append(metrics_vales)
 
     for name in streams_for_plotting:
-        all_figures[name].savefig(f'plots/stream_{name}.png')
+        all_figures[name].savefig(f'plots/{base_model_name}_stream_{name}.png')
 
     """
         metrics_baseline and metrics_ours are [NxMx2] tensor (2 is for mean and std)
@@ -79,21 +87,21 @@ def run():
         order of metrics: SamplewiseStabilizationTime, MaxPerformanceLoss, SamplewiseRestorationTime 0.9, SamplewiseRestorationTime 0.8, SamplewiseRestorationTime 0.7, SamplewiseRestorationTime 0.6
     """
 
-    for i in range(len(models_names)):
+    for i, model_name in enumerate(models_names):
         metrics_b = np.stack(metrics_baseline[i], axis=0)
         metrics_o = np.stack(metrics_ours[i], axis=0)
 
-        np.save(f'results/{models_names[i]}_baseline.npy', metrics_b)
-        np.save(f'results/{models_names[i]}_ours.npy', metrics_o)
+        np.save(f'results/{model_name}_{base_model_name}_baseline.npy', metrics_b)
+        np.save(f'results/{model_name}_{base_model_name}_ours.npy', metrics_o)
 
 
-def get_model(model_name):
+def get_model(model_name, base_model_factory):
     models = {
-        'wae': WAE(GaussianNB()),
-        'aue': AUE(GaussianNB()),
-        'awe': AWE(GaussianNB()),
-        'sea': SEA(GaussianNB()),
-        'onlinebagging': OnlineBagging(GaussianNB()),
+        'wae': WAE(base_model_factory()),
+        'aue': AUE(base_model_factory()),
+        'awe': AWE(base_model_factory()),
+        'sea': SEA(base_model_factory()),
+        'onlinebagging': OnlineBagging(base_model_factory()),
         'mlp': MLPClassifier(learning_rate_init=0.01),
     }
     return models[model_name]

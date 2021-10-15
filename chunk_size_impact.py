@@ -21,7 +21,7 @@ def main():
 
     chunk_sizes = (10000, 50000, 100000)
     for chunk_size in chunk_sizes:
-        model = AUE(GaussianNB(), n_estimators=5)
+        model = AWE(GaussianNB(), n_estimators=5)
 
         sl_stream = StreamGenerator(
             n_chunks=100,
