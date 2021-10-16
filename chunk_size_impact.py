@@ -19,7 +19,7 @@ def main():
     axis.set_ylabel('Accuracy')
     axis.set_xlabel('Chunks')
 
-    chunk_sizes = (10000, 50000, 100000)
+    chunk_sizes = (100, 1000, 10000, 100000)
     for chunk_size in chunk_sizes:
         model = AWE(GaussianNB(), n_estimators=5)
 
@@ -27,7 +27,7 @@ def main():
             n_chunks=100,
             chunk_size=chunk_size,
             n_drifts=1,
-            # recurring=cfg['recurring'],
+            recurring=True,
             random_state=42,
             incremental=False,
             # concept_sigmoid_spacing=cfg['concept_sigmoid_spacing'],

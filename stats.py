@@ -4,7 +4,7 @@ from save_tex_table import *
 
 
 def main():
-    model_names = ['wae', 'aue', 'awe', 'sea', ]  # 'onlinebagging', 'mlp']
+    model_names = ['wae', 'awe', 'sea', ]  # 'aue', 'onlinebagging', 'mlp']
 
     metrics_names = ['SamplewiseStabilizationTime', 'MaxPerformanceLoss', 'SamplewiseRestorationTime0.9',
                      'SamplewiseRestorationTime0.8', 'SamplewiseRestorationTime0.7', 'SamplewiseRestorationTime0.6']
@@ -21,10 +21,11 @@ def main():
          'SRT(0.8) Statistic', 'SRT(0.8) p-value',
          'SRT(0.7) Statistic', 'SRT(0.7) p-value', ]
     ]
+    base_model_name = 'naive_bayes'
     for model_name in model_names:
         table.append([model_name.upper()])
         print(f'===================model {model_name}===================')
-        metrics_baseline = np.load(f'results/{model_name}_baseline.npy')
+        metrics_baseline = np.load(f'results/{model_name}_{base_model_name}_baseline.npy')
         metrics_ours = np.load(f'results/{model_name}_ours.npy')
         for i, metric_name in enumerate(metrics_names):
             print(metric_name)

@@ -1,18 +1,5 @@
 configs = {
     'stream_learn_recurring_abrupt_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
-        'n_chunks': 300,
-        'n_drifts': 5,
-        'recurring': True,
-        'incremental': False,
-        'concept_sigmoid_spacing': None,
-        'fhdsdm_window_size_drift': 1000,
-        'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
-        'random_state': 1,
-    },
-    'stream_learn_recurring_abrupt_2': {
         'chunk_size': 500,
         'drift_chunk_size': 30,
         'n_chunks': 300,
@@ -25,8 +12,21 @@ configs = {
         'fhdsdm_epsilon_s': 0.001,
         'random_state': 1,
     },
+    'stream_learn_recurring_abrupt_2': {
+        'chunk_size': 1000,
+        'drift_chunk_size': 30,
+        'n_chunks': 300,
+        'n_drifts': 5,
+        'recurring': True,
+        'incremental': False,
+        'concept_sigmoid_spacing': None,
+        'fhdsdm_window_size_drift': 1000,
+        'fhdsdm_window_size_stabilization': 30,
+        'fhdsdm_epsilon_s': 0.001,
+        'random_state': 1,
+    },
     'stream_learn_recurring_abrupt_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -52,8 +52,8 @@ configs = {
         'random_state': 1,
     },
     'stream_learn_nonrecurring_abrupt_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'chunk_size': 500,
+        'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': False,
@@ -65,7 +65,7 @@ configs = {
         'random_state': 5,
     },
     'stream_learn_nonrecurring_abrupt_2': {
-        'chunk_size': 500,
+        'chunk_size': 1000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -78,7 +78,7 @@ configs = {
         'random_state': 9,
     },
     'stream_learn_nonrecurring_abrupt_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -104,8 +104,8 @@ configs = {
         'random_state': 9,
     },
     'stream_learn_recurring_gradual_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'chunk_size': 500,
+        'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': True,
@@ -117,7 +117,7 @@ configs = {
         'random_state': 2,
     },
     'stream_learn_recurring_gradual_2': {
-        'chunk_size': 500,
+        'chunk_size': 1000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -130,7 +130,7 @@ configs = {
         'random_state': 14,
     },
     'stream_learn_recurring_gradual_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -143,7 +143,7 @@ configs = {
         'random_state': 15,
     },
     'stream_learn_recurring_gradual_4': {
-        'chunk_size': 100,
+        'chunk_size': 500,
         'drift_chunk_size': 30,
         'n_chunks': 500,
         'n_drifts': 5,
@@ -156,8 +156,8 @@ configs = {
         'random_state': 15,
     },
     'stream_learn_nonrecurring_gradual_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'chunk_size': 500,
+        'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': False,
@@ -169,7 +169,7 @@ configs = {
         'random_state': 2,
     },
     'stream_learn_nonrecurring_gradual_2': {
-        'chunk_size': 500,
+        'chunk_size': 1000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -182,7 +182,7 @@ configs = {
         'random_state': 14,
     },
     'stream_learn_nonrecurring_gradual_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -195,7 +195,7 @@ configs = {
         'random_state': 15,
     },
     'stream_learn_nonrecurring_gradual_4': {
-        'chunk_size': 100,
+        'chunk_size': 500,
         'drift_chunk_size': 30,
         'n_chunks': 500,
         'n_drifts': 5,
@@ -208,8 +208,8 @@ configs = {
         'random_state': 15,
     },
     'stream_learn_recurring_incremental_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'chunk_size': 500,
+        'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': True,
@@ -221,7 +221,7 @@ configs = {
         'random_state': 1,
     },
     'stream_learn_recurring_incremental_2': {
-        'chunk_size': 500,
+        'chunk_size': 1000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -234,7 +234,7 @@ configs = {
         'random_state': 17,
     },
     'stream_learn_recurring_incremental_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -247,7 +247,7 @@ configs = {
         'random_state': 18,
     },
     'stream_learn_recurring_incremental_4': {
-        'chunk_size': 100,
+        'chunk_size': 500,
         'drift_chunk_size': 30,
         'n_chunks': 500,
         'n_drifts': 5,
@@ -260,8 +260,8 @@ configs = {
         'random_state': 18,
     },
     'stream_learn_nonrecurring_incremental_1': {
-        'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'chunk_size': 500,
+        'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
         'recurring': False,
@@ -273,7 +273,7 @@ configs = {
         'random_state': 1,
     },
     'stream_learn_nonrecurring_incremental_2': {
-        'chunk_size': 500,
+        'chunk_size': 1000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -286,7 +286,7 @@ configs = {
         'random_state': 17,
     },
     'stream_learn_nonrecurring_incremental_3': {
-        'chunk_size': 100,
+        'chunk_size': 10000,
         'drift_chunk_size': 30,
         'n_chunks': 300,
         'n_drifts': 5,
@@ -299,7 +299,7 @@ configs = {
         'random_state': 18,
     },
     'stream_learn_nonrecurring_incremental_4': {
-        'chunk_size': 100,
+        'chunk_size': 500,
         'drift_chunk_size': 30,
         'n_chunks': 500,
         'n_drifts': 5,
@@ -321,7 +321,7 @@ configs = {
     },
     'insects_abrupt': {
         'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
@@ -329,7 +329,7 @@ configs = {
     },
     'insects_gradual': {
         'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
@@ -337,7 +337,7 @@ configs = {
     },
     'insects_incremental': {
         'chunk_size': 1000,
-        'drift_chunk_size': 100,
+        'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
         'fhdsdm_epsilon_s': 0.001,
