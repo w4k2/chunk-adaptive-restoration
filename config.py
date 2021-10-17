@@ -9,7 +9,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 1,
     },
     'stream_learn_recurring_abrupt_2': {
@@ -22,7 +22,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 1,
     },
     'stream_learn_recurring_abrupt_3': {
@@ -35,7 +35,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 4,
     },
     'stream_learn_recurring_abrupt_4': {
@@ -48,7 +48,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 1,
     },
     'stream_learn_nonrecurring_abrupt_1': {
@@ -61,7 +61,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 5,
     },
     'stream_learn_nonrecurring_abrupt_2': {
@@ -74,7 +74,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 9,
     },
     'stream_learn_nonrecurring_abrupt_3': {
@@ -87,7 +87,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 10,
     },
     'stream_learn_nonrecurring_abrupt_4': {
@@ -100,7 +100,7 @@ configs = {
         'concept_sigmoid_spacing': None,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 9,
     },
     'stream_learn_recurring_gradual_1': {
@@ -113,7 +113,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 2,
     },
     'stream_learn_recurring_gradual_2': {
@@ -126,7 +126,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 14,
     },
     'stream_learn_recurring_gradual_3': {
@@ -139,7 +139,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 15,
     },
     'stream_learn_recurring_gradual_4': {
@@ -152,7 +152,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 15,
     },
     'stream_learn_nonrecurring_gradual_1': {
@@ -165,7 +165,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 2,
     },
     'stream_learn_nonrecurring_gradual_2': {
@@ -178,7 +178,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 14,
     },
     'stream_learn_nonrecurring_gradual_3': {
@@ -191,7 +191,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 15,
     },
     'stream_learn_nonrecurring_gradual_4': {
@@ -204,7 +204,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 15,
     },
     'stream_learn_recurring_incremental_1': {
@@ -217,7 +217,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 1,
     },
     'stream_learn_recurring_incremental_2': {
@@ -230,7 +230,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 17,
     },
     'stream_learn_recurring_incremental_3': {
@@ -243,7 +243,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 18,
     },
     'stream_learn_recurring_incremental_4': {
@@ -256,7 +256,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 18,
     },
     'stream_learn_nonrecurring_incremental_1': {
@@ -269,7 +269,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 1,
     },
     'stream_learn_nonrecurring_incremental_2': {
@@ -282,7 +282,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 17,
     },
     'stream_learn_nonrecurring_incremental_3': {
@@ -295,7 +295,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 18,
     },
     'stream_learn_nonrecurring_incremental_4': {
@@ -308,7 +308,7 @@ configs = {
         'concept_sigmoid_spacing': 5.0,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'random_state': 18,
     },
     'usenet_1': {
@@ -316,7 +316,7 @@ configs = {
         'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'n_drifts': 2,
     },
     'insects_abrupt': {
@@ -324,7 +324,7 @@ configs = {
         'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'n_drifts': 2,
     },
     'insects_gradual': {
@@ -332,7 +332,7 @@ configs = {
         'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'n_drifts': 2,
     },
     'insects_incremental': {
@@ -340,7 +340,7 @@ configs = {
         'drift_chunk_size': 30,
         'fhdsdm_window_size_drift': 1000,
         'fhdsdm_window_size_stabilization': 30,
-        'fhdsdm_epsilon_s': 0.001,
+        'fhdsdm_epsilon_s': 0.0001,
         'n_drifts': 2,
     },
 }
