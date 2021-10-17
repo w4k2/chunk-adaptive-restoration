@@ -133,14 +133,16 @@ def get_stream(stream_name, cfg):
     return stream
 
 
-def experiment(clf, stream_name, variable_chunk_size=False, axis=None):
+def experiment(clf, stream_name, variable_chunk_size=False, axis=None, window_size_stabilization=None, fhdsdm_epsilon_s=None):
     cfg = configs[stream_name]
     stream = get_stream(stream_name, cfg)
     variable_size_stream = VariableChunkStream(stream)
+    window_size_stabilization = window_size_stabilization if window_size_stabilization is not None else cfg['fhdsdm_window_size_stabilization']
+    fhdsdm_epsilon_s = fhdsdm_epsilon_s if fhdsdm_epsilon_s is not None else cfg['fhdsdm_epsilon_s']
     detector = FHDSDM(
         window_size_drift=cfg['fhdsdm_window_size_drift'],
-        window_size_stabilization=cfg['fhdsdm_window_size_stabilization'],
-        epsilon_s=cfg['fhdsdm_epsilon_s']
+        window_size_stabilization=window_size_stabilization,
+        epsilon_s=fhdsdm_epsilon_s
     )
     scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, cfg['chunk_size'], cfg['drift_chunk_size'],
                                                                                 variable_chunk_size=variable_chunk_size)
@@ -163,15 +165,15 @@ def experiment(clf, stream_name, variable_chunk_size=False, axis=None):
         SamplewiseRestorationTime(percentage=0.6, reduction=None),
     ]
     metrics_vales = [metric(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices) for metric in metrics]
-    print('stabilization_time = ', metrics_vales[0])
-    print('max_performance_loss = ', metrics_vales[1])
+    # print('stabilization_time = ', metrics_vales[0])
+    # print('max_performance_loss = ', metrics_vales[1])
     for m in restoration_time_metrics:
         restoration_time = m(scores, chunk_sizes, stream.drift_sample_idx, drift_indices, stabilization_indices)
-        print(f'restoration_time {m._percentage} = ', restoration_time)
-    print('avg restoration_time 0.9 = ', metrics_vales[2])
-    print('avg restoration_time 0.8 = ', metrics_vales[3])
-    print('avg restoration_time 0.7 = ', metrics_vales[4])
-    print('avg restoration_time 0.6 = ', metrics_vales[5])
+        # print(f'restoration_time {m._percentage} = ', restoration_time)
+    # print('avg restoration_time 0.9 = ', metrics_vales[2])
+    # print('avg restoration_time 0.8 = ', metrics_vales[3])
+    # print('avg restoration_time 0.7 = ', metrics_vales[4])
+    # print('avg restoration_time 0.6 = ', metrics_vales[5])
     return np.array(metrics_vales)
 
 
@@ -196,17 +198,17 @@ def test_then_train(stream, clf, detector, chunk_size, drift_chunk_size, variabl
                 drift_phase = True
                 if variable_chunk_size:
                     stream.chunk_size = drift_chunk_size
-                print("Change detected, batch:", i)
+                # print("Change detected, batch:", i)
                 drift_indices.append(i-1)
             elif detector.stabilization_detected():
                 drift_phase = False
                 if variable_chunk_size:
                     stream.chunk_size = chunk_size
-                print("Stabilization detected, batch:", i)
+                # print("Stabilization detected, batch:", i)
                 stabilization_indices.append(i-1)
         # Train
         clf.partial_fit(X, y, stream.classes)
-    print()
+    # print()
 
     return np.array(scores), chunk_sizes, drift_indices, stabilization_indices
 
