@@ -1,0 +1,1692 @@
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+
+
+==================stream_learn_recurring_abrupt_3================
+
+
+stream = stream_learn_recurring_abrupt_3, model index = 2, model_name = sea, m_baseline = [[3.55000000e+05 5.00000000e+03]
+ [4.27570294e-01 6.30106308e-03]
+ [6.40000000e+04 4.89897949e+03]
+ [6.00000000e+04 0.00000000e+00]
+ [6.00000000e+04 0.00000000e+00]
+ [3.60000000e+04 4.89897949e+03]], m_ours = [[7.63032000e+04 1.17567700e+04]
+ [5.11178234e-01 4.52571377e-02]
+ [1.02560000e+04 2.44948974e+01]
+ [1.02268000e+04 3.03736728e+01]
+ [1.01600000e+04 7.27956043e+01]
+ [1.01170000e+04 5.04856415e+01]]
+
+
+==================stream_learn_recurring_abrupt_4================
+
+
+stream = stream_learn_recurring_abrupt_4, model index = 0, model_name = wae, m_baseline = [[4.37500000e+04 2.72500000e+04]
+ [4.82003396e-01 8.31918506e-03]
+ [1.90000000e+03 2.00000000e+02]
+ [1.80000000e+03 2.44948974e+02]
+ [1.50000000e+03 0.00000000e+00]
+ [1.50000000e+03 0.00000000e+00]], m_ours = [[2.36793333e+04 1.84089350e+03]
+ [4.89357852e-01 1.62146564e-03]
+ [1.01040000e+03 5.31344559e+02]
+ [9.79800000e+02 5.39365331e+02]
+ [9.72600000e+02 5.44615314e+02]
+ [8.58200000e+02 3.73077686e+02]]
+
+
+==================stream_learn_recurring_abrupt_4================
+
+
+stream = stream_learn_recurring_abrupt_4, model index = 1, model_name = awe, m_baseline = [[5.30000000e+04 3.50000000e+04]
+ [4.75929978e-01 1.09409190e-03]
+ [3.40000000e+03 2.00000000e+02]
+ [3.00000000e+03 0.00000000e+00]
+ [3.00000000e+03 0.00000000e+00]
+ [2.20000000e+03 4.00000000e+02]], m_ours = [[2.87210000e+04 8.15762680e+03]
+ [5.53588309e-01 5.16393287e-02]
+ [8.82200000e+02 2.88051662e+02]
+ [8.07600000e+02 1.87050368e+02]
+ [7.63200000e+02 2.09244737e+02]
+ [7.47000000e+02 2.18011009e+02]]
+
+
+==================stream_learn_recurring_abrupt_4================
+
+
+stream = stream_learn_recurring_abrupt_4, model index = 2, model_name = sea, m_baseline = [[4.50000000e+04 2.60000000e+04]
+ [4.80906904e-01 9.41567629e-03]
+ [3.50000000e+03 0.00000000e+00]
+ [3.00000000e+03 0.00000000e+00]
+ [3.00000000e+03 0.00000000e+00]
+ [2.40000000e+03 4.89897949e+02]], m_ours = [[2.93460000e+04 7.92937576e+03]
+ [5.47043804e-01 4.68797673e-02]
+ [8.82200000e+02 2.88051662e+02]
+ [8.07600000e+02 1.87050368e+02]
+ [7.72400000e+02 2.06375968e+02]
+ [7.54800000e+02 2.13221387e+02]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16400.          3120.89730687]
+ [13500.          2024.84567313]
+ [13100.          1772.00451467]
+ [13100.          1772.00451467]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [15233.2         3452.35122199]
+ [12300.8         1690.30250547]
+ [11978.2         1505.75594304]
+ [11978.2         1505.75594304]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16800.          3091.92496675]
+ [13600.          2130.72757527]
+ [13100.          1772.00451467]
+ [13100.          1772.00451467]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [16669.2         2907.38964709]
+ [13169.2         1766.95063881]
+ [12869.2         1616.92132152]
+ [12869.2         1616.92132152]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [17100.          2332.38075794]
+ [14200.          1288.40987267]
+ [13700.           927.36184955]
+ [13700.           927.36184955]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [17069.2         2226.55665996]
+ [14169.2          885.27654436]
+ [13769.2          624.39935938]
+ [13769.2          624.39935938]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[1.75000000e+05 0.00000000e+00]
+ [1.68888889e-01 0.00000000e+00]
+ [3.48000000e+04 2.48193473e+03]
+ [2.88000000e+04 3.96988665e+03]
+ [2.84000000e+04 3.92937654e+03]
+ [2.84000000e+04 3.92937654e+03]], m_ours = [[1.74557000e+05 0.00000000e+00]
+ [2.59259259e-01 0.00000000e+00]
+ [3.15566000e+04 6.83216375e+03]
+ [2.69854000e+04 5.87655360e+03]
+ [2.67762000e+04 5.80050634e+03]
+ [2.67762000e+04 5.80050634e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+stream = stream_learn_nonrecurring_gradual_3, model index = 2, model_name = sea, m_baseline = [[3.40000000e+05 2.62906828e+05]
+ [9.79972349e-02 6.07844237e-02]
+ [3.50000000e+05 8.94427191e+03]
+ [2.98000000e+05 9.79795897e+03]
+ [2.82000000e+05 1.93907194e+04]
+ [2.82000000e+05 1.93907194e+04]], m_ours = [[5.81522667e+05 3.85861230e+04]
+ [1.77622797e-01 5.03836076e-03]
+ [3.19990600e+05 7.98561236e+04]
+ [2.79990600e+05 5.98979838e+04]
+ [2.69976200e+05 5.63348364e+04]
+ [2.69976200e+05 5.63348364e+04]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+stream = stream_learn_nonrecurring_gradual_4, model index = 0, model_name = wae, m_baseline = [[8.47500000e+04 3.25000000e+03]
+ [1.42822232e-01 3.45971233e-02]
+ [2.44000000e+04 5.84294446e+03]
+ [2.05000000e+04 4.95983871e+03]
+ [2.01000000e+04 5.06359556e+03]
+ [2.01000000e+04 5.06359556e+03]], m_ours = [[8.58460000e+04 3.50000000e+03]
+ [2.03177716e-01 2.39120578e-02]
+ [1.69226000e+04 8.38048172e+03]
+ [1.51790000e+04 6.38893537e+03]
+ [1.45430000e+04 5.83330363e+03]
+ [1.45430000e+04 5.83330363e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+stream = stream_learn_nonrecurring_gradual_4, model index = 1, model_name = awe, m_baseline = [[8.42500000e+04 2.75000000e+03]
+ [1.50169771e-01 4.43382378e-02]
+ [2.45000000e+04 9.61769203e+03]
+ [2.11000000e+04 9.29193198e+03]
+ [2.08000000e+04 9.30913530e+03]
+ [2.08000000e+04 9.30913530e+03]], m_ours = [[8.73460000e+04 0.00000000e+00]
+ [2.37223494e-01 0.00000000e+00]
+ [1.94050000e+04 9.14050406e+03]
+ [1.67750000e+04 7.10866868e+03]
+ [1.65678000e+04 6.97262018e+03]
+ [1.65678000e+04 6.97262018e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+stream = stream_learn_nonrecurring_gradual_4, model index = 2, model_name = sea, m_baseline = [[8.42500000e+04 2.75000000e+03]
+ [1.46737277e-01 4.09057436e-02]
+ [2.52000000e+04 9.64676111e+03]
+ [2.05000000e+04 9.24662100e+03]
+ [2.02000000e+04 9.24445780e+03]
+ [2.02000000e+04 9.24445780e+03]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [20566.2         9739.38035811]
+ [18719.8         8794.02343413]
+ [18512.6         8730.69499181]
+ [18512.6         8730.69499181]]
+
+
+==================usenet_1================
+
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 0, model_name = wae, m_baseline = [[  nan   nan]
+ [  nan   nan]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [3419.8 1160.4]
+ [3412.6 1174.8]
+ [3412.6 1174.8]
+ [3412.6 1174.8]]
+
+
+==================usenet_1================
+
+
+
+==================stream_learn_recurring_abrupt_1================
+
+
+stream = stream_learn_recurring_abrupt_1, model index = 0, model_name = wae, m_baseline = [[5.50000000e+04 3.00000000e+03]
+ [4.97881356e-01 2.11864407e-03]
+ [1.90000000e+03 2.00000000e+02]
+ [1.80000000e+03 2.44948974e+02]
+ [1.80000000e+03 2.44948974e+02]
+ [1.30000000e+03 2.44948974e+02]], m_ours = [[5.03460000e+04 0.00000000e+00]
+ [5.02487562e-01 0.00000000e+00]
+ [1.54740000e+03 7.80206537e+02]
+ [1.53960000e+03 7.89399924e+02]
+ [1.33960000e+03 6.31658325e+02]
+ [1.23240000e+03 5.62444877e+02]]
+
+
+==================stream_learn_recurring_abrupt_1================
+
+
+stream = stream_learn_recurring_abrupt_1, model index = 1, model_name = awe, m_baseline = [[5.95000000e+04 0.00000000e+00]
+ [4.86081370e-01 0.00000000e+00]
+ [3.40000000e+03 3.74165739e+02]
+ [3.30000000e+03 2.44948974e+02]
+ [2.90000000e+03 3.74165739e+02]
+ [1.40000000e+03 3.74165739e+02]], m_ours = [[5.03460000e+04 0.00000000e+00]
+ [5.02487562e-01 0.00000000e+00]
+ [2.41140000e+03 1.37064855e+03]
+ [2.16500000e+03 1.24094738e+03]
+ [2.06500000e+03 1.18867590e+03]
+ [1.33240000e+03 6.40206404e+02]]
+
+
+==================stream_learn_recurring_abrupt_1================
+
+
+stream = stream_learn_recurring_abrupt_1, model index = 2, model_name = sea, m_baseline = [[5.95000000e+04 0.00000000e+00]
+ [4.89316239e-01 0.00000000e+00]
+ [3.40000000e+03 3.74165739e+02]
+ [3.30000000e+03 2.44948974e+02]
+ [2.90000000e+03 3.74165739e+02]
+ [1.50000000e+03 4.47213595e+02]], m_ours = [[5.03460000e+04 0.00000000e+00]
+ [5.03546099e-01 0.00000000e+00]
+ [2.41140000e+03 1.37064855e+03]
+ [2.19040000e+03 1.20953637e+03]
+ [2.06500000e+03 1.18867590e+03]
+ [1.43240000e+03 6.95258398e+02]]
+
+
+==================stream_learn_recurring_abrupt_2================
+
+
+stream = stream_learn_recurring_abrupt_2, model index = 0, model_name = wae, m_baseline = [[3.30000000e+04 0.00000000e+00]
+ [4.46675297e-01 1.62748831e-02]
+ [4.00000000e+03 0.00000000e+00]
+ [4.00000000e+03 0.00000000e+00]
+ [3.20000000e+03 4.00000000e+02]
+ [3.00000000e+03 0.00000000e+00]], m_ours = [[2.83070000e+04 5.49431524e+03]
+ [5.00504386e-01 4.39576931e-02]
+ [1.37400000e+03 3.85312341e+02]
+ [1.32300000e+03 3.89153440e+02]
+ [1.30740000e+03 3.78202380e+02]
+ [1.27740000e+03 3.93129800e+02]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [15800.          5697.3678133 ]
+ [15400.          6019.96677732]
+ [15400.          6019.96677732]
+ [15400.          6019.96677732]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [11536.          7113.73207255]
+ [11019.8         7128.91072745]
+ [11019.8         7128.91072745]
+ [11019.8         7128.91072745]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16100.          5860.03412959]
+ [15500.          6379.65516309]
+ [15500.          6379.65516309]
+ [15500.          6379.65516309]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [11578.2         7109.58936648]
+ [10955.2         7124.83179872]
+ [10955.2         7124.83179872]
+ [10955.2         7124.83179872]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16500.          5594.64029228]
+ [16100.          5961.54342432]
+ [16100.          5961.54342432]
+ [16100.          5961.54342432]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [12589.          7204.0741251 ]
+ [12132.2         7215.71253308]
+ [12132.2         7215.71253308]
+ [12132.2         7215.71253308]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [36200.          1469.69384567]
+ [27600.          2497.99919936]
+ [27200.          2039.60780544]
+ [27200.          2039.60780544]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [32245.2         7216.95865029]
+ [26845.2         4792.97946584]
+ [26836.          4809.53053842]
+ [26836.          4809.53053842]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 2, model_name = sea, m_baseline = [[2.16000000e+05 2.40133296e+05]
+ [8.69369305e-02 5.06137508e-02]
+ [3.66000000e+05 3.20000000e+04]
+ [2.96000000e+05 1.62480768e+04]
+ [2.80000000e+05 2.89827535e+04]
+ [2.80000000e+05 2.89827535e+04]], m_ours = [[3.71027667e+05 2.31832078e+05]
+ [1.77066451e-01 4.02266216e-02]
+ [2.56762600e+05 1.22100856e+05]
+ [2.22762600e+05 8.11311760e+04]
+ [2.22741600e+05 8.11497658e+04]
+ [2.22733800e+05 8.11535382e+04]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+stream = stream_learn_recurring_gradual_4, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [27200.          1166.19037897]
+ [21400.          3352.61092285]
+ [21200.          3586.08421541]
+ [21200.          3586.08421541]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [24378.2         4563.98301487]
+ [20857.6         3633.88374057]
+ [20821.6         3689.35038184]
+ [20821.6         3689.35038184]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+stream = stream_learn_recurring_gradual_4, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [27200.          1122.49721603]
+ [21300.          3501.42828   ]
+ [21200.          3586.08421541]
+ [21200.          3586.08421541]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [24938.8         4478.32354347]
+ [21819.8         3257.62001467]
+ [21712.6         3241.04844765]
+ [21712.6         3241.04844765]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+stream = stream_learn_recurring_gradual_4, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [27400.           969.53597148]
+ [21700.          2541.65300543]
+ [21600.          2672.07784318]
+ [21600.          2672.07784318]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [24866.2         4620.19585732]
+ [21719.8         3258.22776368]
+ [21512.6         3247.98938422]
+ [21512.6         3247.98938422]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+stream = stream_learn_recurring_incremental_2, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]
+ [25800.         25079.07494307]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+stream = stream_learn_recurring_incremental_2, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]
+ [22400.         21675.79294974]]
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+stream = stream_learn_recurring_incremental_3, model index = 0, model_name = wae, m_baseline = [[3.00000000e+05 1.61864141e+05]
+ [3.82025473e-02 2.33695728e-02]
+ [3.02000000e+05 7.48331477e+03]
+ [2.88000000e+05 1.16619038e+04]
+ [2.88000000e+05 1.16619038e+04]
+ [2.88000000e+05 1.16619038e+04]], m_ours = [[3.14856000e+05 7.45654075e+04]
+ [8.60916293e-02 4.23625638e-02]
+ [2.34415200e+05 7.84517947e+03]
+ [2.34352800e+05 7.85783684e+03]
+ [2.34346200e+05 7.84464144e+03]
+ [2.34346200e+05 7.84464144e+03]]/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+
+
+==================stream_learn_recurring_abrupt_2================
+
+
+stream = stream_learn_recurring_abrupt_2, model index = 1, model_name = awe, m_baseline = [[3.95000000e+04 6.06217783e+03]
+ [4.43216556e-01 1.18461673e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 0.00000000e+00]
+ [4.80000000e+03 4.00000000e+02]], m_ours = [[3.15570000e+04 7.10633520e+03]
+ [5.13500937e-01 2.81620961e-02]
+ [1.46700000e+03 3.80951440e+02]
+ [1.43600000e+03 3.95474399e+02]
+ [1.40760000e+03 3.86610709e+02]
+ [1.31580000e+03 3.74797759e+02]]
+
+
+==================stream_learn_recurring_abrupt_2================
+
+
+stream = stream_learn_recurring_abrupt_2, model index = 2, model_name = sea, m_baseline = [[3.95000000e+04 6.06217783e+03]
+ [4.44040118e-01 1.07055455e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.20000000e+03 4.00000000e+02]
+ [6.00000000e+03 0.00000000e+00]
+ [5.00000000e+03 0.00000000e+00]], m_ours = [[2.80570000e+04 7.50000000e+03]
+ [5.21263023e-01 2.86879002e-02]
+ [1.46700000e+03 3.80951440e+02]
+ [1.43600000e+03 3.95474399e+02]
+ [1.39000000e+03 3.96357414e+02]
+ [1.32300000e+03 3.89153440e+02]]
+
+
+==================stream_learn_recurring_abrupt_3================
+
+
+stream = stream_learn_recurring_abrupt_3, model index = 0, model_name = wae, m_baseline = [[3.25000000e+05 5.00000000e+03]
+ [4.28630281e-01 7.12830167e-03]
+ [3.20000000e+04 4.00000000e+03]
+ [3.00000000e+04 0.00000000e+00]
+ [3.00000000e+04 0.00000000e+00]
+ [3.00000000e+04 0.00000000e+00]], m_ours = [[7.98843333e+04 1.47851054e+04]
+ [4.15179252e-01 1.66452162e-01]
+ [1.01074000e+04 2.82318969e+01]
+ [1.00996000e+04 2.37284639e+01]
+ [1.00780000e+04 2.77560804e+01]
+ [1.00780000e+04 2.77560804e+01]]
+
+
+==================stream_learn_recurring_abrupt_3================
+
+
+stream = stream_learn_recurring_abrupt_3, model index = 1, model_name = awe, m_baseline = [[3.55000000e+05 5.00000000e+03]
+ [4.27639447e-01 6.12290656e-03]
+ [6.40000000e+04 4.89897949e+03]
+ [6.00000000e+04 0.00000000e+00]
+ [6.00000000e+04 0.00000000e+00]
+ [3.60000000e+04 4.89897949e+03]], m_ours = [[5.90086000e+04 9.71513699e+03]
+ [4.45457635e-01 7.31004986e-02]
+ [1.02830000e+04 9.40553029e+01]
+ [1.02084000e+04 3.82078526e+01]
+ [1.01430000e+04 6.97595872e+01]
+ [1.00896000e+04 7.28082413e+01]]
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+stream = stream_learn_recurring_incremental_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16400.          3878.14388593]
+ [11200.          7871.46746166]
+ [11100.          7933.47338812]
+ [11100.          7933.47338812]], m_ours = [[4.93460000e+04 0.00000000e+00]
+ [1.85999186e-01 0.00000000e+00]
+ [1.58144000e+04 3.78778445e+03]
+ [1.09052000e+04 6.93009640e+03]
+ [1.09052000e+04 6.93009640e+03]
+ [1.09052000e+04 6.93009640e+03]]
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+stream = stream_learn_recurring_incremental_1, model index = 1, model_name = awe, m_baseline = [[5.25000000e+04 0.00000000e+00]
+ [1.79871520e-01 0.00000000e+00]
+ [1.71000000e+04 3.39705755e+03]
+ [1.18000000e+04 7.46056298e+03]
+ [1.18000000e+04 7.46056298e+03]
+ [1.18000000e+04 7.46056298e+03]], m_ours = [[5.23460000e+04 0.00000000e+00]
+ [1.87234043e-01 0.00000000e+00]
+ [1.78384000e+04 3.73884632e+03]
+ [1.25384000e+04 8.13179020e+03]
+ [1.25384000e+04 8.13179020e+03]
+ [1.25384000e+04 8.13179020e+03]]
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+stream = stream_learn_recurring_incremental_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16700.          2657.06605112]
+ [11500.          6774.95387438]
+ [11400.          6851.27725318]
+ [11400.          6851.27725318]], m_ours = [[5.23460000e+04 0.00000000e+00]
+ [1.95942603e-01 0.00000000e+00]
+ [1.62268000e+04 3.61417954e+03]
+ [1.09080000e+04 6.93101770e+03]
+ [1.09080000e+04 6.93101770e+03]
+ [1.09080000e+04 6.93101770e+03]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+stream = stream_learn_recurring_incremental_2, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]
+ [25400.         25405.51121312]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+stream = stream_learn_nonrecurring_incremental_1, model index = 0, model_name = wae, m_baseline = [[1.08500000e+05 0.00000000e+00]
+ [1.97064990e-01 0.00000000e+00]
+ [1.30000000e+04 5.06951674e+03]
+ [1.20000000e+04 4.91934955e+03]
+ [1.20000000e+04 4.91934955e+03]
+ [1.20000000e+04 4.91934955e+03]], m_ours = [[6.20960000e+04 4.62500000e+04]
+ [1.54567906e-01 5.26202548e-02]
+ [1.22472000e+04 4.65116133e+03]
+ [1.17066000e+04 4.61416166e+03]
+ [1.17066000e+04 4.61416166e+03]
+ [1.17066000e+04 4.61416166e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+stream = stream_learn_nonrecurring_incremental_1, model index = 1, model_name = awe, m_baseline = [[1.09500000e+05 0.00000000e+00]
+ [1.97064990e-01 0.00000000e+00]
+ [1.33000000e+04 5.17300686e+03]
+ [1.19000000e+04 5.32353266e+03]
+ [1.18000000e+04 5.30659966e+03]
+ [1.18000000e+04 5.30659966e+03]], m_ours = [[1.09846000e+05 0.00000000e+00]
+ [1.92964880e-01 0.00000000e+00]
+ [1.25808000e+04 5.03872835e+03]
+ [1.19460000e+04 4.94021279e+03]
+ [1.19460000e+04 4.94021279e+03]
+ [1.19460000e+04 4.94021279e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+stream = stream_learn_nonrecurring_incremental_1, model index = 2, model_name = sea, m_baseline = [[1.10500000e+05 0.00000000e+00]
+ [1.97064990e-01 0.00000000e+00]
+ [1.33000000e+04 5.17300686e+03]
+ [1.21000000e+04 4.93355855e+03]
+ [1.20000000e+04 4.91934955e+03]
+ [1.20000000e+04 4.91934955e+03]], m_ours = [[1.09846000e+05 0.00000000e+00]
+ [1.83688614e-01 0.00000000e+00]
+ [1.20808000e+04 4.63352818e+03]
+ [1.14460000e+04 4.51128611e+03]
+ [1.14460000e+04 4.51128611e+03]
+ [1.14460000e+04 4.51128611e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+stream = stream_learn_nonrecurring_incremental_2, model index = 0, model_name = wae, m_baseline = [[4.20000000e+04 1.00000000e+03]
+ [7.94085433e-02 1.91675794e-02]
+ [3.98000000e+04 7.93473377e+03]
+ [3.96000000e+04 8.16333265e+03]
+ [3.96000000e+04 8.16333265e+03]
+ [3.96000000e+04 8.16333265e+03]], m_ours = [[3.90570000e+04 1.50000000e+03]
+ [1.15044248e-01 3.68731563e-02]
+ [3.25468000e+04 8.40869372e+03]
+ [3.25178000e+04 8.40001258e+03]
+ [3.25178000e+04 8.40001258e+03]
+ [3.25178000e+04 8.40001258e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+stream = stream_learn_nonrecurring_incremental_2, model index = 1, model_name = awe, m_baseline = [[4.06666667e+04 5.43650214e+03]
+ [7.51322856e-02 3.54535262e-02]
+ [3.86000000e+04 9.22171351e+03]
+ [3.74000000e+04 9.89141042e+03]
+ [3.74000000e+04 9.89141042e+03]
+ [3.74000000e+04 9.89141042e+03]], m_ours = [[4.50570000e+04 2.50000000e+03]
+ [1.57516405e-01 8.24347941e-03]
+ [3.19256000e+04 7.59244426e+03]
+ [3.18920000e+04 7.60781101e+03]
+ [3.18920000e+04 7.60781101e+03]
+ [3.18920000e+04 7.60781101e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+stream = stream_learn_nonrecurring_incremental_2, model index = 2, model_name = sea, m_baseline = [[3.80000000e+04 7.07106781e+03]
+ [7.29237296e-02 3.58619574e-02]
+ [3.82000000e+04 8.56504524e+03]
+ [3.70000000e+04 9.23038461e+03]
+ [3.70000000e+04 9.23038461e+03]
+ [3.70000000e+04 9.23038461e+03]], m_ours = [[4.30570000e+04 5.00000000e+02]
+ [1.09910991e-01 1.00010001e-02]
+ [3.25454000e+04 8.37400904e+03]
+ [3.25244000e+04 8.39270794e+03]
+ [3.25244000e+04 8.39270794e+03]
+ [3.25244000e+04 8.39270794e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+stream = stream_learn_nonrecurring_incremental_3, model index = 0, model_name = wae, m_baseline = [[1.65000000e+05 1.58350876e+05]
+ [4.09248626e-03 1.64870679e-02]
+ [2.62000000e+05 6.30555311e+04]
+ [2.46000000e+05 7.22772440e+04]
+ [2.46000000e+05 7.22772440e+04]
+ [2.46000000e+05 7.22772440e+04]], m_ours = [[1.23960400e+05 1.48425753e+05]
+ [4.74473245e-02 7.01072185e-02]
+ [2.98273600e+05 1.34549652e+05]
+ [2.82248800e+05 1.43225163e+05]
+ [2.82240400e+05 1.43228218e+05]
+ [2.82240400e+05 1.43228218e+05]]
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+stream = stream_learn_nonrecurring_abrupt_2, model index = 1, model_name = awe, m_baseline = [[6.43333333e+04 3.45671649e+04]
+ [4.50079781e-01 2.78283871e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.20000000e+03 4.00000000e+02]
+ [5.80000000e+03 7.48331477e+02]
+ [3.60000000e+03 1.35646600e+03]], m_ours = [[9.85570000e+04 7.20000000e+04]
+ [5.31414005e-01 1.87434398e-02]
+ [3.80160000e+03 2.62922138e+03]
+ [3.32800000e+03 2.21361135e+03]
+ [2.90880000e+03 1.74613475e+03]
+ [1.89120000e+03 6.89246081e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+stream = stream_learn_nonrecurring_abrupt_2, model index = 2, model_name = sea, m_baseline = [[6.36666667e+04 3.49698283e+04]
+ [4.46780171e-01 2.72345048e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.20000000e+03 4.00000000e+02]
+ [5.80000000e+03 7.48331477e+02]
+ [3.60000000e+03 1.35646600e+03]], m_ours = [[1.00057000e+05 7.45000000e+04]
+ [5.13574661e-01 3.77073906e-03]
+ [3.80160000e+03 2.62922138e+03]
+ [3.32800000e+03 2.21361135e+03]
+ [2.90880000e+03 1.74613475e+03]
+ [1.89120000e+03 6.89246081e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_3================
+
+
+stream = stream_learn_nonrecurring_abrupt_3, model index = 0, model_name = wae, m_baseline = [[2.64000000e+05 1.22081940e+05]
+ [3.40277564e-01 1.66317984e-01]
+ [3.60000000e+04 4.89897949e+03]
+ [3.20000000e+04 4.00000000e+03]
+ [3.00000000e+04 0.00000000e+00]
+ [2.40000000e+04 8.00000000e+03]], m_ours = [[7.13288000e+04 1.10716813e+04]
+ [4.93298660e-01 1.15984312e-01]
+ [1.01464000e+04 1.68000000e+01]
+ [1.01230000e+04 3.22552321e+01]
+ [1.00852000e+04 2.76000000e+01]
+ [1.00654000e+04 4.22307945e+01]]
+
+
+==================stream_learn_nonrecurring_abrupt_3================
+
+
+stream = stream_learn_nonrecurring_abrupt_3, model index = 1, model_name = awe, m_baseline = [[2.92000000e+05 1.36000000e+05]
+ [3.40149146e-01 1.66956653e-01]
+ [6.60000000e+04 4.89897949e+03]
+ [6.00000000e+04 0.00000000e+00]
+ [5.60000000e+04 4.89897949e+03]
+ [2.80000000e+04 9.79795897e+03]], m_ours = [[7.64334000e+04 1.25832994e+04]
+ [5.06717224e-01 8.92120152e-02]
+ [1.03572000e+04 1.43333736e+02]
+ [1.02176000e+04 3.57189026e+01]
+ [1.01724000e+04 3.27267475e+01]
+ [1.01398000e+04 4.27476315e+01]]
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+stream = stream_learn_recurring_incremental_3, model index = 2, model_name = sea, m_baseline = [[3.12500000e+05 1.69318487e+05]
+ [5.10060193e-02 3.33475766e-02]
+ [3.10000000e+05 8.94427191e+03]
+ [3.00000000e+05 6.32455532e+03]
+ [3.00000000e+05 6.32455532e+03]
+ [3.00000000e+05 6.32455532e+03]], m_ours = [[3.57356000e+05 5.80409338e+04]
+ [1.05776372e-01 8.39927754e-02]
+ [2.50722000e+05 2.79466707e+04]
+ [2.50612800e+05 2.79555800e+04]
+ [2.50612800e+05 2.79555800e+04]
+ [2.50606200e+05 2.79533519e+04]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+stream = stream_learn_recurring_incremental_4, model index = 0, model_name = wae, m_baseline = [[1.00000000e+03 0.00000000e+00]
+ [2.72727273e-02 0.00000000e+00]
+ [3.02000000e+04 1.86026880e+04]
+ [3.00000000e+04 1.88467504e+04]
+ [3.00000000e+04 1.88467504e+04]
+ [3.00000000e+04 1.88467504e+04]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25691.4        18574.41616418]
+ [25478.2        18807.16621291]
+ [25478.2        18807.16621291]
+ [25478.2        18807.16621291]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+stream = stream_learn_recurring_incremental_4, model index = 1, model_name = awe, m_baseline = [[3.07500000e+04 2.07500000e+04]
+ [5.51195815e-02 2.82137519e-02]
+ [3.11000000e+04 1.95611861e+04]
+ [3.10000000e+04 1.96773982e+04]
+ [3.10000000e+04 1.96773982e+04]
+ [3.10000000e+04 1.96773982e+04]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25821.6        18637.5777997 ]
+ [25605.8        18869.26534235]
+ [25605.8        18869.26534235]
+ [25605.8        18869.26534235]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+stream = stream_learn_recurring_incremental_4, model index = 2, model_name = sea, m_baseline = [[5.62500000e+04 5.52500000e+04]
+ [2.13209247e-02 1.90378197e-02]
+ [3.11000000e+04 1.95611861e+04]
+ [3.10000000e+04 1.96773982e+04]
+ [3.10000000e+04 1.96773982e+04]
+ [3.10000000e+04 1.96773982e+04]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25691.4        18574.41616418]
+ [25478.2        18807.16621291]
+ [25478.2        18807.16621291]
+ [25478.2        18807.16621291]]
+
+
+==================insects_gradual================
+
+
+stream = insects_gradual, model index = 2, model_name = sea, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [25000.     0.]
+ [22000.     0.]
+ [21000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [53000.     0.]
+ [22000.     0.]
+ [21000.     0.]]
+
+
+==================stream_learn_nonrecurring_abrupt_3================
+
+
+stream = stream_learn_nonrecurring_abrupt_3, model index = 2, model_name = sea, m_baseline = [[2.92000000e+05 1.36000000e+05]
+ [3.39831762e-01 1.67274339e-01]
+ [6.60000000e+04 4.89897949e+03]
+ [6.00000000e+04 0.00000000e+00]
+ [5.60000000e+04 4.89897949e+03]
+ [3.00000000e+04 6.32455532e+03]], m_ours = [[6.86226000e+04 1.95132165e+04]
+ [5.28182439e-01 8.53912649e-02]
+ [1.03220000e+04 5.33291665e+01]
+ [1.02368000e+04 3.61463691e+01]
+ [1.01816000e+04 3.93629267e+01]
+ [1.01392000e+04 3.62292699e+01]]
+
+
+==================stream_learn_nonrecurring_abrupt_4================
+
+
+stream = stream_learn_nonrecurring_abrupt_4, model index = 0, model_name = wae, m_baseline = [[2.16500000e+05 0.00000000e+00]
+ [7.23404255e-01 0.00000000e+00]
+ [1.80000000e+03 2.44948974e+02]
+ [1.40000000e+03 4.89897949e+02]
+ [1.30000000e+03 4.00000000e+02]
+ [1.20000000e+03 4.00000000e+02]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [1827.6         625.52940778]
+ [1412.6         719.69093367]
+ [1412.6         719.69093367]
+ [1112.6         570.53925369]]
+
+
+==================stream_learn_nonrecurring_abrupt_4================
+
+
+stream = stream_learn_nonrecurring_abrupt_4, model index = 1, model_name = awe, m_baseline = [[2.18000000e+05 0.00000000e+00]
+ [7.14285714e-01 0.00000000e+00]
+ [3.20000000e+03 2.44948974e+02]
+ [2.60000000e+03 1.06770783e+03]
+ [2.20000000e+03 8.71779789e+02]
+ [1.70000000e+03 8.12403840e+02]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [2866.2        1035.86184407]
+ [2245.2        1146.51304397]
+ [2127.6        1120.14599049]
+ [1712.6        1015.08376009]]
+
+
+==================stream_learn_nonrecurring_abrupt_4================
+
+
+stream = stream_learn_nonrecurring_abrupt_4, model index = 2, model_name = sea, m_baseline = [[2.18500000e+05 0.00000000e+00]
+ [7.24705882e-01 0.00000000e+00]
+ [3.30000000e+03 2.44948974e+02]
+ [2.60000000e+03 1.06770783e+03]
+ [2.40000000e+03 1.01980390e+03]
+ [1.50000000e+03 8.36660027e+02]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [2855.2        1057.48199039]
+ [2245.2        1146.51304397]
+ [2119.8        1130.57868368]
+ [1706.         1022.61625256]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[1.75000000e+05 0.00000000e+00]
+ [1.77580466e-01 0.00000000e+00]
+ [3.50000000e+04 2.09761770e+03]
+ [2.90000000e+04 4.04969135e+03]
+ [2.84000000e+04 3.92937654e+03]
+ [2.84000000e+04 3.92937654e+03]], m_ours = [[1.74557000e+05 0.00000000e+00]
+ [2.33655726e-01 0.00000000e+00]
+ [3.17566000e+04 6.97250467e+03]
+ [2.73622000e+04 5.95817685e+03]
+ [2.67530000e+04 5.72118135e+03]
+ [2.67530000e+04 5.72118135e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[1.75000000e+05 0.00000000e+00]
+ [1.77580466e-01 0.00000000e+00]
+ [3.50000000e+04 2.09761770e+03]
+ [2.92000000e+04 3.96988665e+03]
+ [2.86000000e+04 3.87814389e+03]
+ [2.86000000e+04 3.87814389e+03]], m_ours = [[1.74557000e+05 0.00000000e+00]
+ [2.33655726e-01 0.00000000e+00]
+ [3.17566000e+04 6.97250467e+03]
+ [2.73854000e+04 5.95533057e+03]
+ [2.67762000e+04 5.72068822e+03]
+ [2.67762000e+04 5.72068822e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+stream = stream_learn_nonrecurring_gradual_3, model index = 0, model_name = wae, m_baseline = [[2.72500000e+05 2.53709972e+05]
+ [8.25173083e-02 6.08501208e-02]
+ [3.48000000e+05 9.79795897e+03]
+ [2.86000000e+05 1.95959179e+04]
+ [2.82000000e+05 1.93907194e+04]
+ [2.82000000e+05 1.93907194e+04]], m_ours = [[5.81522667e+05 3.85861230e+04]
+ [1.84225727e-01 1.99196322e-02]
+ [2.71177000e+05 9.48694222e+04]
+ [2.39125200e+05 6.86213021e+04]
+ [2.37096400e+05 6.74289336e+04]
+ [2.37096400e+05 6.74289336e+04]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+stream = stream_learn_nonrecurring_gradual_3, model index = 1, model_name = awe, m_baseline = [[2.77500000e+05 2.59458571e+05]
+ [8.83973427e-02 6.59077852e-02]
+ [3.50000000e+05 8.94427191e+03]
+ [2.94000000e+05 1.74355958e+04]
+ [2.82000000e+05 1.93907194e+04]
+ [2.82000000e+05 1.93907194e+04]], m_ours = [[3.75476000e+05 2.32504270e+05]
+ [1.28191612e-01 6.47951833e-02]
+ [3.18362600e+05 7.96294758e+04]
+ [2.80362600e+05 6.04448428e+04]
+ [2.76348200e+05 5.93714465e+04]
+ [2.76348200e+05 5.93714465e+04]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 1, model_name = awe, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [7000.            0.        ]
+ [6400.          489.89794856]
+ [6400.          489.89794856]
+ [6400.          489.89794856]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [6705.8        2738.57893076]
+ [6291.4        2458.22208923]
+ [5866.2        2267.6       ]
+ [5455.2        2136.9202512 ]]
+
+
+==================usenet_1================
+
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 2, model_name = sea, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [7400.          489.89794856]
+ [6400.          489.89794856]
+ [6400.          489.89794856]
+ [6400.          489.89794856]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [7121.6        3065.93317605]
+ [6291.4        2458.22208923]
+ [5866.2        2267.6       ]
+ [5466.2        2115.4124326 ]]
+
+
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 0, model_name = wae, m_baseline = [[2.20000000e+05 0.00000000e+00]
+ [5.80487805e-01 0.00000000e+00]
+ [3.12000000e+04 2.37436307e+04]
+ [3.06000000e+04 2.29747688e+04]
+ [2.04000000e+04 8.86791971e+03]
+ [2.02000000e+04 8.58836422e+03]], m_ours = [[1.79557000e+05 0.00000000e+00]
+ [6.01635514e-01 0.00000000e+00]
+ [3.12158000e+04 2.37993315e+04]
+ [2.41904000e+04 1.30832657e+04]
+ [2.01904000e+04 8.80494412e+03]
+ [1.99832000e+04 8.72698370e+03]]
+
+
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [50000.         46117.24189498]
+ [48000.         43506.32137977]
+ [47200.         42920.39142412]
+ [46600.         42832.69779036]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [36400.         21171.67919651]
+ [29600.         10091.58064923]
+ [25800.          6852.7366796 ]
+ [25200.          7138.62731903]]
+
+
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [33000.         23554.1928327 ]
+ [31600.         22561.91481236]
+ [22200.          9410.63228481]
+ [21200.          9260.66952223]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [33000.         24722.45942458]
+ [23200.         10244.99877989]
+ [22000.          9695.35971483]
+ [21400.          9911.60935469]]
+
+
+==================insects_gradual================
+
+
+stream = insects_gradual, model index = 0, model_name = wae, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [68000.     0.]
+ [68000.     0.]
+ [20000.     0.]
+ [19000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [39000.     0.]
+ [21000.     0.]
+ [19000.     0.]]
+
+
+==================insects_gradual================
+
+
+stream = insects_gradual, model index = 1, model_name = awe, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [68000.     0.]
+ [22000.     0.]
+ [21000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [71000.     0.]
+ [67000.     0.]
+ [23000.     0.]
+ [22000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+stream = stream_learn_nonrecurring_abrupt_1, model index = 0, model_name = wae, m_baseline = [[1.70000000e+04 0.00000000e+00]
+ [6.30801688e-01 0.00000000e+00]
+ [1.80000000e+03 2.44948974e+02]
+ [1.70000000e+03 2.44948974e+02]
+ [1.50000000e+03 0.00000000e+00]
+ [1.40000000e+03 2.00000000e+02]], m_ours = [[2.38460000e+04 0.00000000e+00]
+ [6.28450106e-01 0.00000000e+00]
+ [1.53240000e+03 7.98062805e+02]
+ [1.43240000e+03 6.95258398e+02]
+ [1.43240000e+03 6.95258398e+02]
+ [1.13240000e+03 5.50294685e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+stream = stream_learn_nonrecurring_abrupt_1, model index = 1, model_name = awe, m_baseline = [[1.80000000e+04 0.00000000e+00]
+ [6.47181628e-01 0.00000000e+00]
+ [3.50000000e+03 3.16227766e+02]
+ [3.20000000e+03 2.44948974e+02]
+ [2.90000000e+03 4.89897949e+02]
+ [2.40000000e+03 4.89897949e+02]], m_ours = [[1.88460000e+04 0.00000000e+00]
+ [7.07602339e-01 0.00000000e+00]
+ [2.59040000e+03 1.53318565e+03]
+ [2.29040000e+03 1.29030936e+03]
+ [1.98120000e+03 1.05959509e+03]
+ [1.36500000e+03 6.03283018e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+stream = stream_learn_nonrecurring_abrupt_1, model index = 2, model_name = sea, m_baseline = [[1.80000000e+04 0.00000000e+00]
+ [6.51356994e-01 0.00000000e+00]
+ [3.50000000e+03 3.16227766e+02]
+ [3.20000000e+03 2.44948974e+02]
+ [2.90000000e+03 4.89897949e+02]
+ [2.50000000e+03 4.47213595e+02]], m_ours = [[1.88460000e+04 0.00000000e+00]
+ [7.07602339e-01 0.00000000e+00]
+ [2.59040000e+03 1.53318565e+03]
+ [2.39040000e+03 1.35897691e+03]
+ [1.98120000e+03 1.05959509e+03]
+ [1.36500000e+03 6.03283018e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+stream = stream_learn_nonrecurring_abrupt_2, model index = 0, model_name = wae, m_baseline = [[5.66666667e+04 2.65999165e+04]
+ [4.47348045e-01 3.07373535e-02]
+ [4.00000000e+03 0.00000000e+00]
+ [3.40000000e+03 4.89897949e+02]
+ [3.20000000e+03 4.00000000e+02]
+ [2.80000000e+03 4.00000000e+02]], m_ours = [[1.07057000e+05 4.75000000e+04]
+ [4.51306413e-01 2.61282660e-02]
+ [2.94640000e+03 1.70894044e+03]
+ [2.46720000e+03 1.30776655e+03]
+ [2.45940000e+03 1.30982145e+03]
+ [2.25940000e+03 1.12222647e+03]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [37000.           632.45553203]
+ [27600.          2497.99919936]
+ [27200.          2039.60780544]
+ [27200.          2039.60780544]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [33245.2         7589.07716129]
+ [27245.2         5112.3861513 ]
+ [26836.          4809.53053842]
+ [26836.          4809.53053842]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [37000.           632.45553203]
+ [27800.          2481.9347292 ]
+ [27400.          2059.1260282 ]
+ [27400.          2059.1260282 ]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [32845.2         7377.68609796]
+ [27245.2         5112.3861513 ]
+ [26836.          4809.53053842]
+ [26836.          4809.53053842]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 0, model_name = wae, m_baseline = [[2.14000000e+05 2.37789823e+05]
+ [8.10167830e-02 5.05738898e-02]
+ [3.64000000e+05 2.93938769e+04]
+ [2.74000000e+05 3.38230691e+04]
+ [2.74000000e+05 3.38230691e+04]
+ [2.74000000e+05 3.38230691e+04]], m_ours = [[3.79914000e+05 2.62056775e+05]
+ [1.93968396e-01 4.10286330e-02]
+ [2.54587600e+05 1.20801312e+05]
+ [2.22385200e+05 8.27608395e+04]
+ [2.22284200e+05 8.28145160e+04]
+ [2.22284200e+05 8.28145160e+04]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 1, model_name = awe, m_baseline = [[2.14000000e+05 2.37789823e+05]
+ [8.07720586e-02 5.02886535e-02]
+ [3.64000000e+05 2.93938769e+04]
+ [2.76000000e+05 3.26190129e+04]
+ [2.74000000e+05 3.38230691e+04]
+ [2.74000000e+05 3.38230691e+04]], m_ours = [[5.59856000e+05 1.50000000e+04]
+ [2.15282627e-01 3.49102931e-03]
+ [2.46409000e+05 1.29823368e+05]
+ [2.16327200e+05 9.38148122e+04]
+ [2.16278200e+05 9.38549251e+04]
+ [2.16278200e+05 9.38549251e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+stream = stream_learn_nonrecurring_incremental_3, model index = 2, model_name = sea, m_baseline = [[1.33333333e+05 1.62856447e+05]
+ [1.00739411e-02 1.88875603e-02]
+ [2.78000000e+05 6.01331855e+04]
+ [2.60000000e+05 7.18331400e+04]
+ [2.60000000e+05 7.18331400e+04]
+ [2.60000000e+05 7.18331400e+04]], m_ours = [[9.37464000e+04 1.42088381e+05]
+ [4.83499230e-02 5.48854010e-02]
+ [2.62099200e+05 5.94873878e+04]
+ [2.50090000e+05 5.62459559e+04]
+ [2.50081600e+05 5.62489318e+04]
+ [2.50081600e+05 5.62489318e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+stream = stream_learn_nonrecurring_incremental_4, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [26700.         13124.78571254]
+ [26600.         13290.59818067]
+ [26600.         13290.59818067]
+ [26600.         13290.59818067]], m_ours = [[8.88460000e+04 0.00000000e+00]
+ [7.22761597e-02 0.00000000e+00]
+ [1.97234000e+04 8.31398123e+03]
+ [1.96234000e+04 8.49158194e+03]
+ [1.96142000e+04 8.48607180e+03]
+ [1.96142000e+04 8.48607180e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+stream = stream_learn_nonrecurring_incremental_4, model index = 1, model_name = awe, m_baseline = [[2.65000000e+04 0.00000000e+00]
+ [4.36681223e-02 0.00000000e+00]
+ [2.58000000e+04 1.41901374e+04]
+ [2.57000000e+04 1.43582729e+04]
+ [2.57000000e+04 1.43582729e+04]
+ [2.57000000e+04 1.43582729e+04]], m_ours = [[2.63460000e+04 0.00000000e+00]
+ [1.01596591e-01 0.00000000e+00]
+ [2.75852000e+04 1.63573573e+04]
+ [2.74586000e+04 1.65106261e+04]
+ [2.74586000e+04 1.65106261e+04]
+ [2.74586000e+04 1.65106261e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+stream = stream_learn_nonrecurring_incremental_4, model index = 2, model_name = sea, m_baseline = [[3.10000000e+04 0.00000000e+00]
+ [2.66666667e-02 0.00000000e+00]
+ [2.58000000e+04 1.41901374e+04]
+ [2.57000000e+04 1.43582729e+04]
+ [2.57000000e+04 1.43582729e+04]
+ [2.57000000e+04 1.43582729e+04]], m_ours = [[3.70960000e+04 1.07500000e+04]
+ [8.88525681e-02 1.08892447e-02]
+ [2.56050000e+04 1.44089307e+04]
+ [2.53994000e+04 1.44664895e+04]
+ [2.53994000e+04 1.44664895e+04]
+ [2.53994000e+04 1.44664895e+04]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+stream = stream_learn_nonrecurring_incremental_3, model index = 1, model_name = awe, m_baseline = [[1.56000000e+05 1.69540556e+05]
+ [7.06657789e-03 2.08188702e-02]
+ [2.78000000e+05 6.01331855e+04]
+ [2.60000000e+05 7.18331400e+04]
+ [2.60000000e+05 7.18331400e+04]
+ [2.60000000e+05 7.18331400e+04]], m_ours = [[1.06192600e+05 1.37081905e+05]
+ [6.77783431e-02 5.99054394e-02]
+ [2.58293400e+05 5.75781584e+04]
+ [2.40260200e+05 6.43922361e+04]
+ [2.40253000e+05 6.43877830e+04]
+ [2.40253000e+05 6.43877830e+04]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+stream = stream_learn_recurring_incremental_3, model index = 1, model_name = awe, m_baseline = [[3.12500000e+05 1.69318487e+05]
+ [5.07554214e-02 3.35065536e-02]
+ [3.10000000e+05 8.94427191e+03]
+ [3.00000000e+05 6.32455532e+03]
+ [3.00000000e+05 6.32455532e+03]
+ [3.00000000e+05 6.32455532e+03]], m_ours = [[3.59856000e+05 5.40832691e+04]
+ [1.12933689e-01 8.18437822e-02]
+ [2.50649600e+05 2.79983732e+04]
+ [2.50546600e+05 2.80027996e+04]
+ [2.50546600e+05 2.80027996e+04]
+ [2.50540000e+05 2.80005597e+04]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)

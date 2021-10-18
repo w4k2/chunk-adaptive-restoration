@@ -1,0 +1,3804 @@
+
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 61
+Change detected, batch: 90
+Stabilization detected, batch: 122
+Change detected, batch: 150
+
+stabilization_time =  (16250.0, 250.0)
+max_performance_loss =  (0.5979166666666667, 0.04999999999999993)
+restoration_time 0.9 =  ([1500, 1500, 3000, 2000, 2500], 583.09518948453)
+restoration_time 0.8 =  ([1500, 1500, 2000, 1500, 2000], 244.94897427831782)
+restoration_time 0.7 =  ([1500, 1500, 2000, 1500, 1500], 200.0)
+restoration_time 0.6 =  ([1500, 1500, 1500, 1500, 1000], 200.0)
+avg restoration_time 0.9 =  (2100.0, 583.09518948453)
+avg restoration_time 0.8 =  (1700.0, 244.94897427831782)
+avg restoration_time 0.7 =  (1600.0, 200.0)
+avg restoration_time 0.6 =  (1400.0, 200.0)
+Change detected, batch: 30
+Stabilization detected, batch: 81
+Change detected, batch: 111
+Stabilization detected, batch: 161
+Change detected, batch: 192
+
+stabilization_time =  (15096.0, 250.0)
+max_performance_loss =  (0.5805817149258203, 0.14675298173402979)
+restoration_time 0.9 =  ([680, 638, 831, 2500, 2500], 876.1694813219643)
+restoration_time 0.8 =  ([563, 599, 726, 2000, 2000], 673.6671581723426)
+restoration_time 0.7 =  ([563, 599, 638, 2000, 2000], 686.2672948640347)
+restoration_time 0.6 =  ([563, 563, 638, 2000, 1500], 591.446159848891)
+avg restoration_time 0.9 =  (1429.8, 876.1694813219643)
+avg restoration_time 0.8 =  (1177.6, 673.6671581723426)
+avg restoration_time 0.7 =  (1160.0, 686.2672948640347)
+avg restoration_time 0.6 =  (1052.8, 591.446159848891)
+stream = stream_learn_nonrecurring_abrupt_1, model index = 0, model_name = wae, m_baseline = [[1.62500000e+04 2.50000000e+02]
+ [5.97916667e-01 5.00000000e-02]
+ [2.10000000e+03 5.83095189e+02]
+ [1.70000000e+03 2.44948974e+02]
+ [1.60000000e+03 2.00000000e+02]
+ [1.40000000e+03 2.00000000e+02]], m_ours = [[1.50960000e+04 2.50000000e+02]
+ [5.80581715e-01 1.46752982e-01]
+ [1.42980000e+03 8.76169481e+02]
+ [1.17760000e+03 6.73667158e+02]
+ [1.16000000e+03 6.86267295e+02]
+ [1.05280000e+03 5.91446160e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 150
+
+stabilization_time =  (18000.0, 0.0)
+max_performance_loss =  (0.6052909581509012, 0.05249592709500045)
+restoration_time 0.9 =  ([3500, 3500, 4000, 3500, 4000], 244.94897427831782)
+restoration_time 0.8 =  ([3500, 3000, 3500, 3000, 3000], 244.94897427831782)
+restoration_time 0.7 =  ([3000, 3000, 3000, 2500, 2000], 400.0)
+restoration_time 0.6 =  ([3000, 2500, 2500, 1500, 1000], 734.8469228349534)
+avg restoration_time 0.9 =  (3700.0, 244.94897427831782)
+avg restoration_time 0.8 =  (3200.0, 244.94897427831782)
+avg restoration_time 0.7 =  (2700.0, 400.0)
+avg restoration_time 0.6 =  (2100.0, 734.8469228349534)
+Change detected, batch: 30
+Stabilization detected, batch: 80
+Change detected, batch: 111
+Stabilization detected, batch: 157
+Change detected, batch: 192
+
+stabilization_time =  (13846.0, 1000.0)
+max_performance_loss =  (0.6520528879610299, 0.10438413361169102)
+restoration_time 0.9 =  ([776, 726, 891, 4000, 4000], 1569.728842826047)
+restoration_time 0.8 =  ([776, 726, 831, 3500, 3000], 1221.9194081444161)
+restoration_time 0.7 =  ([726, 680, 776, 3000, 2500], 1003.8951339656946)
+restoration_time 0.6 =  ([680, 680, 726, 2500, 1500], 713.3017313872159)
+avg restoration_time 0.9 =  (2078.6, 1569.728842826047)
+avg restoration_time 0.8 =  (1766.6, 1221.9194081444161)
+avg restoration_time 0.7 =  (1536.4, 1003.8951339656946)
+avg restoration_time 0.6 =  (1217.2, 713.3017313872159)
+stream = stream_learn_nonrecurring_abrupt_1, model index = 1, model_name = awe, m_baseline = [[1.80000000e+04 0.00000000e+00]
+ [6.05290958e-01 5.24959271e-02]
+ [3.70000000e+03 2.44948974e+02]
+ [3.20000000e+03 2.44948974e+02]
+ [2.70000000e+03 4.00000000e+02]
+ [2.10000000e+03 7.34846923e+02]], m_ours = [[1.38460000e+04 1.00000000e+03]
+ [6.52052888e-01 1.04384134e-01]
+ [2.07860000e+03 1.56972884e+03]
+ [1.76660000e+03 1.22191941e+03]
+ [1.53640000e+03 1.00389513e+03]
+ [1.21720000e+03 7.13301731e+02]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+Change detected, batch: 91
+Stabilization detected, batch: 193
+Change detected, batch: 216
+
+stabilization_time =  (51500.0, 0.0)
+max_performance_loss =  (0.08314606741573041, 0.0)
+restoration_time 0.9 =  ([17000, 15000, 13500, 17000, 16000], 1326.64991614216)
+restoration_time 0.8 =  ([17000, 14500, 13500, 17000, 16000], 1392.838827718412)
+restoration_time 0.7 =  ([17000, 14500, 13500, 17000, 16000], 1392.838827718412)
+restoration_time 0.6 =  ([17000, 14500, 13500, 17000, 16000], 1392.838827718412)
+avg restoration_time 0.9 =  (15700.0, 1326.64991614216)
+avg restoration_time 0.8 =  (15600.0, 1392.838827718412)
+avg restoration_time 0.7 =  (15600.0, 1392.838827718412)
+avg restoration_time 0.6 =  (15600.0, 1392.838827718412)
+Change detected, batch: 91
+Stabilization detected, batch: 218
+Change detected, batch: 237
+
+stabilization_time =  (53346.0, 0.0)
+max_performance_loss =  (0.17417417417417425, 0.0)
+restoration_time 0.9 =  ([17000, 14563, 14500, 17788, 8000], 3441.8214015256513)
+restoration_time 0.8 =  ([17000, 14563, 14500, 17694, 8000], 3423.3082011411125)
+restoration_time 0.7 =  ([17000, 14530, 14500, 17694, 8000], 3422.925672578942)
+restoration_time 0.6 =  ([17000, 14530, 14500, 17694, 8000], 3422.925672578942)
+avg restoration_time 0.9 =  (14370.2, 3441.8214015256513)
+avg restoration_time 0.8 =  (14351.4, 3423.3082011411125)
+avg restoration_time 0.7 =  (14344.8, 3422.925672578942)
+avg restoration_time 0.6 =  (14344.8, 3422.925672578942)
+stream = stream_learn_recurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[5.15000000e+04 0.00000000e+00]
+ [8.31460674e-02 0.00000000e+00]
+ [1.57000000e+04 1.32664992e+03]
+ [1.56000000e+04 1.39283883e+03]
+ [1.56000000e+04 1.39283883e+03]
+ [1.56000000e+04 1.39283883e+03]], m_ours = [[5.33460000e+04 0.00000000e+00]
+ [1.74174174e-01 0.00000000e+00]
+ [1.43702000e+04 3.44182140e+03]
+ [1.43514000e+04 3.42330820e+03]
+ [1.43448000e+04 3.42292567e+03]
+ [1.43448000e+04 3.42292567e+03]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+Change detected, batch: 83
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 11000, 13500, 16000, 13000], 2088.06130178211)
+restoration_time 0.8 =  ([9500, 10500, 13500, 16000, 13000], 2302.1728866442677)
+restoration_time 0.7 =  ([9500, 10500, 13500, 16000, 13000], 2302.1728866442677)
+restoration_time 0.6 =  ([9500, 10500, 13500, 16000, 13000], 2302.1728866442677)
+avg restoration_time 0.9 =  (12700.0, 2088.06130178211)
+avg restoration_time 0.8 =  (12500.0, 2302.1728866442677)
+avg restoration_time 0.7 =  (12500.0, 2302.1728866442677)
+avg restoration_time 0.6 =  (12500.0, 2302.1728866442677)
+Change detected, batch: 83
+Stabilization detected, batch: 217
+Change detected, batch: 237
+
+stabilization_time =  (56846.0, 0.0)
+max_performance_loss =  (0.21442936148818506, 0.0)
+restoration_time 0.9 =  ([10000, 10638, 14500, 17391, 8000], 3379.702850843547)
+restoration_time 0.8 =  ([9500, 10638, 14500, 17276, 8000], 3411.4437061162243)
+restoration_time 0.7 =  ([9500, 10599, 14500, 17226, 8000], 3399.0513970812503)
+restoration_time 0.6 =  ([9500, 10599, 14500, 17226, 8000], 3399.0513970812503)
+avg restoration_time 0.9 =  (12105.8, 3379.702850843547)
+avg restoration_time 0.8 =  (11982.8, 3411.4437061162243)
+avg restoration_time 0.7 =  (11965.0, 3399.0513970812503)
+avg restoration_time 0.6 =  (11965.0, 3399.0513970812503)
+stream = stream_learn_recurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [12700.          2088.06130178]
+ [12500.          2302.17288664]
+ [12500.          2302.17288664]
+ [12500.          2302.17288664]], m_ours = [[5.68460000e+04 0.00000000e+00]
+ [2.14429361e-01 0.00000000e+00]
+ [1.21058000e+04 3.37970285e+03]
+ [1.19828000e+04 3.41144371e+03]
+ [1.19650000e+04 3.39905140e+03]
+ [1.19650000e+04 3.39905140e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+
+==================stream_learn_recurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 145
+Change detected, batch: 150
+Stabilization detected, batch: 188
+Change detected, batch: 210
+Stabilization detected, batch: 253
+Change detected, batch: 270
+
+stabilization_time =  (33166.666666666664, 17589.453911048204)
+max_performance_loss =  (0.42564013640830006, 0.03523257943929837)
+restoration_time 0.9 =  ([3500, 3000, 3500, 3500, 3500], 200.0)
+restoration_time 0.8 =  ([3500, 3000, 3000, 3000, 3000], 200.0)
+restoration_time 0.7 =  ([2500, 2500, 2500, 2500, 2000], 200.0)
+restoration_time 0.6 =  ([1000, 2000, 1000, 2000, 1000], 489.89794855663564)
+avg restoration_time 0.9 =  (3400.0, 200.0)
+avg restoration_time 0.8 =  (3100.0, 200.0)
+avg restoration_time 0.7 =  (2400.0, 200.0)
+avg restoration_time 0.6 =  (1400.0, 489.89794855663564)
+Change detected, batch: 30
+Stabilization detected, batch: 153
+Change detected, batch: 171
+Stabilization detected, batch: 294
+Change detected, batch: 312
+
+stabilization_time =  (51346.0, 0.0)
+max_performance_loss =  (0.4753347427766032, 0.03136011275546163)
+restoration_time 0.9 =  ([831, 3500, 831, 3500, 776], 1316.6722599037319)
+restoration_time 0.8 =  ([599, 3000, 831, 3500, 776], 1244.3995178398295)
+restoration_time 0.7 =  ([563, 2500, 638, 3000, 638], 1059.1385933861536)
+restoration_time 0.6 =  ([563, 2000, 599, 2500, 638], 823.9919902523325)
+avg restoration_time 0.9 =  (1887.6, 1316.6722599037319)
+avg restoration_time 0.8 =  (1741.2, 1244.3995178398295)
+avg restoration_time 0.7 =  (1467.8, 1059.1385933861536)
+avg restoration_time 0.6 =  (1260.0, 823.9919902523325)
+stream = stream_learn_recurring_abrupt_1, model index = 2, model_name = sea, m_baseline = [[3.31666667e+04 1.75894539e+04]
+ [4.25640136e-01 3.52325794e-02]
+ [3.40000000e+03 2.00000000e+02]
+ [3.10000000e+03 2.00000000e+02]
+ [2.40000000e+03 2.00000000e+02]
+ [1.40000000e+03 4.89897949e+02]], m_ours = [[5.13460000e+04 0.00000000e+00]
+ [4.75334743e-01 3.13601128e-02]
+ [1.88760000e+03 1.31667226e+03]
+ [1.74120000e+03 1.24439952e+03]
+ [1.46780000e+03 1.05913859e+03]
+ [1.26000000e+03 8.23991990e+02]]
+
+
+==================stream_learn_recurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 62
+Change detected, batch: 90
+Stabilization detected, batch: 123
+Change detected, batch: 150
+Stabilization detected, batch: 182
+Change detected, batch: 210
+Stabilization detected, batch: 242
+Change detected, batch: 270
+
+stabilization_time =  (33250.0, 433.0127018922193)
+max_performance_loss =  (0.4607448722655993, 0.01003586998150031)
+restoration_time 0.9 =  ([4000, 4000, 4000, 4000, 4000], 0.0)
+restoration_time 0.8 =  ([3000, 4000, 4000, 4000, 3000], 489.89794855663564)
+restoration_time 0.7 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+restoration_time 0.6 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+avg restoration_time 0.9 =  (4000.0, 0.0)
+avg restoration_time 0.8 =  (3600.0, 489.89794855663564)
+avg restoration_time 0.7 =  (3000.0, 0.0)
+avg restoration_time 0.6 =  (3000.0, 0.0)
+Change detected, batch: 30
+Stabilization detected, batch: 80
+Change detected, batch: 118
+Stabilization detected, batch: 172
+Change detected, batch: 207
+Stabilization detected, batch: 261
+Change detected, batch: 295
+Stabilization detected, batch: 347
+Change detected, batch: 383
+
+stabilization_time =  (25057.0, 1658.3123951777)
+max_performance_loss =  (0.47042119649550046, 0.0656852543013846)
+restoration_time 0.9 =  ([1180, 1226, 2180, 1138, 1180], 400.5687955894718)
+restoration_time 0.8 =  ([1099, 1226, 2099, 1138, 1180], 377.67954670593434)
+restoration_time 0.7 =  ([1063, 1138, 2063, 1099, 1138], 382.42039694556047)
+restoration_time 0.6 =  ([1030, 1138, 2063, 1063, 1099], 393.8510378302944)
+avg restoration_time 0.9 =  (1380.8, 400.5687955894718)
+avg restoration_time 0.8 =  (1348.4, 377.67954670593434)
+avg restoration_time 0.7 =  (1300.2, 382.42039694556047)
+avg restoration_time 0.6 =  (1278.6, 393.8510378302944)
+stream = stream_learn_recurring_abrupt_2, model index = 0, model_name = wae, m_baseline = [[3.32500000e+04 4.33012702e+02]
+ [4.60744872e-01 1.00358700e-02]
+ [4.00000000e+03 0.00000000e+00]
+ [3.60000000e+03 4.89897949e+02]
+ [3.00000000e+03 0.00000000e+00]
+ [3.00000000e+03 0.00000000e+00]], m_ours = [[2.50570000e+04 1.65831240e+03]
+ [4.70421196e-01 6.56852543e-02]
+ [1.38080000e+03 4.00568796e+02]
+ [1.34840000e+03 3.77679547e+02]
+ [1.30020000e+03 3.82420397e+02]
+ [1.27860000e+03 3.93851038e+02]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([22500, 26000, 24000, 26000, 18500], 2782.085548648711)
+restoration_time 0.8 =  ([18000, 23500, 22500, 25000, 18000], 2887.9058156387305)
+restoration_time 0.7 =  ([18000, 23500, 22500, 25000, 18000], 2887.9058156387305)
+restoration_time 0.6 =  ([18000, 23500, 22500, 25000, 18000], 2887.9058156387305)
+avg restoration_time 0.9 =  (23400.0, 2782.085548648711)
+avg restoration_time 0.8 =  (21400.0, 2887.9058156387305)
+avg restoration_time 0.7 =  (21400.0, 2887.9058156387305)
+avg restoration_time 0.6 =  (21400.0, 2887.9058156387305)
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([15831, 24500, 23500, 26500, 24500], 3698.346895573751)
+restoration_time 0.8 =  ([15726, 23500, 22500, 25000, 18000], 3501.4300164361416)
+restoration_time 0.7 =  ([15726, 23500, 22500, 25000, 18000], 3501.4300164361416)
+restoration_time 0.6 =  ([15726, 23500, 22500, 25000, 18000], 3501.4300164361416)
+avg restoration_time 0.9 =  (22966.2, 3698.346895573751)
+avg restoration_time 0.8 =  (20945.2, 3501.4300164361416)
+avg restoration_time 0.7 =  (20945.2, 3501.4300164361416)
+avg restoration_time 0.6 =  (20945.2, 3501.4300164361416)
+stream = stream_learn_recurring_gradual_4, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [23400.          2782.08554865]
+ [21400.          2887.90581564]
+ [21400.          2887.90581564]
+ [21400.          2887.90581564]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [22966.2         3698.34689557]
+ [20945.2         3501.43001644]
+ [20945.2         3501.43001644]
+ [20945.2         3501.43001644]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([26500, 26000, 20000, 26500, 18500], 3507.1355833500365)
+restoration_time 0.8 =  ([25500, 23500, 18000, 25000, 18000], 3331.6662497915363)
+restoration_time 0.7 =  ([25500, 23500, 18000, 25000, 18000], 3331.6662497915363)
+restoration_time 0.6 =  ([25500, 23500, 18000, 25000, 18000], 3331.6662497915363)
+avg restoration_time 0.9 =  (23500.0, 3507.1355833500365)
+avg restoration_time 0.8 =  (22000.0, 3331.6662497915363)
+avg restoration_time 0.7 =  (22000.0, 3331.6662497915363)
+avg restoration_time 0.6 =  (22000.0, 3331.6662497915363)
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([16029, 26000, 23500, 26500, 24500], 3791.4976671494865)
+restoration_time 0.8 =  ([15891, 23500, 22500, 25000, 18000], 3452.5209572137283)
+restoration_time 0.7 =  ([15891, 23500, 22500, 25000, 18000], 3452.5209572137283)
+restoration_time 0.6 =  ([15891, 23500, 22500, 25000, 18000], 3452.5209572137283)
+avg restoration_time 0.9 =  (23305.8, 3791.4976671494865)
+avg restoration_time 0.8 =  (20978.2, 3452.5209572137283)
+avg restoration_time 0.7 =  (20978.2, 3452.5209572137283)
+avg restoration_time 0.6 =  (20978.2, 3452.5209572137283)
+stream = stream_learn_recurring_gradual_4, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [23500.          3507.13558335]
+ [22000.          3331.66624979]
+ [22000.          3331.66624979]
+ [22000.          3331.66624979]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [23305.8         3791.49766715]
+ [20978.2         3452.52095721]
+ [20978.2         3452.52095721]
+ [20978.2         3452.52095721]]
+
+==================stream_learn_recurring_abrupt_4================
+
+
+Change detected, batch: 50
+Stabilization detected, batch: 85
+Change detected, batch: 150
+Stabilization detected, batch: 285
+Change detected, batch: 350
+Stabilization detected, batch: 486
+
+stabilization_time =  (51500.0, 23688.95663946951)
+max_performance_loss =  (0.493755942571652, 0.034805532352691855)
+restoration_time 0.9 =  ([3000, 3500, 3000, 3500, 3500], 244.94897427831782)
+restoration_time 0.8 =  ([3000, 3500, 3000, 3000, 3000], 200.0)
+restoration_time 0.7 =  ([2500, 3000, 2500, 3000, 2500], 244.94897427831782)
+restoration_time 0.6 =  ([2000, 2500, 2000, 2000, 2000], 200.0)
+avg restoration_time 0.9 =  (3300.0, 244.94897427831782)
+avg restoration_time 0.8 =  (3100.0, 200.0)
+avg restoration_time 0.7 =  (2700.0, 244.94897427831782)
+avg restoration_time 0.6 =  (2100.0, 200.0)
+Change detected, batch: 50
+Stabilization detected, batch: 92
+Change detected, batch: 171
+Stabilization detected, batch: 239
+Change detected, batch: 292
+Stabilization detected, batch: 345
+Change detected, batch: 414
+Stabilization detected, batch: 573
+
+stabilization_time =  (30096.0, 23126.013491304548)
+max_performance_loss =  (0.5083034446089127, 0.04220257803955342)
+restoration_time 0.9 =  ([776, 726, 776, 1276, 3500], 1063.750045828436)
+restoration_time 0.8 =  ([638, 726, 726, 1226, 3000], 892.8494609955252)
+restoration_time 0.7 =  ([638, 680, 680, 1226, 2500], 711.6297913943738)
+restoration_time 0.6 =  ([530, 599, 680, 1180, 1500], 377.96211450355713)
+avg restoration_time 0.9 =  (1410.8, 1063.750045828436)
+avg restoration_time 0.8 =  (1263.2, 892.8494609955252)
+avg restoration_time 0.7 =  (1144.8, 711.6297913943738)
+avg restoration_time 0.6 =  (897.8, 377.96211450355713)
+stream = stream_learn_recurring_abrupt_4, model index = 1, model_name = awe, m_baseline = [[5.15000000e+04 2.36889566e+04]
+ [4.93755943e-01 3.48055324e-02]
+ [3.30000000e+03 2.44948974e+02]
+ [3.10000000e+03 2.00000000e+02]
+ [2.70000000e+03 2.44948974e+02]
+ [2.10000000e+03 2.00000000e+02]], m_ours = [[3.00960000e+04 2.31260135e+04]
+ [5.08303445e-01 4.22025780e-02]
+ [1.41080000e+03 1.06375005e+03]
+ [1.26320000e+03 8.92849461e+02]
+ [1.14480000e+03 7.11629791e+02]
+ [8.97800000e+02 3.77962115e+02]]
+
+
+==================stream_learn_recurring_abrupt_4================
+
+
+Change detected, batch: 50
+Stabilization detected, batch: 85
+Change detected, batch: 150
+Stabilization detected, batch: 285
+Change detected, batch: 350
+Stabilization detected, batch: 486
+
+stabilization_time =  (51500.0, 23688.95663946951)
+max_performance_loss =  (0.4955287995950142, 0.03233163979429723)
+restoration_time 0.9 =  ([3000, 3500, 3500, 3500, 3500], 200.0)
+restoration_time 0.8 =  ([3000, 3500, 3000, 3000, 3000], 200.0)
+restoration_time 0.7 =  ([2500, 3000, 2500, 3000, 2500], 244.94897427831782)
+restoration_time 0.6 =  ([2000, 2500, 2000, 2000, 1500], 316.22776601683796)
+avg restoration_time 0.9 =  (3400.0, 200.0)
+avg restoration_time 0.8 =  (3100.0, 200.0)
+avg restoration_time 0.7 =  (2700.0, 244.94897427831782)
+avg restoration_time 0.6 =  (2000.0, 316.22776601683796)
+Change detected, batch: 50
+Stabilization detected, batch: 115
+Change detected, batch: 171
+Stabilization detected, batch: 239
+Change detected, batch: 292
+Stabilization detected, batch: 345
+Change detected, batch: 414
+Stabilization detected, batch: 516
+Change detected, batch: 535
+Stabilization detected, batch: 591
+
+stabilization_time =  (24246.0, 8748.714191239762)
+max_performance_loss =  (0.4981085359879634, 0.03189188892239137)
+restoration_time 0.9 =  ([776, 726, 776, 1276, 726], 211.18712081942877)
+restoration_time 0.8 =  ([726, 726, 726, 1226, 726], 200.0)
+restoration_time 0.7 =  ([638, 726, 726, 1226, 680], 215.90220008142575)
+restoration_time 0.6 =  ([530, 599, 680, 1063, 638], 187.13310770678714)
+avg restoration_time 0.9 =  (856.0, 211.18712081942877)
+avg restoration_time 0.8 =  (826.0, 200.0)
+avg restoration_time 0.7 =  (799.2, 215.90220008142575)
+avg restoration_time 0.6 =  (702.0, 187.13310770678714)
+stream = stream_learn_recurring_abrupt_4, model index = 2, model_name = sea, m_baseline = [[5.15000000e+04 2.36889566e+04]
+ [4.95528800e-01 3.23316398e-02]
+ [3.40000000e+03 2.00000000e+02]
+ [3.10000000e+03 2.00000000e+02]
+ [2.70000000e+03 2.44948974e+02]
+ [2.00000000e+03 3.16227766e+02]], m_ours = [[2.42460000e+04 8.74871419e+03]
+ [4.98108536e-01 3.18918889e-02]
+ [8.56000000e+02 2.11187121e+02]
+ [8.26000000e+02 2.00000000e+02]
+ [7.99200000e+02 2.15902200e+02]
+ [7.02000000e+02 1.87133108e+02]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+Change detected, batch: 20
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([35000, 34000, 33000, 36000, 33000], 1166.19037896906)
+restoration_time 0.8 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.7 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.6 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+avg restoration_time 0.9 =  (34200.0, 1166.19037896906)
+avg restoration_time 0.8 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.7 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.6 =  (27800.0, 2315.167380558045)
+Change detected, batch: 20
+Stabilization detected, batch: 103
+Change detected, batch: 109
+
+stabilization_time =  (55557.0, 0.0)
+max_performance_loss =  (0.18558485187824492, 0.0)
+restoration_time 0.9 =  ([18529, 19226, 33000, 31000, 33000], 6635.97637126595)
+restoration_time 0.8 =  ([18529, 19099, 28000, 29000, 25000], 4380.044867350105)
+restoration_time 0.7 =  ([18457, 19099, 28000, 29000, 25000], 4397.845445215191)
+restoration_time 0.6 =  ([18457, 19099, 28000, 29000, 25000], 4397.845445215191)
+avg restoration_time 0.9 =  (26951.0, 6635.97637126595)
+avg restoration_time 0.8 =  (23925.6, 4380.044867350105)
+avg restoration_time 0.7 =  (23911.2, 4397.845445215191)
+avg restoration_time 0.6 =  (23911.2, 4397.845445215191)
+stream = stream_learn_recurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [34200.          1166.19037897]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]], m_ours = [[5.55570000e+04 0.00000000e+00]
+ [1.85584852e-01 0.00000000e+00]
+ [2.69510000e+04 6.63597637e+03]
+ [2.39256000e+04 4.38004487e+03]
+ [2.39112000e+04 4.39784545e+03]
+ [2.39112000e+04 4.39784545e+03]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+Change detected, batch: 20
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([35000, 34000, 33000, 36000, 33000], 1166.19037896906)
+restoration_time 0.8 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.7 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.6 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+avg restoration_time 0.9 =  (34200.0, 1166.19037896906)
+avg restoration_time 0.8 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.7 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.6 =  (27800.0, 2315.167380558045)
+Change detected, batch: 20
+Stabilization detected, batch: 103
+Change detected, batch: 109
+
+stabilization_time =  (55557.0, 0.0)
+max_performance_loss =  (0.18375675951433526, 0.0)
+restoration_time 0.9 =  ([18529, 19138, 33000, 31000, 33000], 6656.52622919793)
+restoration_time 0.8 =  ([18391, 19099, 28000, 29000, 25000], 4414.264649972858)
+restoration_time 0.7 =  ([18331, 19099, 28000, 29000, 25000], 4429.274929376139)
+restoration_time 0.6 =  ([18331, 19099, 28000, 29000, 25000], 4429.274929376139)
+avg restoration_time 0.9 =  (26933.4, 6656.52622919793)
+avg restoration_time 0.8 =  (23898.0, 4414.264649972858)
+avg restoration_time 0.7 =  (23886.0, 4429.274929376139)
+avg restoration_time 0.6 =  (23886.0, 4429.274929376139)
+stream = stream_learn_recurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [34200.          1166.19037897]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]], m_ours = [[5.55570000e+04 0.00000000e+00]
+ [1.83756760e-01 0.00000000e+00]
+ [2.69334000e+04 6.65652623e+03]
+ [2.38980000e+04 4.41426465e+03]
+ [2.38860000e+04 4.42927493e+03]
+ [2.38860000e+04 4.42927493e+03]]
+
+==================stream_learn_recurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 149
+Change detected, batch: 150
+Stabilization detected, batch: 255
+Change detected, batch: 270
+
+stabilization_time =  (56500.0, 3500.0)
+max_performance_loss =  (0.47234042553191485, 0.025531914893617058)
+restoration_time 0.9 =  ([2000, 1500, 2000, 1500, 2000], 244.94897427831782)
+restoration_time 0.8 =  ([2000, 1500, 2000, 1500, 1500], 244.94897427831782)
+restoration_time 0.7 =  ([1500, 1500, 1500, 1500, 1500], 0.0)
+restoration_time 0.6 =  ([1000, 1500, 1000, 1500, 1000], 244.94897427831782)
+avg restoration_time 0.9 =  (1800.0, 244.94897427831782)
+avg restoration_time 0.8 =  (1700.0, 244.94897427831782)
+avg restoration_time 0.7 =  (1500.0, 0.0)
+avg restoration_time 0.6 =  (1200.0, 244.94897427831782)
+Change detected, batch: 30
+Stabilization detected, batch: 163
+Change detected, batch: 171
+
+stabilization_time =  (56346.0, 0.0)
+max_performance_loss =  (0.46921443736730356, 0.0)
+restoration_time 0.9 =  ([726, 2000, 599, 2500, 2500], 839.613244297635)
+restoration_time 0.8 =  ([563, 2000, 599, 2000, 2000], 695.2583980075322)
+restoration_time 0.7 =  ([563, 1500, 599, 2000, 2000], 640.2064042166401)
+restoration_time 0.6 =  ([563, 1500, 563, 1500, 1000], 419.2285295635305)
+avg restoration_time 0.9 =  (1665.0, 839.613244297635)
+avg restoration_time 0.8 =  (1432.4, 695.2583980075322)
+avg restoration_time 0.7 =  (1332.4, 640.2064042166401)
+avg restoration_time 0.6 =  (1025.2, 419.2285295635305)
+stream = stream_learn_recurring_abrupt_1, model index = 0, model_name = wae, m_baseline = [[5.65000000e+04 3.50000000e+03]
+ [4.72340426e-01 2.55319149e-02]
+ [1.80000000e+03 2.44948974e+02]
+ [1.70000000e+03 2.44948974e+02]
+ [1.50000000e+03 0.00000000e+00]
+ [1.20000000e+03 2.44948974e+02]], m_ours = [[5.63460000e+04 0.00000000e+00]
+ [4.69214437e-01 0.00000000e+00]
+ [1.66500000e+03 8.39613244e+02]
+ [1.43240000e+03 6.95258398e+02]
+ [1.33240000e+03 6.40206404e+02]
+ [1.02520000e+03 4.19228530e+02]]
+
+
+==================stream_learn_recurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 145
+Change detected, batch: 150
+
+stabilization_time =  (58000.0, 0.0)
+max_performance_loss =  (0.4503171247357293, 0.0)
+restoration_time 0.9 =  ([3500, 3000, 3500, 3500, 3500], 200.0)
+restoration_time 0.8 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+restoration_time 0.7 =  ([2500, 2500, 2500, 2500, 2500], 0.0)
+restoration_time 0.6 =  ([1000, 2000, 1000, 2000, 1000], 489.89794855663564)
+avg restoration_time 0.9 =  (3400.0, 200.0)
+avg restoration_time 0.8 =  (3000.0, 0.0)
+avg restoration_time 0.7 =  (2500.0, 0.0)
+avg restoration_time 0.6 =  (1400.0, 489.89794855663564)
+Change detected, batch: 30
+Stabilization detected, batch: 159
+Change detected, batch: 171
+Stabilization detected, batch: 298
+Change detected, batch: 312
+
+stabilization_time =  (53846.0, 500.0)
+max_performance_loss =  (0.46453900709219853, 0.03900709219858156)
+restoration_time 0.9 =  ([599, 3500, 831, 3500, 776], 1356.57294680382)
+restoration_time 0.8 =  ([599, 3000, 776, 3000, 776], 1120.3028876156661)
+restoration_time 0.7 =  ([563, 2500, 599, 3000, 638], 1065.3463286650028)
+restoration_time 0.6 =  ([563, 2000, 599, 2500, 638], 823.9919902523325)
+avg restoration_time 0.9 =  (1841.2, 1356.57294680382)
+avg restoration_time 0.8 =  (1630.2, 1120.3028876156661)
+avg restoration_time 0.7 =  (1460.0, 1065.3463286650028)
+avg restoration_time 0.6 =  (1260.0, 823.9919902523325)
+stream = stream_learn_recurring_abrupt_1, model index = 1, model_name = awe, m_baseline = [[5.80000000e+04 0.00000000e+00]
+ [4.50317125e-01 0.00000000e+00]
+ [3.40000000e+03 2.00000000e+02]
+ [3.00000000e+03 0.00000000e+00]
+ [2.50000000e+03 0.00000000e+00]
+ [1.40000000e+03 4.89897949e+02]], m_ours = [[5.38460000e+04 5.00000000e+02]
+ [4.64539007e-01 3.90070922e-02]
+ [1.84120000e+03 1.35657295e+03]
+ [1.63020000e+03 1.12030289e+03]
+ [1.46000000e+03 1.06534633e+03]
+ [1.26000000e+03 8.23991990e+02]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+Change detected, batch: 84
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 11000, 13500, 17000, 16000], 2720.2941017470885)
+restoration_time 0.8 =  ([9500, 10500, 13500, 17000, 16000], 2942.7877939124323)
+restoration_time 0.7 =  ([9500, 10500, 13500, 17000, 16000], 2942.7877939124323)
+restoration_time 0.6 =  ([9500, 10500, 13500, 17000, 16000], 2942.7877939124323)
+avg restoration_time 0.9 =  (13500.0, 2720.2941017470885)
+avg restoration_time 0.8 =  (13300.0, 2942.7877939124323)
+avg restoration_time 0.7 =  (13300.0, 2942.7877939124323)
+avg restoration_time 0.6 =  (13300.0, 2942.7877939124323)
+Change detected, batch: 84
+Stabilization detected, batch: 219
+Change detected, batch: 237
+
+stabilization_time =  (57346.0, 0.0)
+max_performance_loss =  (0.16099773242630386, 0.0)
+restoration_time 0.9 =  ([10000, 11391, 14500, 17276, 15500], 2671.466982764339)
+restoration_time 0.8 =  ([9500, 11276, 14500, 17276, 15500], 2833.492939818273)
+restoration_time 0.7 =  ([9500, 11276, 14500, 17226, 15500], 2820.5974969853464)
+restoration_time 0.6 =  ([9500, 11276, 14500, 17226, 15500], 2820.5974969853464)
+avg restoration_time 0.9 =  (13733.4, 2671.466982764339)
+avg restoration_time 0.8 =  (13610.4, 2833.492939818273)
+avg restoration_time 0.7 =  (13600.4, 2820.5974969853464)
+avg restoration_time 0.6 =  (13600.4, 2820.5974969853464)
+stream = stream_learn_recurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [13500.          2720.29410175]
+ [13300.          2942.78779391]
+ [13300.          2942.78779391]
+ [13300.          2942.78779391]], m_ours = [[5.73460000e+04 0.00000000e+00]
+ [1.60997732e-01 0.00000000e+00]
+ [1.37334000e+04 2.67146698e+03]
+ [1.36104000e+04 2.83349294e+03]
+ [1.36004000e+04 2.82059750e+03]
+ [1.36004000e+04 2.82059750e+03]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+Change detected, batch: 21
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([35000, 34000, 33000, 36000, 33000], 1166.19037896906)
+restoration_time 0.8 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.7 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+restoration_time 0.6 =  ([30000, 30000, 25000, 29000, 25000], 2315.167380558045)
+avg restoration_time 0.9 =  (34200.0, 1166.19037896906)
+avg restoration_time 0.8 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.7 =  (27800.0, 2315.167380558045)
+avg restoration_time 0.6 =  (27800.0, 2315.167380558045)
+Change detected, batch: 21
+Stabilization detected, batch: 103
+Change detected, batch: 109
+
+stabilization_time =  (54557.0, 0.0)
+max_performance_loss =  (0.18192044176296143, 0.0)
+restoration_time 0.9 =  ([19099, 21166, 33000, 31000, 33000], 6056.984596315232)
+restoration_time 0.8 =  ([19099, 20951, 28000, 29000, 25000], 3859.4222883742586)
+restoration_time 0.7 =  ([19063, 20951, 28000, 29000, 25000], 3869.34440958672)
+restoration_time 0.6 =  ([19063, 20951, 28000, 29000, 25000], 3869.34440958672)
+avg restoration_time 0.9 =  (27453.0, 6056.984596315232)
+avg restoration_time 0.8 =  (24410.0, 3859.4222883742586)
+avg restoration_time 0.7 =  (24402.8, 3869.34440958672)
+avg restoration_time 0.6 =  (24402.8, 3869.34440958672)
+stream = stream_learn_recurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [34200.          1166.19037897]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]], m_ours = [[5.45570000e+04 0.00000000e+00]
+ [1.81920442e-01 0.00000000e+00]
+ [2.74530000e+04 6.05698460e+03]
+ [2.44100000e+04 3.85942229e+03]
+ [2.44028000e+04 3.86934441e+03]
+ [2.44028000e+04 3.86934441e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+Change detected, batch: 35
+Stabilization detected, batch: 208
+Change detected, batch: 250
+Stabilization detected, batch: 305
+Change detected, batch: 435
+
+stabilization_time =  (57500.0, 29500.0)
+max_performance_loss = 
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 67
+Change detected, batch: 90
+Stabilization detected, batch: 127
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (37000.0, 1000.0)
+max_performance_loss =  (0.4363717328151077, 0.037644235655220876)
+restoration_time 0.9 =  ([7000, 7000, 7000, 7000, 7000], 0.0)
+restoration_time 0.8 =  ([6000, 5000, 6000, 6000, 7000], 632.4555320336759)
+restoration_time 0.7 =  ([6000, 5000, 5000, 5000, 6000], 489.89794855663564)
+restoration_time 0.6 =  ([4000, 3000, 3000, 4000, 3000], 489.89794855663564)
+avg restoration_time 0.9 =  (7000.0, 0.0)
+avg restoration_time 0.8 =  (6000.0, 632.4555320336759)
+avg restoration_time 0.7 =  (5400.0, 489.89794855663564)
+avg restoration_time 0.6 =  (3400.0, 489.89794855663564)
+Change detected, batch: 30
+Stabilization detected, batch: 165
+Change detected, batch: 178
+Stabilization detected, batch: 242
+Change detected, batch: 266
+Stabilization detected, batch: 321
+Change detected, batch: 355
+
+stabilization_time =  (57223.666666666664, 35780.19315518325)
+max_performance_loss =  (0.5347995482761831, 0.06369747978788269)
+restoration_time 0.9 =  ([1391, 7000, 1457, 1391, 1331], 2243.3542742955246)
+restoration_time 0.8 =  ([1276, 6000, 1276, 1331, 1180], 1894.3241116556587)
+restoration_time 0.7 =  ([1276, 5000, 1226, 1180, 1180], 1514.215519666867)
+restoration_time 0.6 =  ([1226, 3000, 1180, 1138, 1138], 732.5215628225561)
+avg restoration_time 0.9 =  (2514.0, 2243.3542742955246)
+avg restoration_time 0.8 =  (2212.6, 1894.3241116556587)
+avg restoration_time 0.7 =  (1972.4, 1514.215519666867)
+avg restoration_time 0.6 =  (1536.4, 732.5215628225561)
+stream = stream_learn_nonrecurring_abrupt_2, model index = 1, model_name = awe, m_baseline = [[3.70000000e+04 1.00000000e+03]
+ [4.36371733e-01 3.76442357e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 6.32455532e+02]
+ [5.40000000e+03 4.89897949e+02]
+ [3.40000000e+03 4.89897949e+02]], m_ours = [[5.72236667e+04 3.57801932e+04]
+ [5.34799548e-01 6.36974798e-02]
+ [2.51400000e+03 2.24335427e+03]
+ [2.21260000e+03 1.89432411e+03]
+ [1.97240000e+03 1.51421552e+03]
+ [1.53640000e+03 7.32521563e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 67
+Change detected, batch: 90
+Stabilization detected, batch: 126
+Change detected, batch: 150
+Stabilization detected, batch: 187
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (37250.0, 829.15619758885)
+max_performance_loss =  (0.43544897939272426, 0.040252144877789206)
+restoration_time 0.9 =  ([7000, 7000, 7000, 7000, 7000], 0.0)
+restoration_time 0.8 =  ([6000, 5000, 6000, 6000, 7000], 632.4555320336759)
+restoration_time 0.7 =  ([6000, 4000, 5000, 5000, 6000], 748.3314773547883)
+restoration_time 0.6 =  ([3000, 2000, 3000, 4000, 3000], 632.4555320336759)
+avg restoration_time 0.9 =  (7000.0, 0.0)
+avg restoration_time 0.8 =  (6000.0, 632.4555320336759)
+avg restoration_time 0.7 =  (5200.0, 748.3314773547883)
+avg restoration_time 0.6 =  (3000.0, 632.4555320336759)
+Change detected, batch: 30
+Stabilization detected, batch: 102
+Change detected, batch: 118
+Stabilization detected, batch: 186
+Change detected, batch: 207
+Stabilization detected, batch: 266
+Change detected, batch: 295
+Stabilization detected, batch: 348
+Change detected, batch: 383
+
+stabilization_time =  (35557.0, 7449.83221287567)
+max_performance_loss =  (0.46443094674123286, 0.056615009555005924)
+restoration_time 0.9 =  ([1276, 1276, 2331, 1391, 1391], 402.3008824250824)
+restoration_time 0.8 =  ([1276, 1180, 2226, 1391, 1331], 379.01208424006745)
+restoration_time 0.7 =  ([1276, 1099, 2226, 1276, 1331], 399.9342946035011)
+restoration_time 0.6 =  ([1180, 1063, 2063, 1180, 1226], 364.3144795365674)
+avg restoration_time 0.9 =  (1533.0, 402.3008824250824)
+avg restoration_time 0.8 =  (1480.8, 379.01208424006745)
+avg restoration_time 0.7 =  (1441.6, 399.9342946035011)
+avg restoration_time 0.6 =  (1342.4, 364.3144795365674)
+stream = stream_learn_nonrecurring_abrupt_2, model index = 2, model_name = sea, m_baseline = [[3.72500000e+04 8.29156198e+02]
+ [4.35448979e-01 4.02521449e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 6.32455532e+02]
+ [5.20000000e+03 7.48331477e+02]
+ [3.00000000e+03 6.32455532e+02]], m_ours = [[3.55570000e+04 7.44983221e+03]
+ [4.64430947e-01 5.66150096e-02]
+ [1.53300000e+03 4.02300882e+02]
+ [1.48080000e+03 3.79012084e+02]
+ [1.44160000e+03 3.99934295e+02]
+ [1.34240000e+03 3.64314480e+02]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 19500, 18500, 19000, 13000], 3807.886552931954)
+restoration_time 0.8 =  ([9500, 15000, 14500, 15000, 12000], 2158.7033144922902)
+restoration_time 0.7 =  ([9500, 14500, 14000, 15000, 12000], 2024.8456731316587)
+restoration_time 0.6 =  ([9500, 14500, 14000, 15000, 12000], 2024.8456731316587)
+avg restoration_time 0.9 =  (16000.0, 3807.886552931954)
+avg restoration_time 0.8 =  (13200.0, 2158.7033144922902)
+avg restoration_time 0.7 =  (13000.0, 2024.8456731316587)
+avg restoration_time 0.6 =  (13000.0, 2024.8456731316587)
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 18346, 18000, 19500, 13500], 3575.4208927062)
+restoration_time 0.8 =  ([9500, 10608, 15000, 15500, 11000], 2446.2432912529366)
+restoration_time 0.7 =  ([9500, 10608, 14000, 15500, 11000], 2252.275791283119)
+restoration_time 0.6 =  ([9500, 10529, 14000, 15500, 11000], 2263.0896049427647)
+avg restoration_time 0.9 =  (15869.2, 3575.4208927062)
+avg restoration_time 0.8 =  (12321.6, 2446.2432912529366)
+avg restoration_time 0.7 =  (12121.6, 2252.275791283119)
+avg restoration_time 0.6 =  (12105.8, 2263.0896049427647)
+stream = stream_learn_nonrecurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16000.          3807.88655293]
+ [13200.          2158.70331449]
+ [13000.          2024.84567313]
+ [13000.          2024.84567313]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [15869.2         3575.42089271]
+ [12321.6         2446.24329125]
+ [12121.6         2252.27579128]
+ [12105.8         2263.08960494]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+Change detected, batch: 21
+Stabilization detected, batch: 75
+Change detected, batch: 81
+Stabilization detected, batch: 194
+Change detected, batch: 261
+
+stabilization_time =  (84500.0, 29500.0)
+max_performance_loss =  (0.08540723981900453, 0.01866515837104068)
+restoration_time 0.9 =  ([35000, 26000, 31000, 25000, 33000], 3898.7177379235854)
+restoration_time 0.8 =  ([30000, 25000, 25000, 25000, 33000], 3322.64954516723)
+restoration_time 0.7 =  ([30000, 25000, 25000, 25000, 33000], 3322.64954516723)
+restoration_time 0.6 =  ([30000, 25000, 25000, 25000, 33000], 3322.64954516723)
+avg restoration_time 0.9 =  (30000.0, 3898.7177379235854)
+avg restoration_time 0.8 =  (27600.0, 3322.64954516723)
+avg restoration_time 0.7 =  (27600.0, 3322.64954516723)
+avg restoration_time 0.6 =  (27600.0, 3322.64954516723)
+Change detected, batch: 21
+Stabilization detected, batch: 221
+Change detected, batch: 289
+
+stabilization_time =  (172557.0, 0.0)
+max_performance_loss =  (0.19991999199919994, 0.0)
+restoration_time 0.9 =  ([19099, 27000, 34000, 28000, 19457], 5625.655922645821)
+restoration_time 0.8 =  ([19099, 26000, 28000, 28000, 19391], 4030.252150920585)
+restoration_time 0.7 =  ([19063, 26000, 28000, 28000, 19391], 4039.198603683657)
+restoration_time 0.6 =  ([19063, 26000, 28000, 28000, 19391], 4039.198603683657)
+avg restoration_time 0.9 =  (25511.2, 5625.655922645821)
+avg restoration_time 0.8 =  (24098.0, 4030.252150920585)
+avg restoration_time 0.7 =  (24090.8, 4039.198603683657)
+avg restoration_time 0.6 = 
+
+==================stream_learn_nonrecurring_abrupt_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 150
+
+stabilization_time =  (18000.0, 0.0)
+max_performance_loss =  (0.6024010156176779, 0.05468317329402639)
+restoration_time 0.9 =  ([3500, 3500, 4000, 3500, 4000], 244.94897427831782)
+restoration_time 0.8 =  ([3500, 3000, 3500, 3000, 2500], 374.16573867739413)
+restoration_time 0.7 =  ([3000, 3000, 3000, 2500, 2000], 400.0)
+restoration_time 0.6 =  ([3000, 2500, 2500, 2000, 1000], 678.2329983125268)
+avg restoration_time 0.9 =  (3700.0, 244.94897427831782)
+avg restoration_time 0.8 =  (3100.0, 374.16573867739413)
+avg restoration_time 0.7 =  (2700.0, 400.0)
+avg restoration_time 0.6 =  (2200.0, 678.2329983125268)
+Change detected, batch: 30
+Stabilization detected, batch: 80
+Change detected, batch: 111
+Stabilization detected, batch: 162
+Change detected, batch: 192
+
+stabilization_time =  (15096.0, 250.0)
+max_performance_loss =  (0.6172581767571329, 0.10438413361169108)
+restoration_time 0.9 =  ([776, 726, 831, 4000, 4500], 1708.744287481307)
+restoration_time 0.8 =  ([776, 726, 831, 3500, 3000], 1221.9194081444161)
+restoration_time 0.7 =  ([726, 680, 776, 3000, 2500], 1003.8951339656946)
+restoration_time 0.6 =  ([680, 680, 726, 2000, 1500], 540.5916758515617)
+avg restoration_time 0.9 =  (2166.6, 1708.744287481307)
+avg restoration_time 0.8 =  (1766.6, 1221.9194081444161)
+avg restoration_time 0.7 =  (1536.4, 1003.8951339656946)
+avg restoration_time 0.6 =  (1117.2, 540.5916758515617)
+stream = stream_learn_nonrecurring_abrupt_1, model index = 2, model_name = sea, m_baseline = [[1.80000000e+04 0.00000000e+00]
+ [6.02401016e-01 5.46831733e-02]
+ [3.70000000e+03 2.44948974e+02]
+ [3.10000000e+03 3.74165739e+02]
+ [2.70000000e+03 4.00000000e+02]
+ [2.20000000e+03 6.78232998e+02]], m_ours = [[1.50960000e+04 2.50000000e+02]
+ [6.17258177e-01 1.04384134e-01]
+ [2.16660000e+03 1.70874429e+03]
+ [1.76660000e+03 1.22191941e+03]
+ [1.53640000e+03 1.00389513e+03]
+ [1.11720000e+03 5.40591676e+02]]
+
+
+==================stream_learn_nonrecurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 73
+Change detected, batch: 90
+Stabilization detected, batch: 123
+Change detected, batch: 150
+Stabilization detected, batch: 182
+Change detected, batch: 210
+Stabilization detected, batch: 242
+Change detected, batch: 270
+
+stabilization_time =  (36000.0, 4636.809247747852)
+max_performance_loss =  (0.4376330418908042, 0.03374514084045532)
+restoration_time 0.9 =  ([4000, 4000, 4000, 4000, 4000], 0.0)
+restoration_time 0.8 =  ([3000, 3000, 3000, 3000, 4000], 400.0)
+restoration_time 0.7 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+restoration_time 0.6 =  ([3000, 2000, 3000, 3000, 3000], 400.0)
+avg restoration_time 0.9 =  (4000.0, 0.0)
+avg restoration_time 0.8 =  (3200.0, 400.0)
+avg restoration_time 0.7 =  (3000.0, 0.0)
+avg restoration_time 0.6 =  (2800.0, 400.0)
+Change detected, batch: 30
+Stabilization detected, batch: 165
+Change detected, batch: 178
+Stabilization detected, batch: 299
+Change detected, batch: 327
+
+stabilization_time =  (100557.0, 7000.0)
+max_performance_loss =  (0.4562308868501529, 0.04682721712538229)
+restoration_time 0.9 =  ([1226, 5000, 1180, 5000, 2226], 1733.8666154003888)
+restoration_time 0.8 =  ([1099, 4000, 1138, 4000, 2138], 1299.674112999101)
+restoration_time 0.7 =  ([1063, 3000, 1138, 4000, 2138], 1120.845466600994)
+restoration_time 0.6 =  ([1063, 2000, 1099, 3000, 2099], 719.7703522652207)
+avg restoration_time 0.9 =  (2926.4, 1733.8666154003888)
+avg restoration_time 0.8 =  (2475.0, 1299.674112999101)
+avg restoration_time 0.7 =  (2267.8, 1120.845466600994)
+avg restoration_time 0.6 =  (1852.2, 719.7703522652207)
+stream = stream_learn_nonrecurring_abrupt_2, model index = 0, model_name = wae, m_baseline = [[3.60000000e+04 4.63680925e+03]
+ [4.37633042e-01 3.37451408e-02]
+ [4.00000000e+03 0.00000000e+00]
+ [3.20000000e+03 4.00000000e+02]
+ [3.00000000e+03 0.00000000e+00]
+ [2.80000000e+03 4.00000000e+02]], m_ours = [[1.00557000e+05 7.00000000e+03]
+ [4.56230887e-01 4.68272171e-02]
+ [2.92640000e+03 1.73386662e+03]
+ [2.47500000e+03 1.29967411e+03]
+ [2.26780000e+03 1.12084547e+03]
+ [1.85220000e+03 7.19770352e+02]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+Change detected, batch: 20
+Stabilization detected, batch: 193
+Change detected, batch: 260
+
+stabilization_time =  (174000.0, 0.0)
+max_performance_loss =  (0.132821075740944, 0.0)
+restoration_time 0.9 =  ([35000, 30000, 34000, 25000, 33000], 3611.0940170535578)
+restoration_time 0.8 =  ([30000, 29000, 21000, 25000, 33000], 4176.12260356422)
+restoration_time 0.7 =  ([30000, 29000, 21000, 25000, 33000], 4176.12260356422)
+restoration_time 0.6 =  ([30000, 29000, 21000, 25000, 33000], 4176.12260356422)
+avg restoration_time 0.9 =  (31400.0, 3611.0940170535578)
+avg restoration_time 0.8 =  (27600.0, 4176.12260356422)
+avg restoration_time 0.7 =  (27600.0, 4176.12260356422)
+avg restoration_time 0.6 =  (27600.0, 4176.12260356422)
+Change detected, batch: 20
+Stabilization detected, batch: 103
+Change detected, batch: 110
+Stabilization detected, batch: 250
+Change detected, batch: 317
+
+stabilization_time =  (84057.0, 28500.0)
+max_performance_loss =  (0.17998236935348588, 0.015512401362523756)
+restoration_time 0.9 =  ([18529, 21004, 33000, 25000, 18138], 5504.958724640904)
+restoration_time 0.8 =  ([18529, 20788, 25000, 25000, 18138], 3004.5440253056704)
+restoration_time 0.7 =  ([18457, 20788, 25000, 25000, 18099], 3027.4982014858406)
+restoration_time 0.6 =  ([18457, 20788, 25000, 25000, 18099], 3027.4982014858406)
+avg restoration_time 0.9 =  (23134.2, 5504.958724640904)
+avg restoration_time 0.8 =  (21491.0, 3004.5440253056704)
+avg restoration_time 0.7 =  (21468.8, 3027.4982014858406)
+avg restoration_time 0.6 =  (21468.8, 3027.4982014858406)
+stream = stream_learn_nonrecurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[1.74000000e+05 0.00000000e+00]
+ [1.32821076e-01 0.00000000e+00]
+ [3.14000000e+04 3.61109402e+03]
+ [2.76000000e+04 4.17612260e+03]
+ [2.76000000e+04 4.17612260e+03]
+ [2.76000000e+04 4.17612260e+03]], m_ours = [[8.40570000e+04 2.85000000e+04]
+ [1.79982369e-01 1.55124014e-02]
+ [2.31342000e+04 5.50495872e+03]
+ [2.14910000e+04 3.00454403e+03]
+ [2.14688000e+04 3.02749820e+03]
+ [2.14688000e+04 3.02749820e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+Change detected, batch: 20
+Stabilization detected, batch: 193
+Change detected, batch: 260
+
+stabilization_time =  (174000.0, 0.0)
+max_performance_loss =  (0.1309130913091309, 0.0)
+restoration_time 0.9 =  ([35000, 30000, 34000, 25000, 33000], 3611.0940170535578)
+restoration_time 0.8 =  ([30000, 29000, 24000, 25000, 33000], 3310.58907144937)
+restoration_time 0.7 =  ([30000, 29000, 24000, 25000, 33000], 3310.58907144937)
+restoration_time 0.6 =  ([30000, 29000, 24000, 25000, 33000], 3310.58907144937)
+avg restoration_time 0.9 =  (31400.0, 3611.0940170535578)
+avg restoration_time 0.8 =  (28200.0, 3310.58907144937)
+avg restoration_time 0.7 =  (28200.0, 3310.58907144937)
+avg restoration_time 0.6 =  (28200.0, 3310.58907144937)
+Change detected, batch: 20
+Stabilization detected, batch: 103
+Change detected, batch: 110
+Stabilization detected, batch: 250
+Change detected, batch: 317
+
+stabilization_time =  (84057.0, 28500.0)
+max_performance_loss =  (0.1790742656650623, 0.01552958010157418)
+restoration_time 0.9 =  ([18529, 21004, 33000, 25000, 18138], 5504.958724640904)
+restoration_time 0.8 =  ([18391, 20788, 25000, 25000, 18138], 3032.133611831774)
+restoration_time 0.7 =  ([18331, 20788, 25000, 25000, 18099], 3052.880646209412)
+restoration_time 0.6 =  ([18331, 20788, 25000, 25000, 18099], 3052.880646209412)
+avg restoration_time 0.9 =  (23134.2, 5504.958724640904)
+avg restoration_time 0.8 =  (21463.4, 3032.133611831774)
+avg restoration_time 0.7 =  (21443.6, 3052.880646209412)
+avg restoration_time 0.6 =  (21443.6, 3052.880646209412)
+stream = stream_learn_nonrecurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[1.74000000e+05 0.00000000e+00]
+ [1.30913091e-01 0.00000000e+00]
+ [3.14000000e+04 3.61109402e+03]
+ [2.82000000e+04 3.31058907e+03]
+ [2.82000000e+04 3.31058907e+03]
+ [2.82000000e+04 3.31058907e+03]], m_ours = [[8.40570000e+04 2.85000000e+04]
+ [1.79074266e-01 1.55295801e-02]
+ [2.31342000e+04 5.50495872e+03]
+ [2.14634000e+04 3.03213361e+03]
+ [2.14436000e+04 3.05288065e+03]
+ [2.14436000e+04 3.05288065e+03]] (24090.8, 4039.198603683657)
+stream = stream_learn_nonrecurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[8.45000000e+04 2.95000000e+04]
+ [8.54072398e-02 1.86651584e-02]
+ [3.00000000e+04 3.89871774e+03]
+ [2.76000000e+04 3.32264955e+03]
+ [2.76000000e+04 3.32264955e+03]
+ [2.76000000e+04 3.32264955e+03]], m_ours = [[1.72557000e+05 0.00000000e+00]
+ [1.99919992e-01 0.00000000e+00]
+ [2.55112000e+04 5.62565592e+03]
+ [2.40980000e+04 4.03025215e+03]
+ [2.40908000e+04 4.03919860e+03]
+ [2.40908000e+04 4.03919860e+03]]
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+Change detected, batch: 89
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([14500, 18000, 15500, 16500, 12500], 1854.7236990991407)
+restoration_time 0.8 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+restoration_time 0.7 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+restoration_time 0.6 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+avg restoration_time 0.9 =  (15400.0, 1854.7236990991407)
+avg restoration_time 0.8 =  (14800.0, 1913.112646970899)
+avg restoration_time 0.7 =  (14800.0, 1913.112646970899)
+avg restoration_time 0.6 =  (14800.0, 1913.112646970899)
+Change detected, batch: 89
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([14500, 13563, 12500, 17000, 11500], 1884.960222391974)
+restoration_time 0.8 =  ([13500, 13563, 12000, 17000, 11000], 2035.4741560629063)
+restoration_time 0.7 =  ([13500, 13530, 12000, 17000, 11000], 2035.029238119197)
+restoration_time 0.6 =  ([13500, 13530, 12000, 17000, 11000], 2035.029238119197)
+avg restoration_time 0.9 =  (13812.6, 1884.960222391974)
+avg restoration_time 0.8 =  (13412.6, 2035.4741560629063)
+avg restoration_time 0.7 =  (13406.0, 2035.029238119197)
+avg restoration_time 0.6 =  (13406.0, 2035.029238119197)
+stream = stream_learn_recurring_incremental_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [15400.          1854.7236991 ]
+ [14800.          1913.11264697]
+ [14800.          1913.11264697]
+ [14800.          1913.11264697]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [13812.6         1884.96022239]
+ [13412.6         2035.47415606]
+ [13406.          2035.02923812]
+ [13406.          2035.02923812]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.8 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.7 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.6 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+avg restoration_time 0.9 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.8 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.7 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.6 =  (29000.0, 10936.178491593853)
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.8 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.7 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+restoration_time 0.6 =  ([33000, 20000, 43000, 13000, 36000], 10936.178491593853)
+avg restoration_time 0.9 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.8 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.7 =  (29000.0, 10936.178491593853)
+avg restoration_time 0.6 =  (29000.0, 10936.178491593853)
+stream = stream_learn_recurring_incremental_2, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]
+ [29000.         10936.17849159]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 202
+Change detected, batch: 211
+Stabilization detected, batch: 252
+Change detected, batch: 268
+
+stabilization_time =  (53750.0, 32750.0)
+max_performance_loss =  (0.08296943231441055, 0.010917030567685601)
+restoration_time 0.9 =  ([16000, 29500, 15000, 15500, 14500], 5721.8878003679865)
+restoration_time 0.8 =  ([16000, 29500, 14500, 14500, 14000], 5938.013135721409)
+restoration_time 0.7 =  ([16000, 29500, 14500, 14500, 14000], 5938.013135721409)
+restoration_time 0.6 =  ([16000, 29500, 14500, 14500, 14000], 5938.013135721409)
+avg restoration_time 0.9 =  (18100.0, 5721.8878003679865)
+avg restoration_time 0.8 =  (17700.0, 5938.013135721409)
+avg restoration_time 0.7 =  (17700.0, 5938.013135721409)
+avg restoration_time 0.6 =  (17700.0, 5938.013135721409)
+Change detected, batch: 30
+Stabilization detected, batch: 210
+Change detected, batch: 232
+Stabilization detected, batch: 286
+Change detected, batch: 311
+
+stabilization_time =  (48346.0, 31500.0)
+max_performance_loss =  (0.18337045285820341, 0.07423904974016336)
+restoration_time 0.9 =  ([14063, 29500, 15500, 14599, 13694], 6045.002213399099)
+restoration_time 0.8 =  ([14030, 29500, 15000, 14563, 13608], 6098.14484577072)
+restoration_time 0.7 =  ([14030, 29500, 15000, 14563, 13608], 6098.14484577072)
+restoration_time 0.6 =  ([14030, 29500, 15000, 14530, 13608], 6101.164138096925)
+avg restoration_time 0.9 =  (17471.2, 6045.002213399099)
+avg restoration_time 0.8 =  (17340.2, 6098.14484577072)
+avg restoration_time 0.7 =  (17340.2, 6098.14484577072)
+avg restoration_time 0.6 =  (17333.6, 6101.164138096925)
+stream = stream_learn_nonrecurring_incremental_1, model index = 0, model_name = wae, m_baseline = [[5.37500000e+04 3.27500000e+04]
+ [8.29694323e-02 1.09170306e-02]
+ [1.81000000e+04 5.72188780e+03]
+ [1.77000000e+04 5.93801314e+03]
+ [1.77000000e+04 5.93801314e+03]
+ [1.77000000e+04 5.93801314e+03]], m_ours = [[4.83460000e+04 3.15000000e+04]
+ [1.83370453e-01 7.42390497e-02]
+ [1.74712000e+04 6.04500221e+03]
+ [1.73402000e+04 6.09814485e+03]
+ [1.73402000e+04 6.09814485e+03]
+ [1.73336000e+04 6.10116414e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+Change detected, batch: 29
+Stabilization detected, batch: 192
+Change detected, batch: 211
+Stabilization detected, batch: 251
+Change detected, batch: 267
+
+stabilization_time =  (51250.0, 30750.0)
+max_performance_loss =  (0.10086767895878533, 0.016268980477223444)
+restoration_time 0.9 =  ([17000, 2500, 17000, 16000, 14500], 5526.300751859239)
+restoration_time 0.8 =  ([16000, 2500, 16500, 14500, 14000], 5182.6634079399755)
+restoration_time 0.7 =  ([16000, 2500, 16500, 14500, 14000], 5182.6634079399755)
+restoration_time 0.6 =  ([16000, 2500, 16500, 14500, 14000], 5182.6634079399755)
+avg restoration_time 0.9 =  (13400.0, 5526.300751859239)
+avg restoration_time 0.8 =  (12700.0, 5182.6634079399755)
+avg restoration_time 0.7 =  (12700.0, 5182.6634079399755)
+avg restoration_time 0.6 =  (12700.0, 5182.6634079399755)
+Change detected, batch: 29
+Stabilization detected, batch: 269
+Change detected, batch: 289
+
+stabilization_time =  (109846.0, 0.0)
+max_performance_loss =  (0.1961722488038277, 0.0)
+restoration_time 0.9 =  ([13891, 29500, 17500, 15500, 14128], 5840.760101219703)
+restoration_time 0.8 =  ([13831, 29500, 15000, 15000, 14004], 6036.193038662696)
+restoration_time 0.7 =  ([13831, 29500, 15000, 15000, 14004], 6036.193038662696)
+restoration_time 0.6 =  ([13831, 29500, 15000, 15000, 14004], 6036.193038662696)
+avg restoration_time 0.9 =  (18103.8, 5840.760101219703)
+avg restoration_time 0.8 =  (17467.0, 6036.193038662696)
+avg restoration_time 0.7 =  (17467.0, 6036.193038662696)
+avg restoration_time 0.6 =  (17467.0, 6036.193038662696)
+stream = stream_learn_nonrecurring_incremental_1, model index = 1, model_name = awe, m_baseline = [[5.12500000e+04 3.07500000e+04]
+ [1.00867679e-01 1.62689805e-02]
+ [1.34000000e+04 5.52630075e+03]
+ [1.27000000e+04 5.18266341e+03]
+ [1.27000000e+04 5.18266341e+03]
+ [1.27000000e+04 5.18266341e+03]], m_ours = [[1.09846000e+05 0.00000000e+00]
+ [1.96172249e-01 0.00000000e+00]
+ [1.81038000e+04 5.84076010e+03]
+ [1.74670000e+04 6.03619304e+03]
+ [1.74670000e+04 6.03619304e+03]
+ [1.74670000e+04 6.03619304e+03]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.8 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.7 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.6 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+avg restoration_time 0.9 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.8 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.7 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.6 =  (29400.0, 13749.18179383777)
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.8 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.7 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+restoration_time 0.6 =  ([33000, 32000, 43000, 3000, 36000], 13749.18179383777)
+avg restoration_time 0.9 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.8 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.7 =  (29400.0, 13749.18179383777)
+avg restoration_time 0.6 =  (29400.0, 13749.18179383777)
+stream = stream_learn_recurring_incremental_2, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]
+ [29400.         13749.18179384]]
+
+
+==================stream_learn_recurring_incremental_2================
+
+
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.8 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.7 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.6 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+avg restoration_time 0.9 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.8 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.7 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.6 =  (34600.0, 4758.150901348127)
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.8 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.7 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+restoration_time 0.6 =  ([33000, 32000, 43000, 29000, 36000], 4758.150901348127)
+avg restoration_time 0.9 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.8 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.7 =  (34600.0, 4758.150901348127)
+avg restoration_time 0.6 =  (34600.0, 4758.150901348127)
+stream = stream_learn_recurring_incremental_2, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]
+ [34600.          4758.15090135]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+Change detected, batch: 91
+Stabilization detected, batch: 172
+Change detected, batch: 282
+Stabilization detected, batch: 295
+Change detected, batch: 493
+
+stabilization_time =  (24000.0, 17000.0)
+max_performance_loss =  (0.05339740495990496, 0.042236690674190655)
+restoration_time 0.9 =  ([43000, 6000, 48000, 9500, 44000], 18358.649187780673)
+restoration_time 0.8 =  ([43000, 6000, 48000, 9000, 44000], 18471.599822430107)
+restoration_time 0.7 =  ([43000, 6000, 48000, 9000, 44000], 18471.599822430107)
+restoration_time 0.6 =  ([43000, 6000, 48000, 9000, 44000], 18471.599822430107)
+avg restoration_time 0.9 =  (30100.0, 18358.649187780673)
+avg restoration_time 0.8 =  (30000.0, 18471.599822430107)
+avg restoration_time 0.7 =  (30000.0, 18471.599822430107)
+avg restoration_time 0.6 =  (30000.0, 18471.599822430107)
+Change detected, batch: 91
+Stabilization detected, batch: 243
+Change detected, batch: 303
+Stabilization detected, batch: 415
+Change detected, batch: 532
+
+stabilization_time =  (55846.0, 10000.0)
+max_performance_loss =  (0.13008349043899803, 0.01885267977376783)
+restoration_time 0.9 =  ([43831, 1500, 39694, 8500, 43063], 18408.888164145057)
+restoration_time 0.8 =  ([43776, 1000, 39608, 8000, 43030], 18624.298434035038)
+restoration_time 0.7 =  ([43776, 1000, 39608, 8000, 43030], 18624.298434035038)
+restoration_time 0.6 =  ([43776, 1000, 39608, 8000, 43030], 18624.298434035038)
+avg restoration_time 0.9 =  (27317.6, 18408.888164145057)
+avg restoration_time 0.8 =  (27082.8, 18624.298434035038)
+avg restoration_time 0.7 =  (27082.8, 18624.298434035038)
+avg restoration_time 0.6 =  (27082.8, 18624.298434035038)
+stream = stream_learn_recurring_incremental_4, model index = 1, model_name = awe, m_baseline = [[2.40000000e+04 1.70000000e+04]
+ [5.33974050e-02 4.22366907e-02]
+ [3.01000000e+04 1.83586492e+04]
+ [3.00000000e+04 1.84715998e+04]
+ [3.00000000e+04 1.84715998e+04]
+ [3.00000000e+04 1.84715998e+04]], m_ours = [[5.58460000e+04 1.00000000e+04]
+ [1.30083490e-01 1.88526798e-02]
+ [2.73176000e+04 1.84088882e+04]
+ [2.70828000e+04 1.86242984e+04]
+ [2.70828000e+04 1.86242984e+04]
+ [2.70828000e+04 1.86242984e+04]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+Change detected, batch: 91
+Stabilization detected, batch: 172
+Change detected, batch: 282
+Stabilization detected, batch: 299
+Change detected, batch: 493
+
+stabilization_time =  (25000.0, 16000.0)
+max_performance_loss =  (0.054781879194630866, 0.036884787472035774)
+restoration_time 0.9 =  ([49000, 6000, 48000, 9500, 44000], 19332.873557751314)
+restoration_time 0.8 =  ([49000, 6000, 48000, 9000, 44000], 19446.336415890783)
+restoration_time 0.7 =  ([49000, 6000, 48000, 9000, 44000], 19446.336415890783)
+restoration_time 0.6 =  ([49000, 6000, 48000, 9000, 44000], 19446.336415890783)
+avg restoration_time 0.9 =  (31300.0, 19332.873557751314)
+avg restoration_time 0.8 =  (31200.0, 19446.336415890783)
+avg restoration_time 0.7 =  (31200.0, 19446.336415890783)
+avg restoration_time 0.6 =  (31200.0, 19446.336415890783)
+Change detected, batch: 91
+Stabilization detected, batch: 224
+Change detected, batch: 303
+Stabilization detected, batch: 415
+Change detected, batch: 532
+
+stabilization_time =  (51096.0, 5250.0)
+max_performance_loss =  (0.13908834906223538, 0.02409156725575616)
+restoration_time 0.9 =  ([43831, 5000, 39694, 8500, 43063], 17455.730389760265)
+restoration_time 0.8 =  ([43776, 4500, 39608, 8000, 43030], 17672.2543032857)
+restoration_time 0.7 =  ([43776, 4500, 39608, 8000, 43030], 17672.2543032857)
+restoration_time 0.6 =  ([43776, 4500, 39608, 8000, 43030], 17672.2543032857)
+avg restoration_time 0.9 =  (28017.6, 17455.730389760265)
+avg restoration_time 0.8 =  (27782.8, 17672.2543032857)
+avg restoration_time 0.7 =  (27782.8, 17672.2543032857)
+avg restoration_time 0.6 =  (27782.8, 17672.2543032857)
+stream = stream_learn_recurring_incremental_4, model index = 2, model_name = sea, m_baseline = [[2.50000000e+04 1.60000000e+04]
+ [5.47818792e-02 3.68847875e-02]
+ [3.13000000e+04 1.93328736e+04]
+ [3.12000000e+04 1.94463364e+04]
+ [3.12000000e+04 1.94463364e+04]
+ [3.12000000e+04 1.94463364e+04]], m_ours = [[5.10960000e+04 5.25000000e+03]
+ [1.39088349e-01 2.40915673e-02]
+ [2.80176000e+04 1.74557304e+04]
+ [2.77828000e+04 1.76722543e+04]
+ [2.77828000e+04 1.76722543e+04]
+ [2.77828000e+04 1.76722543e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_1================
+
+
+Change detected, batch: 29
+Stabilization detected, batch: 195
+Change detected, batch:
+
+==================stream_learn_recurring_abrupt_3================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (360000.0, 0.0)
+max_performance_loss =  (0.4600827397768879, 0.0029620176926837163)
+restoration_time 0.9 =  ([70000, 70000, 70000, 70000, 70000], 0.0)
+restoration_time 0.8 =  ([60000, 60000, 60000, 60000, 60000], 0.0)
+restoration_time 0.7 =  ([50000, 50000, 50000, 60000, 50000], 4000.0)
+restoration_time 0.6 =  ([30000, 40000, 40000, 40000, 40000], 4000.0)
+avg restoration_time 0.9 =  (70000.0, 0.0)
+avg restoration_time 0.8 =  (60000.0, 0.0)
+avg restoration_time 0.7 =  (52000.0, 4000.0)
+avg restoration_time 0.6 =  (38000.0, 4000.0)
+Change detected, batch: 30
+Stabilization detected, batch: 87
+Change detected, batch: 141
+Stabilization detected, batch: 191
+Change detected, batch: 248
+Stabilization detected, batch: 295
+Change detected, batch: 352
+Stabilization detected, batch: 404
+Change detected, batch: 461
+Stabilization detected, batch: 510
+
+stabilization_time =  (45309.2, 12754.91186014235)
+max_performance_loss =  (0.49503504285920086, 0.05304298638386078)
+restoration_time 0.9 =  ([10331, 10457, 10276, 10391, 10276], 69.81518459475704)
+restoration_time 0.8 =  ([10226, 10391, 10276, 10331, 10276], 56.3382640840131)
+restoration_time 0.7 =  ([10180, 10138, 10180, 10276, 10180], 45.6)
+restoration_time 0.6 =  ([10099, 10138, 10030, 10099, 10099], 34.93422390722313)
+avg restoration_time 0.9 =  (10346.2, 69.81518459475704)
+avg restoration_time 0.8 =  (10300.0, 56.3382640840131)
+avg restoration_time 0.7 =  (10190.8, 45.6)
+avg restoration_time 0.6 =  (10093.0, 34.93422390722313)
+stream = stream_learn_recurring_abrupt_3, model index = 2, model_name = sea, m_baseline = [[3.60000000e+05 0.00000000e+00]
+ [4.60082740e-01 2.96201769e-03]
+ [7.00000000e+04 0.00000000e+00]
+ [6.00000000e+04 0.00000000e+00]
+ [5.20000000e+04 4.00000000e+03]
+ [3.80000000e+04 4.00000000e+03]], m_ours = [[4.53092000e+04 1.27549119e+04]
+ [4.95035043e-01 5.30429864e-02]
+ [1.03462000e+04 6.98151846e+01]
+ [1.03000000e+04 5.63382641e+01]
+ [1.01908000e+04 4.56000000e+01]
+ [1.00930000e+04 3.49342239e+01]]
+
+
+==================stream_learn_recurring_abrupt_4================
+
+
+Change detected, batch: 50
+Stabilization detected, batch: 81
+Change detected, batch: 150
+Stabilization detected, batch: 282
+Change detected, batch: 350
+Stabilization detected, batch: 492
+
+stabilization_time =  (51333.333333333336, 25067.68614948115)
+max_performance_loss =  (0.4988398614805217, 0.02702919500480571)
+restoration_time 0.9 =  ([1500, 2000, 2000, 2000, 1500], 244.94897427831782)
+restoration_time 0.8 =  ([1500, 1500, 2000, 1500, 1500], 200.0)
+restoration_time 0.7 =  ([1500, 1500, 1500, 1500, 1500], 0.0)
+restoration_time 0.6 =  ([1500, 1500, 1500, 1500, 1500], 0.0)
+avg restoration_time 0.9 =  (1800.0, 244.94897427831782)
+avg restoration_time 0.8 =  (1600.0, 200.0)
+avg restoration_time 0.7 =  (1500.0, 0.0)
+avg restoration_time 0.6 =  (1500.0, 0.0)
+Change detected, batch: 50
+Stabilization detected, batch: 118
+Change detected, batch: 171
+Stabilization detected, batch: 336
+Change detected, batch: 392
+Stabilization detected, batch: 551
+
+stabilization_time =  (55179.333333333336, 22189.837513800972)
+max_performance_loss =  (0.4813442092379474, 0.03378782968126414)
+restoration_time 0.9 =  ([599, 599, 2500, 638, 2500], 925.0369506133255)
+restoration_time 0.8 =  ([563, 599, 2000, 638, 2000], 686.2672948640347)
+restoration_time 0.7 =  ([563, 599, 2000, 599, 2000], 692.3506048238855)
+restoration_time 0.6 =  ([563, 599, 2000, 563, 2000], 698.2283294166745)
+avg restoration_time 0.9 =  (1367.2, 925.0369506133255)
+avg restoration_time 0.8 =  (1160.0, 686.2672948640347)
+avg restoration_time 0.7 =  (1152.2, 692.3506048238855)
+avg restoration_time 0.6 =  (1145.0, 698.2283294166745)
+stream = stream_learn_recurring_abrupt_4, model index = 0, model_name = wae, m_baseline = [[5.13333333e+04 2.50676861e+04]
+ [4.98839861e-01 2.70291950e-02]
+ [1.80000000e+03 2.44948974e+02]
+ [1.60000000e+03 2.00000000e+02]
+ [1.50000000e+03 0.00000000e+00]
+ [1.50000000e+03 0.00000000e+00]], m_ours = [[5.51793333e+04 2.21898375e+04]
+ [4.81344209e-01 3.37878297e-02]
+ [1.36720000e+03 9.25036951e+02]
+ [1.16000000e+03 6.86267295e+02]
+ [1.15220000e+03 6.92350605e+02]
+ [1.14500000e+03 6.98228329e+02]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+Change detected, batch: 264
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.8 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.7 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.6 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+avg restoration_time 0.9 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.8 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.7 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.6 =  (29500.0, 15469.324484281788)
+Change detected, batch: 264
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([2500, 32000, 43846, 4000, 29500], 16352.774521774585)
+restoration_time 0.8 =  ([2500, 32000, 43846, 4000, 29500], 16352.774521774585)
+restoration_time 0.7 =  ([2500, 32000, 43846, 4000, 29500], 16352.774521774585)
+restoration_time 0.6 =  ([2500, 32000, 43846, 4000, 29500], 16352.774521774585)
+avg restoration_time 0.9 =  (22369.2, 16352.774521774585)
+avg restoration_time 0.8 =  (22369.2, 16352.774521774585)
+avg restoration_time 0.7 =  (22369.2, 16352.774521774585)
+avg restoration_time 0.6 =  (22369.2, 16352.774521774585)
+stream = stream_learn_nonrecurring_incremental_4, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [29500.         15469.32448428]
+ [29500.         15469.32448428]
+ [29500.         15469.32448428]
+ [29500.         15469.32448428]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [22369.2        16352.77452177]
+ [22369.2        16352.77452177]
+ [22369.2        16352.77452177]
+ [22369.2        16352.77452177]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+Change detected, batch: 264
+Stabilization detected, batch: 331
+Change detected, batch: 452
+
+stabilization_time =  (34000.0, 0.0)
+max_performance_loss =  (0.06401766004415016, 0.0)
+restoration_time 0.9 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.8 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.7 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+restoration_time 0.6 =  ([2500, 32000, 43500, 24500, 45000], 15469.324484281788)
+avg restoration_time 0.9 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.8 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.7 =  (29500.0, 15469.324484281788)
+avg restoration_time 0.6 =  (29500.0, 15469.324484281788)
+Change detected, batch: 264
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([2500, 32000, 30099, 19000, 29500], 11037.87154119851)
+restoration_time 0.8 =  ([2500, 32000, 30063, 19000, 29500], 11033.001180096011)
+restoration_time 0.7 =  ([2500, 32000, 30063, 19000, 29500], 11033.001180096011)
+restoration_time 0.6 =  ([2500, 32000, 30063, 19000, 29500], 11033.001180096011)
+avg restoration_time 0.9 =  (22619.8, 11037.87154119851)
+avg restoration_time 0.8 =  (22612.6, 11033.001180096011)
+avg restoration_time 0.7 =  (22612.6, 11033.001180096011)
+avg restoration_time 0.6 =  (22612.6, 11033.001180096011)
+stream = stream_learn_nonrecurring_incremental_4, model index = 2, model_name = sea, m_baseline = [[3.40000000e+04 0.00000000e+00]
+ [6.40176600e-02 0.00000000e+00]
+ [2.95000000e+04 1.54693245e+04]
+ [2.95000000e+04 1.54693245e+04]
+ [2.95000000e+04 1.54693245e+04]
+ [2.95000000e+04 1.54693245e+04]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [22619.8       11037.8715412]
+ [22612.6       11033.0011801]
+ [22612.6       11033.0011801]
+ [22612.6       11033.0011801]]
+
+
+==================usenet_1================
+
+
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([3000, 3000, 3000, 3000, 3000], 0.0)
+avg restoration_time 0.9 =  (3000.0, 0.0)
+avg restoration_time 0.8 =  (3000.0, 0.0)
+avg restoration_time 0.7 =  (3000.0, 0.0)
+avg restoration_time 0.6 =  (3000.0, 0.0)
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([1099, 4000, 4000, 4000, 4000], 1160.4)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([1099, 4000, 4000, 4000, 4000], 1160.4)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([1063, 4000, 4000, 4000, 4000], 1174.7999999999997)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([1063, 4000, 4000, 4000, 4000], 1174.7999999999997)
+avg restoration_time 0.9 =  (3419.8, 1160.4)
+avg restoration_time 0.8 =  (3419.8, 1160.4)
+avg restoration_time 0.7 =  (3412.6, 1174.7999999999997)
+avg restoration_time 0.6 =  (3412.6, 1174.7999999999997)
+stream = usenet_1, model index = 0, model_name = wae, m_baseline = [[  nan   nan]
+ [  nan   nan]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [3419.8 1160.4]
+ [3419.8 1160.4]
+ [3412.6 1174.8]
+ [3412.6 1174.8]]
+
+
+==================usenet_1================
+
+
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([7000, 6000, 6000, 6000, 7000], 489.89794855663564)
+avg restoration_time 0.9 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.8 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.7 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.6 =  (6400.0, 489.89794855663564)
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([1331, 7000, 7000, 7000, 7000], 2267.6000000000004)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([1331, 6000, 7000, 6000, 7000], 2115.4124326003193)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([1276, 6000, 7000, 6000, 7000], 2136.9202512026504)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([1276, 6000, 7000, 6000, 7000], 2136.9202512026504)
+avg restoration_time 0.9 =  (5866.2, 2267.6000000000004)
+avg restoration_time 0.8 =  (5466.2, 2115.4124326003193)
+avg restoration_time 0.7 =  (5455.2, 2136.9202512026504)
+avg restoration_time 0.6 =  (5455.2, 2136.9202512026504)
+stream = usenet_1, model index = 1, model_name = awe, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [6600.          489.89794856]
+ [6600.          489.89794856]
+ [6600.          489.89794856]
+ [6400.          489.89794856]], m_ours = [[         nan          nan]
+ [         nan          nan]
+ [5866.2       2267.6      ]
+ [5466.2       2115.4124326]
+ [5455.2       2136.9202512]
+ [5455.2       2136.9202512]]
+
+
+==================usenet_1================
+
+
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([7000, 6000, 7000, 6000, 7000], 489.89794855663564)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([6000, 6000, 6000, 6000, 6000], 0.0)
+avg restoration_time 0.9 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.8 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.7 =  (6600.0, 489.89794855663564)
+avg restoration_time 0.6 =  (6000.0, 0.0)
+Change detected, batch: 20
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.9 =  ([1391, 7000, 7000, 7000, 7000], 2243.6000000000004)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.8 =  ([1276, 6000, 7000, 6000, 7000], 2136.9202512026504)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.7 =  ([1276, 6000, 7000, 6000, 7000], 2136.9202512026504)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+restoration_time 0.6 =  ([1276, 6000, 7000, 6000, 7000], 2136.9202512026504)
+avg restoration_time 0.9 =  (5878.2, 2243.6000000000004)
+avg restoration_time 0.8 =  (5455.2, 2136.9202512026504)
+avg restoration_time 0.7 =  (5455.2, 2136.9202512026504)
+avg restoration_time 0.6 =  (5455.2, 2136.9202512026504)
+stream = usenet_1, model index = 2, model_name = sea, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [6600.          489.89794856]
+ [6600.          489.89794856]
+ [6600.          489.89794856]
+ [6000.            0.        ]], m_ours = [[         nan          nan]
+ [         nan          nan]
+ [5878.2       2243.6      ]
+ [5455.2       2136.9202512]
+ [5455.2       2136.9202512]
+ [5455.2       2136.9202512]]
+
+
+==================insects_abrupt================
+
+
+Change detected, batch: (0.08365513659712975, 0.054042380332892825)
+restoration_time 0.9 =  ([22500, 28000, 35500, 9500, 26500], 8558.037158133868)
+restoration_time 0.8 =  ([18000, 19000, 35500, 9000, 26000], 8843.076387773657)
+restoration_time 0.7 =  ([18000, 18500, 35500, 9000, 26000], 8873.556220591607)
+restoration_time 0.6 =  ([18000, 18500, 35500, 9000, 26000], 8873.556220591607)
+avg restoration_time 0.9 =  (24400.0, 8558.037158133868)
+avg restoration_time 0.8 =  (21500.0, 8843.076387773657)
+avg restoration_time 0.7 =  (21400.0, 8873.556220591607)
+avg restoration_time 0.6 =  (21400.0, 8873.556220591607)
+Change detected, batch: 35
+Stabilization detected, batch: 230
+Change detected, batch: 271
+Stabilization detected, batch: 395
+Change detected, batch: 477
+
+stabilization_time =  (69596.0, 17750.0)
+max_performance_loss =  (0.1177401795295042, 0.04802682410186303)
+restoration_time 0.9 =  ([15831, 28500, 23180, 10000, 15638], 6471.209543817909)
+restoration_time 0.8 =  ([15726, 19500, 23138, 9500, 15638], 4543.222715209987)
+restoration_time 0.7 =  ([15726, 19000, 23138, 9500, 15599], 4487.338792647598)
+restoration_time 0.6 =  ([15726, 19000, 23138, 9500, 15599], 4487.338792647598)
+avg restoration_time 0.9 =  (18629.8, 6471.209543817909)
+avg restoration_time 0.8 =  (16700.4, 4543.222715209987)
+avg restoration_time 0.7 =  (16592.6, 4487.338792647598)
+avg restoration_time 0.6 =  (16592.6, 4487.338792647598)
+stream = stream_learn_nonrecurring_gradual_4, model index = 1, model_name = awe, m_baseline = [[5.75000000e+04 2.95000000e+04]
+ [8.36551366e-02 5.40423803e-02]
+ [2.44000000e+04 8.55803716e+03]
+ [2.15000000e+04 8.84307639e+03]
+ [2.14000000e+04 8.87355622e+03]
+ [2.14000000e+04 8.87355622e+03]], m_ours = [[6.95960000e+04 1.77500000e+04]
+ [1.17740180e-01 4.80268241e-02]
+ [1.86298000e+04 6.47120954e+03]
+ [1.67004000e+04 4.54322272e+03]
+ [1.65926000e+04 4.48733879e+03]
+ [1.65926000e+04 4.48733879e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+Change detected, batch: 35
+Stabilization detected, batch: 208
+Change detected, batch: 250
+Stabilization detected, batch: 305
+Change detected, batch: 434
+
+stabilization_time =  (57500.0, 29500.0)
+max_performance_loss =  (0.09139578074657803, 0.059505120154322876)
+restoration_time 0.9 =  ([26500, 28000, 35500, 18000, 26500], 5562.373594069352)
+restoration_time 0.8 =  ([25500, 21500, 35500, 17000, 26000], 6126.989472816156)
+restoration_time 0.7 =  ([25500, 21000, 35500, 17000, 26000], 6188.699378706321)
+restoration_time 0.6 =  ([25500, 21000, 35500, 17000, 26000], 6188.699378706321)
+avg restoration_time 0.9 =  (26900.0, 5562.373594069352)
+avg restoration_time 0.8 =  (25100.0, 6126.989472816156)
+avg restoration_time 0.7 =  (25000.0, 6188.699378706321)
+avg restoration_time 0.6 =  (25000.0, 6188.699378706321)
+Change detected, batch: 35
+Stabilization detected, batch: 230
+Change detected, batch: 271
+Stabilization detected, batch: 452
+Change detected, batch: 476
+
+stabilization_time =  (83846.0, 3500.0)
+max_performance_loss =  (0.15523823418560262, 0.018935939988571612)
+restoration_time 0.9 =  ([16029, 28500, 23180, 4000, 15226], 8279.89700419033)
+restoration_time 0.8 =  ([15891, 19500, 23138, 3500, 15180], 6611.7681266057725)
+restoration_time 0.7 =  ([15891, 19000, 23138, 3500, 15180], 6553.154794448244)
+restoration_time 0.6 =  ([15891, 19000, 23138, 3500, 15180], 6553.154794448244)
+avg restoration_time 0.9 =  (17387.0, 8279.89700419033)
+avg restoration_time 0.8 =  (15441.8, 6611.7681266057725)
+avg restoration_time 0.7 =  (15341.8, 6553.154794448244)
+avg restoration_time 0.6 =  (15341.8, 6553.154794448244)
+stream = stream_learn_nonrecurring_gradual_4, model index = 2, model_name = sea, m_baseline = [[5.75000000e+04 2.95000000e+04]
+ [9.13957807e-02 5.95051202e-02]
+ [2.69000000e+04 5.56237359e+03]
+ [2.51000000e+04 6.12698947e+03]
+ [2.50000000e+04 6.18869938e+03]
+ [2.50000000e+04 6.18869938e+03]], m_ours = [[8.38460000e+04 3.50000000e+03]
+ [1.55238234e-01 1.89359400e-02]
+ [1.73870000e+04 8.27989700e+03]
+ [1.54418000e+04 6.61176813e+03]
+ [1.53418000e+04 6.55315479e+03]
+ [1.53418000e+04 6.55315479e+03]]
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+Change detected, batch: 26
+Stabilization detected, batch: 67
+Change detected, batch: 83
+Stabilization detected, batch: 84
+Change detected, batch: 88
+Stabilization detected, batch: 126
+Change detected, batch: 144
+Stabilization detected, batch: 188
+Change detected, batch: 204
+Stabilization detected, batch: 246
+Change detected, batch: 265
+
+stabilization_time =  (342000.0, 162160.41440499588)
+max_performance_loss =  (0.07484921523065059, 0.04480320299069004)
+restoration_time 0.9 =  ([330000, 330000, 330000, 320000, 330000], 4000.0)
+restoration_time 0.8 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+restoration_time 0.7 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+restoration_time 0.6 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+avg restoration_time 0.9 =  (328000.0, 4000.0)
+avg restoration_time 0.8 =  (294000.0, 12000.0)
+avg restoration_time 0.7 =  (294000.0, 12000.0)
+avg restoration_time 0.6 =  (294000.0, 12000.0)
+Change detected, batch: 26
+Stabilization detected, batch: 119
+Change detected, batch: 137
+Stabilization detected, batch: 230
+Change detected, batch: 249
+Stabilization detected, batch: 345
+Change detected, batch: 360
+Stabilization detected, batch: 417
+Change detected, batch: 419
+Stabilization detected, batch: 501
+Change detected, batch: 526
+
+stabilization_time =  (329718.8, 138749.48394628355)
+max_performance_loss =  (0.10277196240223778, 0.03692360996724614)
+restoration_time 0.9 =  ([241264, 231951, 220063, 289396, 230276], 24350.96941807451)
+restoration_time 0.8 =  ([241264, 231755, 220030, 289396, 230226], 24379.350544261837)
+restoration_time 0.7 =  ([241264, 231755, 220030, 289350, 230226], 24361.666905201702)
+restoration_time 0.6 =  ([241264, 231755, 220030, 289350, 230226], 24361.666905201702)
+avg restoration_time 0.9 =  (242590.0, 24350.96941807451)
+avg restoration_time 0.8 =  (242534.2, 24379.350544261837)
+avg restoration_time 0.7 =  (242525.0, 24361.666905201702)
+avg restoration_time 0.6 =  (242525.0, 24361.666905201702)
+stream = stream_learn_recurring_incremental_3, model index = 2, model_name = sea, m_baseline = [[3.42000000e+05 1.62160414e+05]
+ [7.48492152e-02 4.48032030e-02]
+ [3.28000000e+05 4.00000000e+03]
+ [2.94000000e+05 1.20000000e+04]
+ [2.94000000e+05 1.20000000e+04]
+ [2.94000000e+05 1.20000000e+04]], m_ours = [[3.29718800e+05 1.38749484e+05]
+ [1.02771962e-01 3.69236100e-02]
+ [2.42590000e+05 2.43509694e+04]
+ [2.42534200e+05 2.43793505e+04]
+ [2.42525000e+05 2.43616669e+04]
+ [2.42525000e+05 2.43616669e+04]]
+
+
+==================stream_learn_recurring_incremental_4================
+
+
+Change detected, batch: 76
+Stabilization detected, batch: 172
+Change detected, batch: 282
+Stabilization detected, batch: 299
+Change detected, batch: 489
+
+stabilization_time =  (28750.0, 19750.0)
+max_performance_loss =  (0.049275971599402085, 0.04030736173393122)
+restoration_time 0.9 =  ([43000, 6000, 40000, 9500, 36000], 15831.61394173064)
+restoration_time 0.8 =  ([43000, 6000, 40000, 9000, 36000], 15942.396306703708)
+restoration_time 0.7 =  ([43000, 6000, 40000, 9000, 36000], 15942.396306703708)
+restoration_time 0.6 =  ([43000, 6000, 40000, 9000, 36000], 15942.396306703708)
+avg restoration_time 0.9 =  (26900.0, 15831.61394173064)
+avg restoration_time 0.8 =  (26800.0, 15942.396306703708)
+avg restoration_time 0.7 =  (26800.0, 15942.396306703708)
+avg restoration_time 0.6 =  (26800.0, 15942.396306703708)
+Change detected, batch: 76
+Stabilization detected, batch: 408
+Change detected, batch: 497
+
+stabilization_time =  (155846.0, 0.0)
+max_performance_loss =  (0.08624257572092764, 0.0)
+restoration_time 0.9 =  ([36608, 1500, 40000, 2000, 36694], 17687.870754842144)
+restoration_time 0.8 =  ([36608, 1000, 40000, 1500, 36608], 17919.278985494926)
+restoration_time 0.7 =  ([36608, 1000, 40000, 1500, 36608], 17919.278985494926)
+restoration_time 0.6 =  ([36608, 1000, 40000, 1500, 36608], 17919.278985494926)
+avg restoration_time 0.9 =  (23360.4, 17687.870754842144)
+avg restoration_time 0.8 =  (23143.2, 17919.278985494926)
+avg restoration_time 0.7 = 
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+Change detected, batch: 87
+Stabilization detected, batch: 128
+Change detected, batch: 146
+Stabilization detected, batch: 189
+Change detected, batch: 243
+Stabilization detected, batch: 248
+Change detected, batch: 268
+
+stabilization_time =  (30666.666666666668, 17461.06780494506)
+max_performance_loss =  (0.0640151256128885, 0.036325784728873475)
+restoration_time 0.9 =  ([31000, 33000, 31000, 54000, 31000], 9033.271832508972)
+restoration_time 0.8 =  ([31000, 32000, 30000, 54000, 31000], 9221.713506718803)
+restoration_time 0.7 =  ([31000, 32000, 30000, 54000, 31000], 9221.713506718803)
+restoration_time 0.6 =  ([31000, 32000, 30000, 54000, 31000], 9221.713506718803)
+avg restoration_time 0.9 =  (36000.0, 9033.271832508972)
+avg restoration_time 0.8 =  (35600.0, 9221.713506718803)
+avg restoration_time 0.7 =  (35600.0, 9221.713506718803)
+avg restoration_time 0.6 =  (35600.0, 9221.713506718803)
+Change detected, batch: 87
+Stabilization detected, batch: 151
+Change detected, batch: 177
+Stabilization detected, batch: 244
+Change detected, batch: 300
+
+stabilization_time =  (38057.0, 1500.0)
+max_performance_loss =  (0.11863974363974368, 0.05464067964067969)
+restoration_time 0.9 =  ([31000, 27661, 27694, 54000, 30557], 10006.36254789921)
+restoration_time 0.8 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+restoration_time 0.7 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+restoration_time 0.6 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+avg restoration_time 0.9 =  (34182.4, 10006.36254789921)
+avg restoration_time 0.8 =  (34149.4, 10027.955017848853)
+avg restoration_time 0.7 =  (34149.4, 10027.955017848853)
+avg restoration_time 0.6 =  (34149.4, 10027.955017848853)
+stream = stream_learn_nonrecurring_incremental_2, model index = 1, model_name = awe, m_baseline = [[3.06666667e+04 1.74610678e+04]
+ [6.40151256e-02 3.63257847e-02]
+ [3.60000000e+04 9.03327183e+03]
+ [3.56000000e+04 9.22171351e+03]
+ [3.56000000e+04 9.22171351e+03]
+ [3.56000000e+04 9.22171351e+03]], m_ours = [[3.80570000e+04 1.50000000e+03]
+ [1.18639744e-01 5.46406796e-02]
+ [3.41824000e+04 1.00063625e+04]
+ [3.41494000e+04 1.00279550e+04]
+ [3.41494000e+04 1.00279550e+04]
+ [3.41494000e+04 1.00279550e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+Change detected, batch: 87
+Stabilization detected, batch: 128
+Change detected, batch: 147
+Stabilization detected, batch: 189
+Change detected, batch: 243
+Stabilization detected, batch: 248
+Change detected, batch: 268
+
+stabilization_time =  (30333.333333333332, 17211.107524567447)
+max_performance_loss =  (0.0640074937784862, 0.0371660836953192)
+restoration_time 0.9 =  ([31000, 30000, 32000, 50000, 31000], 7626.270385975047)
+restoration_time 0.8 =  ([31000, 29000, 30000, 50000, 31000], 7934.733769950949)
+restoration_time 0.7 =  ([31000, 29000, 30000, 50000, 31000], 7934.733769950949)
+restoration_time 0.6 =  ([31000, 29000, 30000, 50000, 31000], 7934.733769950949)
+avg restoration_time 0.9 =  (34800.0, 7626.270385975047)
+avg restoration_time 0.8 =  (34200.0, 7934.733769950949)
+avg restoration_time 0.7 =  (34200.0, 7934.733769950949)
+avg restoration_time 0.6 =  (34200.0, 7934.733769950949)
+Change detected, batch: 87
+Stabilization detected, batch: 154
+Change detected, batch: 177
+Stabilization detected, batch: 244
+Change detected, batch: 312
+
+stabilization_time =  (39557.0, 0.0)
+max_performance_loss =  (0.10263730686265901, 0.039652328384722796)
+restoration_time 0.9 =  ([31000, 27661, 27694, 54000, 30557], 10006.36254789921)
+restoration_time 0.8 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+restoration_time 0.7 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+restoration_time 0.6 =  ([31000, 27661, 27529, 54000, 30557], 10027.955017848853)
+avg restoration_time 0.9 =  (34182.4, 10006.36254789921)
+avg restoration_time 0.8 =  (34149.4, 10027.955017848853)
+avg restoration_time 0.7 =  (34149.4, 10027.955017848853)
+avg restoration_time 0.6 =  (34149.4, 10027.955017848853)
+stream = stream_learn_nonrecurring_incremental_2, model index = 2, model_name = sea, m_baseline = [[3.03333333e+04 1.72111075e+04]
+ [6.40074938e-02 3.71660837e-02]
+ [3.48000000e+04 7.62627039e+03]
+ [3.42000000e+04 7.93473377e+03]
+ [3.42000000e+04 7.93473377e+03]
+ [3.42000000e+04 7.93473377e+03]], m_ours = [[3.95570000e+04 0.00000000e+00]
+ [1.02637307e-01 3.96523284e-02]
+ [3.41824000e+04 1.00063625e+04]
+ [3.41494000e+04 1.00279550e+04]
+ [3.41494000e+04 1.00279550e+04]
+ [3.41494000e+04 1.00279550e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+Change detected, batch: 24
+Stabilization detected, batch: 25
+Change detected, batch: 29
+Stabilization detected, batch: 66
+Change detected, batch: 86
+Stabilization detected, batch: 127
+Change detected, batch: 146
+Stabilization detected, batch: 186
+Change detected, batch: 206
+Stabilization detected, batch: 207
+Change detected, batch: 212
+Stabilization detected, batch: 246
+
+stabilization_time =  (266666.6666666667, 175847.1558547997)
+max_performance_loss =  (0.0416013405153918, 0.04135371308938133)
+restoration_time 0.9 =  ([320000, 330000, 320000, 300000, 260000], 24979.991993593594)
+restoration_time 0.8 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+restoration_time 0.7 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+restoration_time 0.6 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+avg restoration_time 0.9 =  (306000.0, 24979.991993593594)
+avg restoration_time 0.8 =  (292000.0, 20396.07805437114)
+avg restoration_time 0.7 =  (292000.0, 20396.07805437114)
+avg restoration_time 0.6 =  (292000.0, 20396.07805437114)
+Change detected, batch: 24
+Stabilization detected, batch: 118
+Change detected, batch: 138
+Stabilization detected, batch: 230
+Change detected, batch: 251
+Stabilization detected, batch: 315
+Change detected, batch: 363
+Stabilization detected, batch: 364
+Change detected, batch: 371
+Stabilization detected, batch: 425
+
+stabilization_time =  (203807.8, 176281.7908263925)
+max_performance_loss =  (0.054362887328780626, 0.032127216354369055)
+restoration_time 0.9 =  ([220138, 288891, 240529, 310306, 260000], 32417.793579452627)
+restoration_time 0.8 =  ([220063, 288891, 240529, 310256, 260000], 32423.798675664148)
+restoration_time 0.7 =  ([220063, 288891, 240529, 310256, 260000], 32423.798675664148)
+restoration_time 0.6 =  ([220063, 288891, 240529, 310256, 260000], 32423.798675664148)
+avg restoration_time 0.9 =  (263972.8, 32417.793579452627)
+avg restoration_time 0.8 =  (263947.8, 32423.798675664148)
+avg restoration_time 0.7 =  (263947.8, 32423.798675664148)
+avg restoration_time 0.6 =  (263947.8, 32423.798675664148)
+stream = stream_learn_nonrecurring_incremental_3, model index = 2, model_name = sea, m_baseline = [[2.66666667e+05 1.75847156e+05]
+ [4.16013405e-02 4.13537131e-02]
+ [3.06000000e+05 2.49799920e+04]
+ [2.92000000e+05 2.03960781e+04]
+ [2.92000000e+05 2.03960781e+04]
+ [2.92000000e+05 2.03960781e+04]], m_ours = [[2.03807800e+05 1.76281791e+05]
+ [5.43628873e-02 3.21272164e-02]
+ [2.63972800e+05 3.24177936e+04]
+ [2.63947800e+05 3.24237987e+04]
+ [2.63947800e+05 3.24237987e+04]
+ [2.63947800e+05 3.24237987e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_4================
+
+
+Change detected, batch: 265
+Stabilization detected, batch: 335
+Change detected, batch: 455
+
+stabilization_time =  (35500.0, 0.0)
+max_performance_loss =  (0.04298642533936655, 0.0)
+restoration_time 0.9 =  ([4500, 32000, 43500, 24500, 45000], 14776.332427229701)
+restoration_time 0.8 =  ([4500, 32000, 43500, 24500, 45000], 14776.332427229701)
+restoration_time 0.7 =  ([4500, 32000, 43500, 24500, 45000], 14776.332427229701)
+restoration_time 0.6 =  ([4500, 32000, 43500, 24500, 45000], 14776.332427229701)
+avg restoration_time 0.9 =  (29900.0, 14776.332427229701)
+avg restoration_time 0.8 =  (29900.0, 14776.332427229701)
+avg restoration_time 0.7 =  (29900.0, 14776.332427229701)
+avg restoration_time 0.6 =  (29900.0, 14776.332427229701)
+Change detected, batch: 265
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([17000, 19500, 17500, 19000, 12500], 2477.9023386727736)
+restoration_time 0.8 =  ([17000, 15000, 14000, 15000, 12000], 1624.807680927192)
+restoration_time 0.7 =  ([17000, 14500, 14000, 15000, 12000], 1612.4515496597098)
+restoration_time 0.6 =  ([17000, 14500, 14000, 15000, 12000], 1612.4515496597098)
+avg restoration_time 0.9 =  (17100.0, 2477.9023386727736)
+avg restoration_time 0.8 =  (14600.0, 1624.807680927192)
+avg restoration_time 0.7 =  (14500.0, 1612.4515496597098)
+avg restoration_time 0.6 =  (14500.0, 1612.4515496597098)
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([17000, 10099, 17500, 19500, 12500], 3471.5541418793973)
+restoration_time 0.8 =  ([17000, 10063, 14500, 15500, 11000], 2655.167610528571)
+restoration_time 0.7 =  ([17000, 10063, 14500, 15500, 11000], 2655.167610528571)
+restoration_time 0.6 =  ([17000, 10030, 14500, 15500, 11000], 2664.0090089937758)
+avg restoration_time 0.9 =  (15319.8, 3471.5541418793973)
+avg restoration_time 0.8 =  (13612.6, 2655.167610528571)
+avg restoration_time 0.7 =  (13612.6, 2655.167610528571)
+avg restoration_time 0.6 =  (13606.0, 2664.0090089937758)
+stream = stream_learn_nonrecurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [17100.          2477.90233867]
+ [14600.          1624.80768093]
+ [14500.          1612.45154966]
+ [14500.          1612.45154966]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [15319.8         3471.55414188]
+ [13612.6         2655.16761053]
+ [13612.6         2655.16761053]
+ [13606.          2664.00900899]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 19500, 18500, 19000, 13000], 3807.886552931954)
+restoration_time 0.8 =  ([9500, 15000, 14000, 15000, 12000], 2107.1307505705477)
+restoration_time 0.7 =  ([9500, 14500, 14000, 15000, 12000], 2024.8456731316587)
+restoration_time 0.6 =  ([9500, 14500, 14000, 15000, 12000], 2024.8456731316587)
+avg restoration_time 0.9 =  (16000.0, 3807.886552931954)
+avg restoration_time 0.8 =  (13100.0, 2107.1307505705477)
+avg restoration_time 0.7 =  (13000.0, 2024.8456731316587)
+avg restoration_time 0.6 =  (13000.0, 2024.8456731316587)
+Change detected, batch: 82
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([10000, 10099, 18000, 19500, 13500], 3936.400406462737)
+restoration_time 0.8 =  ([9500, 10063, 14000, 15500, 12000], 2281.4896537131176)
+restoration_time 0.7 =  ([9500, 10063, 14000, 15500, 12000], 2281.4896537131176)
+restoration_time 0.6 =  ([9500, 10030, 14000, 15500, 12000], 2287.737747207927)
+avg restoration_time 0.9 =  (14219.8, 3936.400406462737)
+avg restoration_time 0.8 =  (12212.6, 2281.4896537131176)
+avg restoration_time 0.7 =  (12212.6, 2281.4896537131176)
+avg restoration_time 0.6 =  (12206.0, 2287.737747207927)
+stream = stream_learn_nonrecurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16000.          3807.88655293]
+ [13100.          2107.13075057]
+ [13000.          2024.84567313]
+ [13000.          2024.84567313]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [14219.8         3936.40040646]
+ [12212.6         2281.48965371]
+ [12212.6         2281.48965371]
+ [12206.          2287.73774721]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+Change detected, batch: 16
+Stabilization detected, batch: 69
+Change detected, batch: 79
+Stabilization detected, batch: 131
+Change detected, batch: 138
+Stabilization detected, batch: 191
+Change detected, batch: 198
+Stabilization detected, batch: 252
+Change detected, batch: 257
+
+stabilization_time =  (540000.0, 7071.067811865475)
+max_performance_loss =  (0.06642415797609098, 0.0080703310230017)
+restoration_time 0.9 =  ([300000, 250000, 300000, 300000, 270000], 20591.260281974002)
+restoration_time 0.8 =  ([250000, 250000, 300000, 230000, 270000], 23664.319132398465)
+restoration_time 0.7 =  ([250000, 250000, 300000, 230000, 270000], 23664.319132398465)
+restoration_time 0.6 =  ([250000, 250000, 300000, 230000, 270000], 23664.319132398465)
+avg restoration_time 0.9 =  (284000.0, 20591.260281974002)
+avg restoration_time 0.8 =  (260000.0, 23664.319132398465)
+avg restoration_time 0.7 =  (260000.0, 23664.319132398465)
+avg restoration_time 0.6 =  (260000.0, 23664.319132398465)
+Change detected, batch: 16
+Stabilization detected, batch: 122
+Change detected, batch: 132
+Stabilization detected, batch: 195
+Change detected, batch: 243
+Stabilization detected, batch: 348
+Change detected, batch: 355
+Stabilization detected, batch: 462
+Change detected, batch: 468
+
+stabilization_time =  (437356.0, 186329.68094214084)
+max_performance_loss =  (0.10147563387903123, 0.04330757896575124)
+restoration_time 0.9 =  ([140331, 180226, 284856, 160063, 160457], 51406.94523738986)
+restoration_time 0.8 =  ([140331, 180138, 284856, 160063, 160391], 51415.00719206408)
+restoration_time 0.7 =  ([140276, 180138, 284856, 160030, 160391], 51427.82173259917)
+restoration_time 0.6 =  ([140276, 180138, 284856, 160030, 160391], 51427.82173259917)
+avg restoration_time 0.9 =  (185186.6, 51406.94523738986)
+avg restoration_time 0.8 =  (185155.8, 51415.00719206408)
+avg restoration_time 0.7 =  (185138.2, 51427.82173259917)
+avg restoration_time 0.6 =  (185138.2, 51427.82173259917)
+stream = stream_learn_nonrecurring_gradual_3, model index = 2, model_name = sea, m_baseline = [[5.40000000e+05 7.07106781e+03]
+ [6.64241580e-02 8.07033102e-03]
+ [2.84000000e+05 2.05912603e+04]
+ [2.60000000e+05 2.36643191e+04]
+ [2.60000000e+05 2.36643191e+04]
+ [2.60000000e+05 2.36643191e+04]], m_ours = [[4.37356000e+05 1.86329681e+05]
+ [1.01475634e-01 4.33075790e-02]
+ [1.85186600e+05 5.14069452e+04]
+ [1.85155800e+05 5.14150072e+04]
+ [1.85138200e+05 5.14278217e+04]
+ [1.85138200e+05 5.14278217e+04]]
+
+
+==================stream_learn_nonrecurring_gradual_4================
+
+
+Change detected, batch: 35
+Stabilization detected, batch: 208
+Change detected, batch: 250
+Stabilization detected, batch: 305
+Change detected, batch: 434
+
+stabilization_time =  (57500.0, 29500.0)
+max_performance_loss =  (0.08907887479316053, 0.05506526935098362)
+restoration_time 0.9 =  ([26500, 28000, 35500, 12500, 27500], 7469.939758793239)
+restoration_time 0.8 =  ([25500, 19000, 35500, 12000, 27000], 7903.163923391694)
+restoration_time 0.7 =  ([25500, 18500, 35500, 12000, 27000], 7966.178506661773)
+restoration_time 0.6 =  ([25500, 18500, 35500, 12000, 27000], 7966.178506661773)
+avg restoration_time 0.9 =  (26000.0, 7469.939758793239)
+avg restoration_time 0.8 =  (23800.0, 7903.163923391694)
+avg restoration_time 0.7 =  (23700.0, 7966.178506661773)
+avg restoration_time 0.6 =  (23700.0, 7966.178506661773)
+Change detected, batch: 35
+Stabilization detected, batch: 230
+Change detected, batch: 272
+Stabilization detected, batch: 430
+Change detected, batch: 477
+
+stabilization_time =  (78096.0, 9250.0)
+max_performance_loss =  (0.1846776977933295, 0.008265245149613465)
+restoration_time 0.9 =  ([16029, 28500, 23680, 4000, 15638], 8331.256846358778)
+restoration_time 0.8 =  ([15957, 19500, 23638, 3500, 15599], 6728.28903659764)
+restoration_time 0.7 =  ([15891, 19000, 23638, 3500, 15599], 6672.877178548995)
+restoration_time 0.6 =  ([15891, 19000, 23638, 3500, 15599], 6672.877178548995)
+avg restoration_time 0.9 =  (17569.4, 8331.256846358778)
+avg restoration_time 0.8 =  (15638.8, 6728.28903659764)
+avg restoration_time 0.7 =  (15525.6, 6672.877178548995)
+avg restoration_time 0.6 =  (15525.6, 6672.877178548995)
+stream = stream_learn_nonrecurring_gradual_4, model index = 0, model_name = wae, m_baseline = [[5.75000000e+04 2.95000000e+04]
+ [8.90788748e-02 5.50652694e-02]
+ [2.60000000e+04 7.46993976e+03]
+ [2.38000000e+04 7.90316392e+03]
+ [2.37000000e+04 7.96617851e+03]
+ [2.37000000e+04 7.96617851e+03]], m_ours = [[7.80960000e+04 9.25000000e+03]
+ [1.84677698e-01 8.26524515e-03]
+ [1.75694000e+04 8.33125685e+03]
+ [1.56388000e+04 6.72828904e+03]
+ [1.55256000e+04 6.67287718e+03]
+ [1.55256000e+04 6.67287718e+03]]
+
+==================stream_learn_recurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 126
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (36250.0, 433.0127018922193)
+max_performance_loss =  (0.4617462371892666, 0.011714946258176026)
+restoration_time 0.9 =  ([7000, 7000, 7000, 7000, 7000], 0.0)
+restoration_time 0.8 =  ([6000, 6000, 6000, 6000, 6000], 0.0)
+restoration_time 0.7 =  ([6000, 6000, 6000, 6000, 6000], 0.0)
+restoration_time 0.6 =  ([4000, 4000, 4000, 4000, 3000], 400.0)
+avg restoration_time 0.9 =  (7000.0, 0.0)
+avg restoration_time 0.8 =  (6000.0, 0.0)
+avg restoration_time 0.7 =  (6000.0, 0.0)
+avg restoration_time 0.6 =  (3800.0, 400.0)
+Change detected, batch: 30
+Stabilization detected, batch: 81
+Change detected, batch: 118
+Stabilization detected, batch: 169
+Change detected, batch: 207
+Stabilization detected, batch: 259
+Change detected, batch: 295
+Stabilization detected, batch: 347
+Change detected, batch: 383
+
+stabilization_time =  (24057.0, 500.0)
+max_performance_loss =  (0.4745210212704388, 0.06876187411280546)
+restoration_time 0.9 =  ([1276, 1331, 2331, 1226, 1457], 410.68109282020765)
+restoration_time 0.8 =  ([1276, 1331, 2226, 1226, 1331], 376.03989150088853)
+restoration_time 0.7 =  ([1226, 1226, 2180, 1226, 1276], 377.0975470617649)
+restoration_time 0.6 =  ([1030, 1226, 2099, 1226, 1180], 380.2706404654453)
+avg restoration_time 0.9 =  (1524.2, 410.68109282020765)
+avg restoration_time 0.8 =  (1478.0, 376.03989150088853)
+avg restoration_time 0.7 =  (1426.8, 377.0975470617649)
+avg restoration_time 0.6 =  (1352.2, 380.2706404654453)
+stream = stream_learn_recurring_abrupt_2, model index = 1, model_name = awe, m_baseline = [[3.62500000e+04 4.33012702e+02]
+ [4.61746237e-01 1.17149463e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 0.00000000e+00]
+ [3.80000000e+03 4.00000000e+02]], m_ours = [[2.40570000e+04 5.00000000e+02]
+ [4.74521021e-01 6.87618741e-02]
+ [1.52420000e+03 4.10681093e+02]
+ [1.47800000e+03 3.76039892e+02]
+ [1.42680000e+03 3.77097547e+02]
+ [1.35220000e+03 3.80270640e+02]]
+
+
+==================stream_learn_recurring_abrupt_2================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 126
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (36250.0, 433.0127018922193)
+max_performance_loss =  (0.46196293519771847, 0.01037965190176208)
+restoration_time 0.9 =  ([7000, 7000, 7000, 7000, 7000], 0.0)
+restoration_time 0.8 =  ([6000, 6000, 6000, 6000, 6000], 0.0)
+restoration_time 0.7 =  ([6000, 6000, 6000, 5000, 6000], 400.0)
+restoration_time 0.6 =  ([4000, 4000, 4000, 4000, 3000], 400.0)
+avg restoration_time 0.9 =  (7000.0, 0.0)
+avg restoration_time 0.8 =  (6000.0, 0.0)
+avg restoration_time 0.7 =  (5800.0, 400.0)
+avg restoration_time 0.6 =  (3800.0, 400.0)
+Change detected, batch: 30
+Stabilization detected, batch: 80
+Change detected, batch: 118
+Stabilization detected, batch: 172
+Change detected, batch: 207
+Stabilization detected, batch: 259
+Change detected, batch: 295
+Stabilization detected, batch: 347
+Change detected, batch: 383
+
+stabilization_time =  (24557.0, 1414.213562373095)
+max_performance_loss =  (0.48565992743722997, 0.07461113100939334)
+restoration_time 0.9 =  ([1276, 1331, 2226, 1226, 1457], 369.5096209843527)
+restoration_time 0.8 =  ([1276, 1331, 2180, 1226, 1276], 362.62509565665755)
+restoration_time 0.7 =  ([1180, 1226, 2180, 1226, 1276], 382.40794970816177)
+restoration_time 0.6 =  ([1030, 1226, 2063, 1226, 1180], 366.140956463491)
+avg restoration_time 0.9 =  (1503.2, 369.5096209843527)
+avg restoration_time 0.8 =  (1457.8, 362.62509565665755)
+avg restoration_time 0.7 =  (1417.6, 382.40794970816177)
+avg restoration_time 0.6 =  (1345.0, 366.140956463491)
+stream = stream_learn_recurring_abrupt_2, model index = 2, model_name = sea, m_baseline = [[3.62500000e+04 4.33012702e+02]
+ [4.61962935e-01 1.03796519e-02]
+ [7.00000000e+03 0.00000000e+00]
+ [6.00000000e+03 0.00000000e+00]
+ [5.80000000e+03 4.00000000e+02]
+ [3.80000000e+03 4.00000000e+02]], m_ours = [[2.45570000e+04 1.41421356e+03]
+ [4.85659927e-01 7.46111310e-02]
+ [1.50320000e+03 3.69509621e+02]
+ [1.45780000e+03 3.62625096e+02]
+ [1.41760000e+03 3.82407950e+02]
+ [1.34500000e+03 3.66140956e+02]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+Change detected, batch: 16
+Stabilization detected, batch: 69
+Change detected, batch: 77
+Change detected, batch: 130
+Stabilization detected, batch: 131
+Change detected, batch: 137
+Stabilization detected, batch: 190
+Change detected, batch: 197
+Change detected, batch: 250
+Stabilization detected, batch: 251
+Change detected, batch: 257
+
+stabilization_time =  (280000.0, 260000.0)
+max_performance_loss =  (0.06293175298591186, 0.01084195536486173)
+restoration_time 0.9 =  ([300000, 320000, 310000, 310000, 310000], 6324.555320336759)
+restoration_time 0.8 =  ([250000, 320000, 240000, 310000, 230000], 37416.57386773941)
+restoration_time 0.7 =  ([250000, 320000, 240000, 310000, 230000], 37416.57386773941)
+restoration_time 0.6 =  ([250000, 320000, 240000, 310000, 230000], 37416.57386773941)
+avg restoration_time 0.9 =  (310000.0, 6324.555320336759)
+avg restoration_time 0.8 =  (270000.0, 37416.57386773941)
+avg restoration_time 0.7 =  (270000.0, 37416.57386773941)
+avg restoration_time 0.6 =  (270000.0, 37416.57386773941)
+Change detected, batch: 16
+Stabilization detected, batch: 122
+Change detected, batch: 131
+Stabilization detected, batch: 235
+Change detected, batch: 237
+Stabilization detected, batch: 348
+Change detected, batch: 357
+Stabilization detected, batch: 460
+Change detected, batch: 466
+Stabilization detected, batch: 467
+Change detected, batch: 472
+Stabilization detected, batch: 532
+
+stabilization_time =  (379704.1666666667, 236009.04261660308)
+max_performance_loss =  (0.0680225426734694, 0.037997259594424834)
+restoration_time 0.9 =  ([140331, 324856, 304856, 180138, 191294], 72954.02578062433)
+restoration_time 0.8 =  ([140331, 324856, 234856, 180099, 191034], 62972.35170263217)
+restoration_time 0.7 =  ([140276, 324856, 234856, 180099, 190921], 62993.600432424886)
+restoration_time 0.6 =  ([140276, 324856, 234856, 180099, 190921], 62993.600432424886)
+avg restoration_time 0.9 =  (228295.0, 72954.02578062433)
+avg restoration_time 0.8 =  (214235.2, 62972.35170263217)
+avg restoration_time 0.7 =  (214201.6, 62993.600432424886)
+avg restoration_time 0.6 =  (214201.6, 62993.600432424886)
+stream = stream_learn_recurring_gradual_3, model index = 2, model_name = sea, m_baseline = [[2.80000000e+05 2.60000000e+05]
+ [6.29317530e-02 1.08419554e-02]
+ [3.10000000e+05 6.32455532e+03]
+ [2.70000000e+05 3.74165739e+04]
+ [2.70000000e+05 3.74165739e+04]
+ [2.70000000e+05 3.74165739e+04]], m_ours = [[3.79704167e+05 2.36009043e+05]
+ [6.80225427e-02 3.79972596e-02]
+ [2.28295000e+05 7.29540258e+04]
+ [2.14235200e+05 6.29723517e+04]
+ [2.14201600e+05 6.29936004e+04]
+ [2.14201600e+05 6.29936004e+04]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([26500, 22500, 23500, 26000, 18500], 2870.5400188814647)
+restoration_time 0.8 =  ([25500, 21000, 22500, 25000, 18000], 2745.906043549196)
+restoration_time 0.7 =  ([25500, 21000, 22500, 25000, 18000], 2745.906043549196)
+restoration_time 0.6 =  ([25500, 21000, 22500, 25000, 18000], 2745.906043549196)
+avg restoration_time 0.9 =  (23400.0, 2870.5400188814647)
+avg restoration_time 0.8 =  (22400.0, 2745.906043549196)
+avg restoration_time 0.7 =  (22400.0, 2745.906043549196)
+avg restoration_time 0.6 =  (22400.0, 2745.906043549196)
+Change detected, batch: 35
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([16029, 24500, 23500, 26500, 18500], 3910.607952735738)
+restoration_time 0.8 = 
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+Change detected, batch: 89
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([14000, 16000, 8000, 16000, 12500], 2959.729717389748)
+restoration_time 0.8 =  ([13500, 16000, 7500, 16000, 12000], 3146.4265445104547)
+restoration_time 0.7 =  ([13500, 16000, 7500, 16000, 12000], 3146.4265445104547)
+restoration_time 0.6 =  ([13500, 16000, 7500, 16000, 12000], 3146.4265445104547)
+avg restoration_time 0.9 =  (13300.0, 2959.729717389748)
+avg restoration_time 0.8 =  (13000.0, 3146.4265445104547)
+avg restoration_time 0.7 =  (13000.0, 3146.4265445104547)
+avg restoration_time 0.6 =  (13000.0, 3146.4265445104547)
+Change detected, batch: 89
+Stabilization detected, batch: 213
+Change detected, batch: 232
+
+stabilization_time =  (51846.0, 0.0)
+max_performance_loss =  (0.20806335493160558, 0.0)
+restoration_time 0.9 =  ([14000, 13563, 14000, 14599, 13000], 530.9088810709424)
+restoration_time 0.8 =  ([13500, 13563, 13500, 14599, 12500], 664.3073385113249)
+restoration_time 0.7 =  ([13500, 13530, 13500, 14563, 12500], 652.554855931668)
+restoration_time 0.6 =  ([13500, 13530, 13500, 14563, 12500], 652.554855931668)
+avg restoration_time 0.9 =  (13832.4, 530.9088810709424)
+avg restoration_time 0.8 =  (13532.4, 664.3073385113249)
+avg restoration_time 0.7 =  (13518.6, 652.554855931668)
+avg restoration_time 0.6 =  (13518.6, 652.554855931668)
+stream = stream_learn_recurring_incremental_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [13300.          2959.72971739]
+ [13000.          3146.42654451]
+ [13000.          3146.42654451]
+ [13000.          3146.42654451]], m_ours = [[5.18460000e+04 0.00000000e+00]
+ [2.08063355e-01 0.00000000e+00]
+ [1.38324000e+04 5.30908881e+02]
+ [1.35324000e+04 6.64307339e+02]
+ [1.35186000e+04 6.52554856e+02]
+ [1.35186000e+04 6.52554856e+02]]
+
+
+==================stream_learn_recurring_incremental_1================
+
+
+Change detected, batch: 89
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([14500, 18000, 15500, 16500, 12500], 1854.7236990991407)
+restoration_time 0.8 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+restoration_time 0.7 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+restoration_time 0.6 =  ([13500, 17500, 15000, 16000, 12000], 1913.112646970899)
+avg restoration_time 0.9 =  (15400.0, 1854.7236990991407)
+avg restoration_time 0.8 =  (14800.0, 1913.112646970899)
+avg restoration_time 0.7 =  (14800.0, 1913.112646970899)
+avg restoration_time 0.6 =  (14800.0, 1913.112646970899)
+Change detected, batch: 89
+Stabilization detected, batch: 209
+Change detected, batch: 232
+
+stabilization_time =  (49846.0, 0.0)
+max_performance_loss =  (0.22151450813871199, 0.0)
+restoration_time 0.9 =  ([14500, 13563, 12500, 14599, 14500], 809.558052272967)
+restoration_time 0.8 =  ([13500, 13563, 12000, 14599, 13500], 829.3275830454453)
+restoration_time 0.7 =  ([13500, 13530, 12000, 14563, 13500], 818.2590298921241)
+restoration_time 0.6 =  ([13500, 13530, 12000, 14563, 13500], 818.2590298921241)
+avg restoration_time 0.9 =  (13932.4, 809.558052272967)
+avg restoration_time 0.8 =  (13432.4, 829.3275830454453)
+avg restoration_time 0.7 =  (13418.6, 818.2590298921241)
+avg restoration_time 0.6 =  (13418.6, 818.2590298921241)
+stream = stream_learn_recurring_incremental_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [15400.          1854.7236991 ]
+ [14800.          1913.11264697]
+ [14800.          1913.11264697]
+ [14800.          1913.11264697]], m_ours = [[4.98460000e+04 0.00000000e+00]
+ [2.21514508e-01 0.00000000e+00]
+ [1.39324000e+04 8.09558052e+02]
+ [1.34324000e+04 8.29327583e+02]
+ [1.34186000e+04 8.18259030e+02]
+ [1.34186000e+04 8.18259030e+02]]
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+Change detected, batch: 26
+Stabilization detected, batch: 67
+Change detected, batch: 83
+Stabilization detected, batch: 84
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 144
+Stabilization detected, batch: 186
+Change detected, batch: 204
+Stabilization detected, batch: 245
+Change detected, batch: 265
+
+stabilization_time =  (330000.0, 156971.33496278868)
+max_performance_loss =  (0.061457639880592094, 0.03626542739297282)
+restoration_time 0.9 =  ([300000, 310000, 300000, 310000, 300000], 4898.979485566356)
+restoration_time 0.8 =  ([300000, 280000, 300000, 280000, 300000], 9797.958971132712)
+restoration_time 0.7 =  ([300000, 280000, 300000, 280000, 300000], 9797.958971132712)
+restoration_time 0.6 =  ([300000, 280000, 300000, 280000, 300000], 9797.958971132712)
+avg restoration_time 0.9 =  (304000.0, 4898.979485566356)
+avg restoration_time 0.8 =  (292000.0, 9797.958971132712)
+avg restoration_time 0.7 =  (292000.0, 9797.958971132712)
+avg restoration_time 0.6 =  (292000.0, 9797.958971132712)
+Change detected, batch: 26
+Stabilization detected, batch: 74
+Change detected, batch: 77
+Stabilization detected, batch: 159
+Change detected, batch: 181
+Stabilization detected, batch: 182
+Change detected, batch: 189
+Stabilization detected, batch: 273
+Change detected, batch: 297
+Stabilization detected, batch: 389
+Change detected, batch: 408
+Stabilization detected, batch: 409
+Change detected, batch: 414
+Stabilization detected, batch: 499
+Change detected, batch: 523
+
+stabilization_time =  (203505.0, 163022.91783234477)
+max_performance_loss =  (0.07970662314275113, 0.05121145772605236)
+restoration_time 0.9 =  ([240180, 280129, 240891, 270559, 241264], 17205.472345739305)
+restoration_time 0.8 =  ([240138, 280093, 240788, 270487, 241128], 17226.01868569752)
+restoration_time 0.7 =  ([240138, 280060, 240788, 270487, 241128], 17216.225491088342)
+restoration_time 0.6 =  ([240138, 280060, 240788, 270487, 241128], 17216.225491088342)
+avg restoration_time 0.9 =  (254604.6, 17205.472345739305)
+avg restoration_time 0.8 =  (254526.8, 17226.01868569752)
+avg restoration_time 0.7 =  (254520.2, 17216.225491088342)
+avg restoration_time 0.6 =  (254520.2, 17216.225491088342)
+stream = stream_learn_recurring_incremental_3, model index = 0, model_name = wae, m_baseline = [[3.30000000e+05 1.56971335e+05]
+ [6.14576399e-02 3.62654274e-02]
+ [3.04000000e+05 4.89897949e+03]
+ [2.92000000e+05 9.79795897e+03]
+ [2.92000000e+05 9.79795897e+03]
+ [2.92000000e+05 9.79795897e+03]], m_ours = [[2.03505000e+05 1.63022918e+05]
+ [7.97066231e-02 5.12114577e-02]
+ [2.54604600e+05 1.72054723e+04]
+ [2.54526800e+05 1.72260187e+04]
+ [2.54520200e+05 1.72162255e+04]
+ [2.54520200e+05 1.72162255e+04]]
+
+
+==================stream_learn_recurring_incremental_3================
+
+
+Change detected, batch: 26
+Stabilization detected, batch: 67
+Change detected, batch: 83
+Stabilization detected, batch: 84
+Change detected, batch: 88
+Stabilization detected, batch: 126
+Change detected, batch: 144
+Stabilization detected, batch: 188
+Change detected, batch: 204
+Stabilization detected, batch: 246
+Change detected, batch: 265
+
+stabilization_time =  (342000.0, 162160.41440499588)
+max_performance_loss =  (0.07543009135227148, 0.04439334814205973)
+restoration_time 0.9 =  ([330000, 330000, 330000, 320000, 330000], 4000.0)
+restoration_time 0.8 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+restoration_time 0.7 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+restoration_time 0.6 =  ([310000, 280000, 300000, 280000, 300000], 12000.0)
+avg restoration_time 0.9 =  (328000.0, 4000.0)
+avg restoration_time 0.8 =  (294000.0, 12000.0)
+avg restoration_time 0.7 =  (294000.0, 12000.0)
+avg restoration_time 0.6 =  (294000.0, 12000.0)
+Change detected, batch: 26
+Stabilization detected, batch: 119
+Change detected, batch: 136
+Stabilization detected, batch: 137
+Change detected, batch: 141
+Stabilization detected, batch: 230
+Change detected, batch: 252
+Stabilization detected, batch: 344
+Change detected, batch: 363
+Stabilization detected, batch: 418
+Change detected, batch: 474
+
+stabilization_time =  (252697.8, 179342.5562240039)
+max_performance_loss =  (0.12015511830994736, 0.047791470490280985)
+restoration_time 0.9 =  210
+Stabilization detected, batch: 248
+Change detected, batch: 267
+
+stabilization_time =  (51500.0, 32000.0)
+max_performance_loss =  (0.09497816593886471, 0.016375545851528395)
+restoration_time 0.9 =  ([17000, 2500, 17000, 16000, 14500], 5526.300751859239)
+restoration_time 0.8 =  ([16000, 2500, 16500, 14000, 14000], 5151.698748956504)
+restoration_time 0.7 =  ([16000, 2500, 16500, 14000, 14000], 5151.698748956504)
+restoration_time 0.6 =  ([16000, 2500, 16500, 14000, 14000], 5151.698748956504)
+avg restoration_time 0.9 =  (13400.0, 5526.300751859239)
+avg restoration_time 0.8 =  (12600.0, 5151.698748956504)
+avg restoration_time 0.7 =  (12600.0, 5151.698748956504)
+avg restoration_time 0.6 =  (12600.0, 5151.698748956504)
+Change detected, batch: 29
+Stabilization detected, batch: 274
+Change detected, batch: 289
+
+stabilization_time =  (112346.0, 0.0)
+max_performance_loss =  (0.20095304509530454, 0.0)
+restoration_time 0.9 =  ([14108, 29500, 17500, 15500, 14128], 5810.0208054704935)
+restoration_time 0.8 =  ([14029, 29500, 15000, 15000, 14004], 6012.813637557712)
+restoration_time 0.7 =  ([14029, 29500, 15000, 15000, 14004], 6012.813637557712)
+restoration_time 0.6 =  ([14029, 29500, 15000, 15000, 14004], 6012.813637557712)
+avg restoration_time 0.9 =  (18147.2, 5810.0208054704935)
+avg restoration_time 0.8 =  (17506.6, 6012.813637557712)
+avg restoration_time 0.7 =  (17506.6, 6012.813637557712)
+avg restoration_time 0.6 =  (17506.6, 6012.813637557712)
+stream = stream_learn_nonrecurring_incremental_1, model index = 2, model_name = sea, m_baseline = [[5.15000000e+04 3.20000000e+04]
+ [9.49781659e-02 1.63755459e-02]
+ [1.34000000e+04 5.52630075e+03]
+ [1.26000000e+04 5.15169875e+03]
+ [1.26000000e+04 5.15169875e+03]
+ [1.26000000e+04 5.15169875e+03]], m_ours = [[1.12346000e+05 0.00000000e+00]
+ [2.00953045e-01 0.00000000e+00]
+ [1.81472000e+04 5.81002081e+03]
+ [1.75066000e+04 6.01281364e+03]
+ [1.75066000e+04 6.01281364e+03]
+ [1.75066000e+04 6.01281364e+03]]
+
+
+==================stream_learn_nonrecurring_incremental_2================
+
+
+Change detected, batch: 89
+Stabilization detected, batch: 127
+Change detected, batch: 147
+Stabilization detected, batch: 189
+Change detected, batch: 256
+Stabilization detected, batch: 257
+Change detected, batch: 271
+
+stabilization_time =  (28000.0, 18457.15759987617)
+max_performance_loss =  (0.057230968998539244, 0.029293426489540603)
+restoration_time 0.9 =  ([8000, 29000, 29000, 43000, 31000], 11278.297743897347)
+restoration_time 0.8 =  ([8000, 29000, 27000, 43000, 31000], 11271.202242884297)
+restoration_time 0.7 =  ([8000, 29000, 27000, 43000, 31000], 11271.202242884297)
+restoration_time 0.6 =  ([8000, 29000, 27000, 43000, 31000], 11271.202242884297)
+avg restoration_time 0.9 =  (28000.0, 11278.297743897347)
+avg restoration_time 0.8 =  (27600.0, 11271.202242884297)
+avg restoration_time 0.7 =  (27600.0, 11271.202242884297)
+avg restoration_time 0.6 =  (27600.0, 11271.202242884297)
+Change detected, batch: 89
+Stabilization detected, batch: 150
+Change detected, batch: 176
+Stabilization detected, batch: 243
+Change detected, batch: 300
+
+stabilization_time =  (36557.0, 3000.0)
+max_performance_loss =  (0.14467253176930606, 0.009963961922981712)
+restoration_time 0.9 =  ([8000, 28264, 26099, 46000, 1608], 15772.590103087065)
+restoration_time 0.8 =  ([8000, 28128, 26063, 46000, 1529], 15780.408828671076)
+restoration_time 0.7 =  ([8000, 28128, 26063, 46000, 1529], 15780.408828671076)
+restoration_time 0.6 =  ([8000, 28128, 26063, 46000, 1529], 15780.408828671076)
+avg restoration_time 0.9 =  (21994.2, 15772.590103087065)
+avg restoration_time 0.8 =  (21944.0, 15780.408828671076)
+avg restoration_time 0.7 =  (21944.0, 15780.408828671076)
+avg restoration_time 0.6 =  (21944.0, 15780.408828671076)
+stream = stream_learn_nonrecurring_incremental_2, model index = 0, model_name = wae, m_baseline = [[2.80000000e+04 1.84571576e+04]
+ [5.72309690e-02 2.92934265e-02]
+ [2.80000000e+04 1.12782977e+04]
+ [2.76000000e+04 1.12712022e+04]
+ [2.76000000e+04 1.12712022e+04]
+ [2.76000000e+04 1.12712022e+04]], m_ours = [[3.65570000e+04 3.00000000e+03]
+ [1.44672532e-01 9.96396192e-03]
+ [2.19942000e+04 1.57725901e+04]
+ [2.19440000e+04 1.57804088e+04]
+ [2.19440000e+04 1.57804088e+04]
+ [2.19440000e+04 1.57804088e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+Change detected, batch: 26
+Stabilization detected, batch: 65
+Change detected, batch: 86
+Stabilization detected, batch: 126
+Change detected, batch: 146
+Stabilization detected, batch: 185
+Change detected, batch: 206
+Stabilization detected, batch: 207
+
+stabilization_time =  (307500.0, 166038.3991732033)
+max_performance_loss =  (0.05580356970526419, 0.037163832833227606)
+restoration_time 0.9 =  ([310000, 290000, 300000, 300000, 220000], 32619.01286060018)
+restoration_time 0.8 =  ([270000, 290000, 300000, 300000, 220000], 30066.592756745817)
+restoration_time 0.7 =  ([270000, 290000, 300000, 300000, 220000], 30066.592756745817)
+restoration_time 0.6 =  ([270000, 290000, 300000, 300000, 220000], 30066.592756745817)
+avg restoration_time 0.9 =  (284000.0, 32619.01286060018)
+avg restoration_time 0.8 =  (276000.0, 30066.592756745817)
+avg restoration_time 0.7 =  (276000.0, 30066.592756745817)
+avg restoration_time 0.6 =  (276000.0, 30066.592756745817)
+Change detected, batch: 26
+Stabilization detected, batch: 117
+Change detected, batch: 138
+Stabilization detected, batch: 185
+Change detected, batch: 188
+Stabilization detected, batch: 268
+Change detected, batch: 296
+Stabilization detected, batch: 351
+Change detected, batch: 406
+Stabilization detected, batch: 407
+
+stabilization_time =  (156279.6, 154647.94249986)
+max_performance_loss =  (0.07124436438633301, 0.055410059336223075)
+restoration_time 0.9 =  ([241413, 292903, 240276, 300030, 240000], 27483.669613790662)
+restoration_time 0.8 =  ([241128, 292864, 240226, 300030, 240000], 27528.188299268808)
+restoration_time 0.7 =  ([241128, 292864, 240226, 300030, 240000], 27528.188299268808)
+restoration_time 0.6 =  ([241128, 292864, 240226, 300030, 240000], 27528.188299268808)
+avg restoration_time 0.9 =  (262924.4, 27483.669613790662)
+avg restoration_time 0.8 =  (262849.6, 27528.188299268808)
+avg restoration_time 0.7 =  (262849.6, 27528.188299268808)
+avg restoration_time 0.6 =  (262849.6, 27528.188299268808)
+stream = stream_learn_nonrecurring_incremental_3, model index = 0, model_name = wae, m_baseline = [[3.07500000e+05 1.66038399e+05]
+ [5.58035697e-02 3.71638328e-02]
+ [2.84000000e+05 3.26190129e+04]
+ [2.76000000e+05 3.00665928e+04]
+ [2.76000000e+05 3.00665928e+04]
+ [2.76000000e+05 3.00665928e+04]], m_ours = [[1.56279600e+05 1.54647942e+05]
+ [7.12443644e-02 5.54100593e-02]
+ [2.62924400e+05 2.74836696e+04]
+ [2.62849600e+05 2.75281883e+04]
+ [2.62849600e+05 2.75281883e+04]
+ [2.62849600e+05 2.75281883e+04]]
+
+
+==================stream_learn_nonrecurring_incremental_3================
+
+
+Change detected, batch: 25
+Stabilization detected, batch: 66
+Change detected, batch: 85
+Stabilization detected, batch: 127
+Change detected, batch: 146
+Stabilization detected, batch: 186
+Change detected, batch: 204
+Stabilization detected, batch: 205
+Change detected, batch: 212
+Stabilization detected, batch: 246
+
+stabilization_time =  (326000.0, 155512.05741035)
+max_performance_loss =  (0.06473921241465633, 0.03534449392177695)
+restoration_time 0.9 =  ([320000, 330000, 320000, 300000, 260000], 24979.991993593594)
+restoration_time 0.8 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+restoration_time 0.7 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+restoration_time 0.6 =  ([280000, 300000, 320000, 300000, 260000], 20396.07805437114)
+avg restoration_time 0.9 =  (306000.0, 24979.991993593594)
+avg restoration_time 0.8 =  (292000.0, 20396.07805437114)
+avg restoration_time 0.7 =  (292000.0, 20396.07805437114)
+avg restoration_time 0.6 =  (292000.0, 20396.07805437114)
+Change detected, batch: 25
+Stabilization detected, batch: 117
+Change detected, batch: 137
+Stabilization detected, batch: 231
+Change detected, batch: 251
+Stabilization detected, batch: 315
+Change detected, batch: 363
+Stabilization detected, batch: 364
+Change detected, batch: 371
+Stabilization detected, batch:
+
+==================stream_learn_recurring_abrupt_3================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 62
+Change detected, batch: 90
+Stabilization detected, batch: 122
+Change detected, batch: 150
+Stabilization detected, batch: 182
+Change detected, batch: 210
+Stabilization detected, batch: 242
+Change detected, batch: 270
+
+stabilization_time =  (330000.0, 0.0)
+max_performance_loss =  (0.4562134596913963, 0.003229087997999476)
+restoration_time 0.9 =  ([40000, 30000, 40000, 40000, 40000], 4000.0)
+restoration_time 0.8 =  ([30000, 30000, 30000, 30000, 30000], 0.0)
+restoration_time 0.7 =  ([30000, 30000, 30000, 30000, 30000], 0.0)
+restoration_time 0.6 =  ([30000, 30000, 30000, 30000, 30000], 0.0)
+avg restoration_time 0.9 =  (38000.0, 4000.0)
+avg restoration_time 0.8 =  (30000.0, 0.0)
+avg restoration_time 0.7 =  (30000.0, 0.0)
+avg restoration_time 0.6 =  (30000.0, 0.0)
+Change detected, batch: 30
+Stabilization detected, batch: 87
+Change detected, batch: 141
+Stabilization detected, batch: 192
+Change detected, batch: 248
+Stabilization detected, batch: 299
+Change detected, batch: 356
+Stabilization detected, batch: 410
+Change detected, batch: 465
+Stabilization detected, batch: 520
+
+stabilization_time =  (53848.8, 9798.798261011398)
+max_performance_loss =  (0.5215622347082212, 0.08130877488678091)
+restoration_time 0.9 =  ([10099, 10099, 10276, 10276, 10180], 79.21363518990907)
+restoration_time 0.8 =  ([10099, 10099, 10138, 10099, 10099], 15.599999999999998)
+restoration_time 0.7 =  ([10099, 10099, 10099, 10063, 10099], 14.4)
+restoration_time 0.6 =  ([10030, 10099, 10099, 10063, 10099], 27.756080414928906)
+avg restoration_time 0.9 =  (10186.0, 79.21363518990907)
+avg restoration_time 0.8 =  (10106.8, 15.599999999999998)
+avg restoration_time 0.7 =  (10091.8, 14.4)
+avg restoration_time 0.6 =  (10078.0, 27.756080414928906)
+stream = stream_learn_recurring_abrupt_3, model index = 0, model_name = wae, m_baseline = [[3.3000000e+05 0.0000000e+00]
+ [4.5621346e-01 3.2290880e-03]
+ [3.8000000e+04 4.0000000e+03]
+ [3.0000000e+04 0.0000000e+00]
+ [3.0000000e+04 0.0000000e+00]
+ [3.0000000e+04 0.0000000e+00]], m_ours = [[5.38488000e+04 9.79879826e+03]
+ [5.21562235e-01 8.13087749e-02]
+ [1.01860000e+04 7.92136352e+01]
+ [1.01068000e+04 1.56000000e+01]
+ [1.00918000e+04 1.44000000e+01]
+ [1.00780000e+04 2.77560804e+01]]
+
+
+==================stream_learn_recurring_abrupt_3================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (360000.0, 0.0)
+max_performance_loss =  (0.46172299768545627, 0.00423877753368621)
+restoration_time 0.9 =  ([70000, 70000, 70000, 70000, 70000], 0.0)
+restoration_time 0.8 =  ([60000, 60000, 60000, 60000, 60000], 0.0)
+restoration_time 0.7 =  ([50000, 50000, 50000, 60000, 50000], 4000.0)
+restoration_time 0.6 =  ([40000, 40000, 40000, 40000, 40000], 0.0)
+avg restoration_time 0.9 =  (70000.0, 0.0)
+avg restoration_time 0.8 =  (60000.0, 0.0)
+avg restoration_time 0.7 =  (52000.0, 4000.0)
+avg restoration_time 0.6 =  (40000.0, 0.0)
+Change detected, batch: 30
+Stabilization detected, batch: 87
+Change detected, batch: 141
+Stabilization detected, batch: 191
+Change detected, batch: 248
+Stabilization detected, batch: 294
+Change detected, batch: 351
+Stabilization detected, batch: 403
+Change detected, batch: 460
+Stabilization detected, batch: 516
+
+stabilization_time =  (50137.6, 14385.911018771109)
+max_performance_loss =  (0.5044181473438256, 0.05551675403164391)
+restoration_time 0.9 =  ([10331, 10391, 10276, 10457, 10276], 69.81518459475704)
+restoration_time 0.8 =  ([10226, 10226, 10276, 10331, 10226], 41.7612260356422)
+restoration_time 0.7 =  ([10180, 10138, 10180, 10099, 10180], 32.55518391900129)
+restoration_time 0.6 =  ([10099, 10138, 10030, 10099, 10063], 36.62458190887644)
+avg restoration_time 0.9 =  (10346.2, 69.81518459475704)
+avg restoration_time 0.8 =  (10257.0, 41.7612260356422)
+avg restoration_time 0.7 =  (10155.4, 32.55518391900129)
+avg restoration_time 0.6 =  (10085.8, 36.62458190887644)
+stream = stream_learn_recurring_abrupt_3, model index = 1, model_name = awe, m_baseline = [[3.60000000e+05 0.00000000e+00]
+ [4.61722998e-01 4.23877753e-03]
+ [7.00000000e+04 0.00000000e+00]
+ [6.00000000e+04 0.00000000e+00]
+ [5.20000000e+04 4.00000000e+03]
+ [4.00000000e+04 0.00000000e+00]], m_ours = [[5.01376000e+04 1.43859110e+04]
+ [5.04418147e-01 5.55167540e-02]
+ [1.03462000e+04 6.98151846e+01]
+ [1.02570000e+04 4.17612260e+01]
+ [1.01554000e+04 3.25551839e+01]
+ [1.00858000e+04 3.66245819e+01]]
+Process SpawnPoolWorker-4:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+ 427
+
+stabilization_time =  (205676.8, 174730.96268995944)
+max_performance_loss =  (0.08022757013811992, 0.053063312485479554)
+restoration_time 0.9 =  ([230391, 289170, 242166, 310361, 280000], 29796.750524847503)
+restoration_time 0.8 =  ([230331, 289170, 241951, 310306, 280000], 29838.969101495448)
+restoration_time 0.7 =  ([230331, 289170, 241951, 310306, 280000], 29838.969101495448)
+restoration_time 0.6 =  ([230331, 289170, 241951, 310306, 280000], 29838.969101495448)
+avg restoration_time 0.9 =  (270417.6, 29796.750524847503)
+avg restoration_time 0.8 =  (270351.6, 29838.969101495448)
+avg restoration_time 0.7 =  (270351.6, 29838.969101495448)
+avg restoration_time 0.6 =  (270351.6, 29838.969101495448)
+stream = stream_learn_nonrecurring_incremental_3, model index = 1, model_name = awe, m_baseline = [[3.26000000e+05 1.55512057e+05]
+ [6.47392124e-02 3.53444939e-02]
+ [3.06000000e+05 2.49799920e+04]
+ [2.92000000e+05 2.03960781e+04]
+ [2.92000000e+05 2.03960781e+04]
+ [2.92000000e+05 2.03960781e+04]], m_ours = [[2.05676800e+05 1.74730963e+05]
+ [8.02275701e-02 5.30633125e-02]
+ [2.70417600e+05 2.97967505e+04]
+ [2.70351600e+05 2.98389691e+04]
+ [2.70351600e+05 2.98389691e+04]
+ [2.70351600e+05 2.98389691e+04]]
+ ([15957, 23500, 22500, 25000, 18000], 3433.1175103686737)
+restoration_time 0.7 =  ([15891, 23500, 22500, 25000, 18000], 3452.5209572137283)
+restoration_time 0.6 =  ([15891, 23500, 22500, 25000, 18000], 3452.5209572137283)
+avg restoration_time 0.9 =  (21805.8, 3910.607952735738)
+avg restoration_time 0.8 =  (20991.4, 3433.1175103686737)
+avg restoration_time 0.7 =  (20978.2, 3452.5209572137283)
+avg restoration_time 0.6 =  (20978.2, 3452.5209572137283)
+stream = stream_learn_recurring_gradual_4, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [23400.          2870.54001888]
+ [22400.          2745.90604355]
+ [22400.          2745.90604355]
+ [22400.          2745.90604355]], m_ours = [[           nan            nan]
+ [           nan            nan]
+ [21805.8         3910.60795274]
+ [20991.4         3433.11751037]
+ [20978.2         3452.52095721]
+ [20978.2         3452.52095721]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-11:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+ 44
+Stabilization detected, batch: 99
+Change detected, batch: 138
+Stabilization detected, batch: 258
+Change detected, batch: 288
+
+stabilization_time =  (88500.0, 32500.0)
+max_performance_loss =  (0.29935622317596566, 0.20171673819742483)
+restoration_time 0.9 =  ([33000, 14000, 34000, 9000, 74000], 22885.803459787032)
+restoration_time 0.8 =  ([33000, 14000, 33000, 9000, 27000], 9927.738916792685)
+restoration_time 0.7 =  ([33000, 13000, 32000, 9000, 24000], 9744.742172063867)
+restoration_time 0.6 =  ([33000, 13000, 31000, 9000, 24000], 9549.869109050658)
+avg restoration_time 0.9 =  (32800.0, 22885.803459787032)
+avg restoration_time 0.8 =  (23200.0, 9927.738916792685)
+avg restoration_time 0.7 =  (22200.0, 9744.742172063867)
+avg restoration_time 0.6 =  (22000.0, 9549.869109050658)
+Change detected, batch: 63
+Stabilization detected, batch: 124
+Change detected, batch: 166
+Stabilization detected, batch: 315
+Change detected, batch: 344
+Stabilization detected, batch: 583
+Change detected, batch: 630
+
+stabilization_time =  (122223.66666666667, 72669.72470629629)
+max_performance_loss =  (0.24672404334152395, 0.060518604714878084)
+restoration_time 0.9 =  ([31000, 21557, 34000, 9000, 75557], 22430.177434875543)
+restoration_time 0.8 =  ([31000, 18585, 33000, 9000, 22257], 8715.228983796123)
+restoration_time 0.7 =  ([31000, 18585, 31000, 9000, 20755], 8296.856392634501)
+restoration_time 0.6 =  ([31000, 18585, 31000, 9000, 20576], 8302.828636073371)
+avg restoration_time 0.9 =  (34222.8, 22430.177434875543)
+avg restoration_time 0.8 =  (22768.4, 8715.228983796123)
+avg restoration_time 0.7 =  (22068.0, 8296.856392634501)
+avg restoration_time 0.6 =  (22032.2, 8302.828636073371)
+stream = insects_abrupt, model index = 0, model_name = wae, m_baseline = [[8.85000000e+04 3.25000000e+04]
+ [2.99356223e-01 2.01716738e-01]
+ [3.28000000e+04 2.28858035e+04]
+ [2.32000000e+04 9.92773892e+03]
+ [2.22000000e+04 9.74474217e+03]
+ [2.20000000e+04 9.54986911e+03]], m_ours = [[1.22223667e+05 7.26697247e+04]
+ [2.46724043e-01 6.05186047e-02]
+ [3.42228000e+04 2.24301774e+04]
+ [2.27684000e+04 8.71522898e+03]
+ [2.20680000e+04 8.29685639e+03]
+ [2.20322000e+04 8.30282864e+03]]
+
+
+==================insects_abrupt================
+
+
+Change detected, batch: 44
+Stabilization detected, batch: 100
+Change detected, batch: 138
+Stabilization detected, batch: 261
+Change detected, batch: 288
+Stabilization detected, batch: 372
+Change detected, batch: 375
+Stabilization detected, batch: 481
+Change detected, batch: 525
+
+stabilization_time =  (93250.0, 25083.610186733487)
+max_performance_loss =  (0.3225130163878457, 0.1642682780138253)
+restoration_time 0.9 =  ([8000, 16000, 36000, 9000, 74000], 24832.23711227001)
+restoration_time 0.8 =  ([8000, 16000, 35000, 9000, 28000], 10647.065323364932)
+restoration_time 0.7 =  ([8000, 15000, 33000, 9000, 26000], 9785.703858180053)
+restoration_time 0.6 =  ([8000, 15000, 31000, 9000, 24000], 8867.919710958146)
+avg restoration_time 0.9 =  (28600.0, 24832.23711227001)
+avg restoration_time 0.8 =  (19200.0, 10647.065323364932)
+avg restoration_time 0.7 =  (18200.0, 9785.703858180053)
+avg restoration_time 0.6 =  (17400.0, 8867.919710958146)
+Change detected, batch: 138
+Stabilization detected, batch: 289
+Change detected, batch: 316
+Stabilization detected, batch: 557
+Change detected, batch: 608
+
+stabilization_time =  (168557.0, 45000.0)
+max_performance_loss =  (0.4526336511927499, 0.14543708835708932)
+restoration_time 0.9 =  ([36000, 10788, 37000, 18000, 140557], 47149.61587966544)
+restoration_time 0.8 =  ([36000, 10694, 35000, 18000, 133557], 44532.29858159131)
+restoration_time 0.7 =  ([36000, 10608, 33000, 18000, 128557], 42704.35684564281)
+restoration_time 0.6 =  ([36000, 10608, 31000, 18000, 127557], 42435.349575560234)
+avg restoration_time 0.9 =  (48469.0, 47149.61587966544)
+avg restoration_time 0.8 =  (46650.2, 44532.29858159131)
+avg restoration_time 0.7 =  (45233.0, 42704.35684564281)
+avg restoration_time 0.6 =  (44633.0, 42435.349575560234)
+stream = insects_abrupt, model index = 1, model_name = awe, m_baseline = [[9.32500000e+04 2.50836102e+04]
+ [3.22513016e-01 1.64268278e-01]
+ [2.86000000e+04 2.48322371e+04]
+ [1.92000000e+04 1.06470653e+04]
+ [1.82000000e+04 9.78570386e+03]
+ [1.74000000e+04 8.86791971e+03]], m_ours = [[1.68557000e+05 4.50000000e+04]
+ [4.52633651e-01 1.45437088e-01]
+ [4.84690000e+04 4.71496159e+04]
+ [4.66502000e+04 4.45322986e+04]
+ [4.52330000e+04 4.27043568e+04]
+ [4.46330000e+04 4.24353496e+04]]
+
+
+==================insects_abrupt================
+
+
+Change detected, batch: 138
+Stabilization detected, batch: 261
+Change detected, batch: 288
+Stabilization detected, batch: 499
+Change detected, batch: 556
+
+stabilization_time =  (168000.0, 44000.0)
+max_performance_loss =  (0.46370758710224164, 0.04686323742207116)
+restoration_time 0.9 =  ([36000, 16000, 36000, 9000, 75000], 22966.06191753388)
+restoration_time 0.8 =  ([36000, 16000, 36000, 9000, 28000], 10844.353369380768)
+restoration_time 0.7 =  ([36000, 15000, 33000, 9000, 26000], 10342.146779078317)
+restoration_time 0.6 =  ([36000, 14000, 31000, 9000, 25000], 10139.03348450926)
+avg restoration_time 0.9 =  (34400.0, 22966.06191753388)
+avg restoration_time 0.8 =  (25000.0, 10844.353369380768)
+avg restoration_time 0.7 =  (23800.0, 10342.146779078317)
+avg restoration_time 0.6 =  (23000.0, 10139.03348450926)
+Change detected, batch: 63
+Stabilization detected, batch: 126
+Change detected, batch: 166
+Stabilization detected, batch: 319
+Change detected, batch: 345
+Stabilization detected, batch: 459
+Change detected, batch: 460
+Stabilization detected, batch: 598
+Change detected, batch: 625
+
+stabilization_time =  (89557.0, 34139.420030223126)
+max_performance_loss =  (0.32183374214766675, 0.16325957494541316)
+restoration_time 0.9 =  ([32000, 10413, 36000, 9000, 76557], 24467.008963091506)
+restoration_time 0.8 =  ([32000, 10264, 36000, 9000, 22166], 10979.037043384087)
+restoration_time 0.7 =  ([32000, 10264, 33000, 9000, 20788], 10240.176748474609)
+restoration_time 0.6 =  ([32000, 10128, 31000, 9000, 20694], 9821.866250361994)
+avg restoration_time 0.9 =  (32794.0, 24467.008963091506)
+avg restoration_time 0.8 =  (21886.0, 10979.037043384087)
+avg restoration_time 0.7 =  (21010.4, 10240.176748474609)
+avg restoration_time 0.6 =  (20564.4, 9821.866250361994)
+stream = insects_abrupt, model index = 2, model_name = sea, m_baseline = [[1.68000000e+05 4.40000000e+04]
+ [4.63707587e-01 4.68632374e-02]
+ [3.44000000e+04 2.29660619e+04]
+ [2.50000000e+04 1.08443534e+04]
+ [2.38000000e+04 1.03421468e+04]
+ [2.30000000e+04 1.01390335e+04]], m_ours = [[8.95570000e+04 3.41394200e+04]
+ [3.21833742e-01 1.63259575e-01]
+ [3.27940000e+04 2.44670090e+04]
+ [2.18860000e+04 1.09790370e+04]
+ [2.10104000e+04 1.02401767e+04]
+ [2.05644000e+04 9.82186625e+03]]
+
+
+==================insects_gradual================
+
+
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([70000], 0.0)
+restoration_time 0.8 =  ([25000], 0.0)
+restoration_time 0.7 =  ([23000], 0.0)
+restoration_time 0.6 =  ([20000], 0.0)
+avg restoration_time 0.9 =  (70000.0, 0.0)
+avg restoration_time 0.8 =  (25000.0, 0.0)
+avg restoration_time 0.7 =  (23000.0, 0.0)
+avg restoration_time 0.6 =  (20000.0, 0.0)
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([71000], 0.0)
+restoration_time 0.8 =  ([25000], 0.0)
+restoration_time 0.7 =  ([23000], 0.0)
+restoration_time 0.6 =  ([21000], 0.0)
+avg restoration_time 0.9 =  (71000.0, 0.0)
+avg restoration_time 0.8 =  (25000.0, 0.0)
+avg restoration_time 0.7 =  (23000.0, 0.0)
+avg restoration_time 0.6 =  (21000.0, 0.0)
+stream = insects_gradual, model index = 2, model_name = sea, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [70000.     0.]
+ [25000.     0.]
+ [23000.     0.]
+ [20000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [71000.     0.]
+ [25000.     0.]
+ [23000.     0.]
+ [21000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-7:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+
+
+==================stream_learn_nonrecurring_abrupt_3================
+
+
+Change detected, batch: 30
+Stabilization detected, batch: 65
+Change detected, batch: 90
+Stabilization detected, batch: 125
+Change detected, batch: 150
+Stabilization detected, batch: 185
+Change detected, batch: 210
+Stabilization detected, batch: 245
+Change detected, batch: 270
+
+stabilization_time =  (360000.0, 0.0)
+max_performance_loss =  (0.4515862227385912, 0.00943832504537265)
+restoration_time 0.9 =  ([70000, 70000, 70000, 60000, 60000], 4898.979485566356)
+restoration_time 0.8 =  ([60000, 60000, 60000, 60000, 60000], 0.0)
+restoration_time 0.7 =  ([50000, 50000, 60000, 50000, 50000], 4000.0)
+restoration_time 0.6 =  ([40000, 40000, 30000, 30000, 30000], 4898.979485566356)
+avg restoration_time 0.9 =  (66000.0, 4898.979485566356)
+avg restoration_time 0.8 =  (60000.0, 0.0)
+avg restoration_time 0.7 =  (52000.0, 4000.0)
+avg restoration_time 0.6 =  (34000.0, 4898.979485566356)
+Change detected, batch: 30
+Stabilization detected, batch: 84
+Change detected, batch: 139
+Stabilization detected, batch: 192
+Change detected, batch: 248
+Stabilization detected, batch: 307
+Change detected, batch: 360
+Stabilization detected, batch: 425
+Change detected, batch: 472
+Stabilization detected, batch: 526
+
+stabilization_time =  (75147.8, 31865.409882190434)
+max_performance_loss =  (0.5934750355977721, 0.060798717051716314)
+restoration_time 0.9 =  ([10331, 10391, 10391, 10331, 10276], 43.31281565541543)
+restoration_time 0.8 =  ([10276, 10276, 10276, 10226, 10276], 20.0)
+restoration_time 0.7 =  ([10138, 10226, 10226, 10180, 10180], 33.15418525616336)
+restoration_time 0.6 =  ([10138, 10138, 10138, 10180, 10180], 20.575713839378697)
+avg restoration_time 0.9 =  (10344.0, 43.31281565541543)
+avg restoration_time 0.8 =  (10266.0, 20.0)
+avg restoration_time 0.7 =  (10190.0, 33.15418525616336)
+avg restoration_time 0.6 =  (10154.8, 20.575713839378697)
+stream = stream_learn_nonrecurring_abrupt_3, model index = 2, model_name = sea, m_baseline = [[3.60000000e+05 0.00000000e+00]
+ [4.51586223e-01 9.43832505e-03]
+ [6.60000000e+04 4.89897949e+03]
+ [6.00000000e+04 0.00000000e+00]
+ [5.20000000e+04 4.00000000e+03]
+ [3.40000000e+04 4.89897949e+03]], m_ours = [[7.51478000e+04 3.18654099e+04]
+ [5.93475036e-01 6.07987171e-02]
+ [1.03440000e+04 4.33128157e+01]
+ [1.02660000e+04 2.00000000e+01]
+ [1.01900000e+04 3.31541853e+01]
+ [1.01548000e+04 2.05757138e+01]]
+
+
+==================stream_learn_nonrecurring_abrupt_4================
+
+
+Change detected, batch: 50
+Stabilization detected, batch: 446
+Change detected, batch: 450
+Stabilization detected, batch: 482
+
+stabilization_time =  (107500.0, 91000.0)
+max_performance_loss =  (0.5524926907954432, 0.11952565782841018)
+restoration_time 0.9 =  ([1500, 1500, 2000, 1500, 2000], 244.94897427831782)
+restoration_time 0.8 =  ([1500, 500, 1500, 1500, 1500], 400.0)
+restoration_time 0.7 =  ([1500, 500, 1500, 1500, 1500], 400.0)
+restoration_time 0.6 =  ([1000, 500, 1500, 1500, 1500], 400.0)
+avg restoration_time 0.9 =  (1700.0, 244.94897427831782)
+avg restoration_time 0.8 =  (1300.0, 400.0)
+avg restoration_time 0.7 =  (1300.0, 400.0)
+avg restoration_time 0.6 =  (1200.0, 400.0)
+Change detected, batch: 50
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([638, 2000, 2000, 2000, 2000], 544.8)
+restoration_time 0.8 =  ([563, 1000, 2000, 2000, 2000], 612.7275414080877)
+restoration_time 0.7 =  ([563, 1000, 1500, 1500, 1500], 378.1468497819332)
+restoration_time 0.6 =  ([563, 1000, 1500, 1500, 1500], 378.1468497819332)
+avg restoration_time 0.9 =  (1727.6, 544.8)
+avg restoration_time 0.8 =  (1512.6, 612.7275414080877)
+avg restoration_time 0.7 =  (1212.6, 378.1468497819332)
+avg restoration_time 0.6 =  (1212.6, 378.1468497819332)
+stream = stream_learn_nonrecurring_abrupt_4, model index = 0, model_name = wae, m_baseline = [[1.07500000e+05 9.10000000e+04]
+ [5.52492691e-01 1.19525658e-01]
+ [1.70000000e+03 2.44948974e+02]
+ [1.30000000e+03 4.00000000e+02]
+ [1.30000000e+03 4.00000000e+02]
+ [1.20000000e+03 4.00000000e+02]], m_ours = [[          nan           nan]
+ [          nan           nan]
+ [1727.6         544.8       ]
+ [1512.6         612.72754141]
+ [1212.6         378.14684978]
+ [1212.6         378.14684978]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-6:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-5:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+ ([241413, 260210, 240276, 230276, 230226], 10949.439591138898)
+restoration_time 0.8 =  ([241264, 260210, 240180, 230226, 230180], 10965.299375758055)
+restoration_time 0.7 =  ([241264, 260168, 240180, 230180, 230138], 10966.538049904355)
+restoration_time 0.6 =  ([241264, 260168, 240180, 230180, 230138], 10966.538049904355)
+avg restoration_time 0.9 =  (240480.2, 10949.439591138898)
+avg restoration_time 0.8 =  (240412.0, 10965.299375758055)
+avg restoration_time 0.7 =  (240386.0, 10966.538049904355)
+avg restoration_time 0.6 =  (240386.0, 10966.538049904355)
+stream = stream_learn_recurring_incremental_3, model index = 1, model_name = awe, m_baseline = [[3.42000000e+05 1.62160414e+05]
+ [7.54300914e-02 4.43933481e-02]
+ [3.28000000e+05 4.00000000e+03]
+ [2.94000000e+05 1.20000000e+04]
+ [2.94000000e+05 1.20000000e+04]
+ [2.94000000e+05 1.20000000e+04]], m_ours = [[2.52697800e+05 1.79342556e+05]
+ [1.20155118e-01 4.77914705e-02]
+ [2.40480200e+05 1.09494396e+04]
+ [2.40412000e+05 1.09652994e+04]
+ [2.40386000e+05 1.09665380e+04]
+ [2.40386000e+05 1.09665380e+04]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-12:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+ (23143.2, 17919.278985494926)
+avg restoration_time 0.6 =  (23143.2, 17919.278985494926)
+stream = stream_learn_recurring_incremental_4, model index = 0, model_name = wae, m_baseline = [[2.87500000e+04 1.97500000e+04]
+ [4.92759716e-02 4.03073617e-02]
+ [2.69000000e+04 1.58316139e+04]
+ [2.68000000e+04 1.59423963e+04]
+ [2.68000000e+04 1.59423963e+04]
+ [2.68000000e+04 1.59423963e+04]], m_ours = [[1.55846000e+05 0.00000000e+00]
+ [8.62425757e-02 0.00000000e+00]
+ [2.33604000e+04 1.76878708e+04]
+ [2.31432000e+04 1.79192790e+04]
+ [2.31432000e+04 1.79192790e+04]
+ [2.31432000e+04 1.79192790e+04]]
+
+
+==================insects_gradual================
+
+
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([69000], 0.0)
+restoration_time 0.8 =  ([23000], 0.0)
+restoration_time 0.7 =  ([20000], 0.0)
+restoration_time 0.6 =  ([19000], 0.0)
+avg restoration_time 0.9 =  (69000.0, 0.0)
+avg restoration_time 0.8 =  (23000.0, 0.0)
+avg restoration_time 0.7 =  (20000.0, 0.0)
+avg restoration_time 0.6 =  (19000.0, 0.0)
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([69000], 0.0)
+restoration_time 0.8 =  ([24000], 0.0)
+restoration_time 0.7 =  ([20000], 0.0)
+restoration_time 0.6 =  ([18000], 0.0)
+avg restoration_time 0.9 =  (69000.0, 0.0)
+avg restoration_time 0.8 =  (24000.0, 0.0)
+avg restoration_time 0.7 =  (20000.0, 0.0)
+avg restoration_time 0.6 =  (18000.0, 0.0)
+stream = insects_gradual, model index = 0, model_name = wae, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [23000.     0.]
+ [20000.     0.]
+ [19000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [69000.     0.]
+ [24000.     0.]
+ [20000.     0.]
+ [18000.     0.]]
+
+
+==================insects_gradual================
+
+
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([70000], 0.0)
+restoration_time 0.8 =  ([24000], 0.0)
+restoration_time 0.7 =  ([23000], 0.0)
+restoration_time 0.6 =  ([19000], 0.0)
+avg restoration_time 0.9 =  (70000.0, 0.0)
+avg restoration_time 0.8 =  (24000.0, 0.0)
+avg restoration_time 0.7 =  (23000.0, 0.0)
+avg restoration_time 0.6 =  (19000.0, 0.0)
+Change detected, batch: 4
+
+stabilization_time =  (nan, nan)
+max_performance_loss =  (nan, nan)
+restoration_time 0.9 =  ([70000], 0.0)
+restoration_time 0.8 =  ([25000], 0.0)
+restoration_time 0.7 =  ([23000], 0.0)
+restoration_time 0.6 =  ([21000], 0.0)
+avg restoration_time 0.9 =  (70000.0, 0.0)
+avg restoration_time 0.8 =  (25000.0, 0.0)
+avg restoration_time 0.7 =  (23000.0, 0.0)
+avg restoration_time 0.6 =  (21000.0, 0.0)
+stream = insects_gradual, model index = 1, model_name = awe, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [70000.     0.]
+ [24000.     0.]
+ [23000.     0.]
+ [19000.     0.]], m_ours = [[   nan    nan]
+ [   nan    nan]
+ [70000.     0.]
+ [25000.     0.]
+ [23000.     0.]
+ [21000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Process SpawnPoolWorker-10:
+Traceback (most recent call last):
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/queues.py", line 356, in get
+    res = self._reader.recv_bytes()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "run_mp.py", line 111, in <module>
+  File "run_mp.py", line 62, in run
+    metrics_b = np.stack(metrics_baseline[i], axis=0)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 765, in get
+    self.wait(timeout)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/multiprocessing/pool.py", line 762, in wait
+    self._event.wait(timeout)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
