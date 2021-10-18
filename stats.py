@@ -5,7 +5,7 @@ from save_tex_table import *
 
 def main():
     model_names = ['wae', 'awe', 'sea', ]  # 'aue', 'onlinebagging', 'mlp']
-
+    base_model_name = 'naive_bayes'
     metrics_names = ['SamplewiseStabilizationTime', 'MaxPerformanceLoss', 'SamplewiseRestorationTime0.9',
                      'SamplewiseRestorationTime0.8', 'SamplewiseRestorationTime0.7', 'SamplewiseRestorationTime0.6']
 
@@ -21,12 +21,11 @@ def main():
          'SRT(0.8) Statistic', 'SRT(0.8) p-value',
          'SRT(0.7) Statistic', 'SRT(0.7) p-value', ]
     ]
-    base_model_name = 'naive_bayes'
     for model_name in model_names:
         table.append([model_name.upper()])
         print(f'===================model {model_name}===================')
         metrics_baseline = np.load(f'results/{model_name}_{base_model_name}_baseline.npy')
-        metrics_ours = np.load(f'results/{model_name}_ours.npy')
+        metrics_ours = np.load(f'results/{model_name}_{base_model_name}_ours.npy')
         for i, metric_name in enumerate(metrics_names):
             print(metric_name)
             stabilization_time_baseline = metrics_baseline[:, i, 0]
@@ -38,7 +37,7 @@ def main():
                 table[-1].append(statistic)
                 table[-1].append(p_value)
 
-    save_tex_table(table, 'tabels/stats.tex', use_hline=False)
+    save_tex_table(table, f'tabels/stats_{base_model_name}.tex', use_hline=False)
 
 
 if __name__ == '__main__':
