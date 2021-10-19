@@ -5,6 +5,7 @@ import functools
 import multiprocessing
 import itertools
 
+from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -15,29 +16,30 @@ from run import *
 
 def run():
     stream_names = [
-        # 'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_recurring_abrupt_4',
-        # 'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_4',
-        # 'stream_learn_recurring_gradual_1', 'stream_learn_recurring_gradual_2', 'stream_learn_recurring_gradual_3', 'stream_learn_recurring_gradual_4',
-        # 'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_gradual_4',
-        # 'stream_learn_recurring_incremental_1', 'stream_learn_recurring_incremental_2', 'stream_learn_recurring_incremental_3', 'stream_learn_recurring_incremental_4',
-        # 'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', 'stream_learn_nonrecurring_incremental_4',
-        # 'usenet_1',
-        # 'insects_abrupt',
-        # 'insects_gradual',
+        'stream_learn_recurring_abrupt_1',  'stream_learn_recurring_abrupt_2', 'stream_learn_recurring_abrupt_3', 'stream_learn_recurring_abrupt_4',
+        'stream_learn_nonrecurring_abrupt_1', 'stream_learn_nonrecurring_abrupt_2', 'stream_learn_nonrecurring_abrupt_3', 'stream_learn_nonrecurring_abrupt_4',
+        'stream_learn_recurring_gradual_1', 'stream_learn_recurring_gradual_2', 'stream_learn_recurring_gradual_3', 'stream_learn_recurring_gradual_4',
+        'stream_learn_nonrecurring_gradual_1', 'stream_learn_nonrecurring_gradual_2', 'stream_learn_nonrecurring_gradual_3', 'stream_learn_nonrecurring_gradual_4',
+        'stream_learn_recurring_incremental_1', 'stream_learn_recurring_incremental_2', 'stream_learn_recurring_incremental_3', 'stream_learn_recurring_incremental_4',
+        'stream_learn_nonrecurring_incremental_1', 'stream_learn_nonrecurring_incremental_2', 'stream_learn_nonrecurring_incremental_3', 'stream_learn_nonrecurring_incremental_4',
+        'usenet_1',
+        'insects_abrupt',
+        'insects_gradual',
         # not done svm:
-        'stream_learn_recurring_gradual_3',
-        'stream_learn_nonrecurring_gradual_3',
-        'stream_learn_nonrecurring_incremental_4',
-        'stream_learn_nonrecurring_abrupt_3',
-        'stream_learn_nonrecurring_abrupt_4',
+        # 'stream_learn_recurring_gradual_3',
+        # 'stream_learn_nonrecurring_gradual_3',
+        # 'stream_learn_nonrecurring_incremental_4',
+        # 'stream_learn_nonrecurring_abrupt_3',
+        # 'stream_learn_nonrecurring_abrupt_4',
     ]
 
     models_names = ['wae', 'awe', 'sea']
-    base_model_name = 'svm'
+    base_model_name = 'mlp'
     base_models = {
         'naive_bayes': GaussianNB,
         'knn': KNeighborsClassifier,
         'svm': functools.partial(SVC, probability=True),
+        'mlp': functools.partial(MLPClassifier, learning_rate_init=0.01),
     }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]

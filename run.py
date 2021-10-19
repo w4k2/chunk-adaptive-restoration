@@ -33,11 +33,12 @@ def run():
     ]
 
     models_names = ['wae', 'awe', 'sea']
-    base_model_name = 'svm'
+    base_model_name = 'mlp'
     base_models = {
         'naive_bayes': GaussianNB,
         'knn': KNeighborsClassifier,
         'svm': functools.partial(SVC, probability=True),
+        'mlp': functools.partial(MLPClassifier, learning_rate_init=0.01),
     }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
@@ -61,7 +62,7 @@ def run():
 
     for stream_name in stream_names:
         for model_index, model_name in enumerate(models_names):
-            print(f'\n\n=================={stream_name}================\n\n')
+            print(f'\n\n=================={stream_name}================\n\n', flush=True)
             clf = get_model(model_name, base_models[base_model_name])
             axis = None
             if stream_name in streams_for_plotting:
@@ -70,6 +71,7 @@ def run():
 
             metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
             metrics_baseline[model_index].append(metrics_vales)
+            print(f'stream = {stream_name}, model index = {model_index}, model_name = {model_name}, m_baseline = {metrics_vales}', flush=True)
 
             clf = get_model(model_name, base_models[base_model_name])
             if stream_name in streams_for_plotting:
@@ -77,6 +79,7 @@ def run():
                 axis.set_title(clf.__class__.__name__)
             metrics_vales = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
             metrics_ours[model_index].append(metrics_vales)
+            print(f'stream = {stream_name}, model index = {model_index}, model_name = {model_name}, m_ours = {metrics_vales}', flush=True)
 
     for name in streams_for_plotting:
         all_figures[name].savefig(f'plots/{base_model_name}_stream_{name}.png')
