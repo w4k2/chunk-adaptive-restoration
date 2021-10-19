@@ -34,12 +34,13 @@ def run():
     ]
 
     models_names = ['wae', 'awe', 'sea']
-    base_model_name = 'mlp'
+    base_model_name = 'cart'
     base_models = {
         'naive_bayes': GaussianNB,
         'knn': KNeighborsClassifier,
         'svm': functools.partial(SVC, probability=True),
         'mlp': functools.partial(MLPClassifier, learning_rate_init=0.01),
+        'cart': DecisionTreeClassifier
     }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
@@ -73,13 +74,14 @@ def run():
         np.save(f'results/{model_name}_{base_model_name}_baseline.npy', metrics_b)
         np.save(f'results/{model_name}_{base_model_name}_ours.npy', metrics_o)
 
+
 def get_metric_values(args, base_model_name=None, base_models=None):
     stream_name, (model_index, model_name) = args
     print(f'\n\n=================={stream_name}================\n\n')
     clf = get_model(model_name, base_models[base_model_name])
     axis = None
     m_baseline = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
-    
+
     clf = get_model(model_name, base_models[base_model_name])
     m_ours = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
 

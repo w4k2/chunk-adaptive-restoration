@@ -1,0 +1,289 @@
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 0, model_name = wae, m_baseline = [[2.54000000e+05 0.00000000e+00]
+ [4.48936170e-01 0.00000000e+00]
+ [2.88000000e+04 2.54039367e+04]
+ [1.92000000e+04 1.13384302e+04]
+ [1.86000000e+04 1.06695829e+04]
+ [1.80000000e+04 1.04115321e+04]]
+stream = insects_abrupt, model index = 0, model_name = wae, m_ours = [[2.53557000e+05 0.00000000e+00]
+ [4.32692308e-01 0.00000000e+00]
+ [4.19114000e+04 5.04627447e+04]
+ [4.05114000e+04 4.85650751e+04]
+ [3.89114000e+04 4.59443511e+04]
+ [3.81114000e+04 4.57283155e+04]]
+
+
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 1, model_name = awe, m_baseline = [[2.61000000e+05 0.00000000e+00]
+ [5.55070883e-01 0.00000000e+00]
+ [3.00000000e+04 2.72029410e+04]
+ [2.86000000e+04 2.60507198e+04]
+ [1.88000000e+04 1.16687617e+04]
+ [1.74000000e+04 1.11462998e+04]]
+stream = insects_abrupt, model index = 1, model_name = awe, m_ours = [[2.60557000e+05 0.00000000e+00]
+ [5.99352052e-01 0.00000000e+00]
+ [2.07322000e+04 1.10217996e+04]
+ [1.95902000e+04 9.17569312e+03]
+ [1.91510000e+04 8.89354845e+03]
+ [1.83152000e+04 8.88021420e+03]]
+
+
+==================insects_abrupt================
+
+
+stream = insects_abrupt, model index = 2, model_name = sea, m_baseline = [[2.14500000e+05 2.65000000e+04]
+ [4.93495539e-01 7.15364436e-02]
+ [2.98000000e+04 2.72279268e+04]
+ [2.82000000e+04 2.57013618e+04]
+ [1.90000000e+04 1.19833217e+04]
+ [1.74000000e+04 1.08921990e+04]]
+stream = insects_abrupt, model index = 2, model_name = sea, m_ours = [[2.60557000e+05 0.00000000e+00]
+ [5.78040904e-01 0.00000000e+00]
+ [2.08804000e+04 1.02361524e+04]
+ [1.99510000e+04 8.82120196e+03]
+ [1.93152000e+04 8.68491820e+03]
+ [1.84826000e+04 8.78047898e+03]]
+
+
+==================insects_gradual================
+
+
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 0, model_name = wae, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [70000.     0.]
+ [34000.     0.]
+ [28000.     0.]
+ [27000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 0, model_name = wae, m_ours = [[   nan    nan]
+ [   nan    nan]
+ [70000.     0.]
+ [26000.     0.]
+ [21000.     0.]
+ [18000.     0.]]
+
+
+==================insects_gradual================
+
+
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 1, model_name = awe, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [73000.     0.]
+ [43000.     0.]
+ [24000.     0.]
+ [19000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 1, model_name = awe, m_ours = [[   nan    nan]
+ [   nan    nan]
+ [72557.     0.]
+ [65557.     0.]
+ [49557.     0.]
+ [48557.     0.]]
+
+
+==================insects_gradual================
+
+
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 2, model_name = sea, m_baseline = [[   nan    nan]
+ [   nan    nan]
+ [72000.     0.]
+ [71000.     0.]
+ [24000.     0.]
+ [20000.     0.]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+stream = insects_gradual, model index = 2, model_name = sea, m_ours = [[   nan    nan]
+ [   nan    nan]
+ [72557.     0.]
+ [70557.     0.]
+ [56557.     0.]
+ [55557.     0.]]
+
+
+==================usenet_1================
+
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 0, model_name = wae, m_baseline = [[  nan   nan]
+ [  nan   nan]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]
+ [3000.    0.]]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 0, model_name = wae, m_ours = [[   nan    nan]
+ [   nan    nan]
+ [3478.2 1043.6]
+ [3427.6 1144.8]
+ [3419.8 1160.4]
+ [3412.6 1174.8]]
+
+
+==================usenet_1================
+
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 1, model_name = awe, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [7000.            0.        ]
+ [6600.          489.89794856]
+ [6600.          489.89794856]
+ [6000.            0.        ]]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 1, model_name = awe, m_ours = [[          nan           nan]
+ [          nan           nan]
+ [5878.2        2243.6       ]
+ [5855.2        2289.6       ]
+ [5445.2        2156.48143048]
+ [5045.2        1909.6       ]]
+
+
+==================usenet_1================
+
+
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 2, model_name = sea, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [7000.            0.        ]
+ [7000.            0.        ]
+ [6600.          489.89794856]
+ [6000.            0.        ]]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+drift_idx =  [19000, 39000, 59000, 79000, 99000]
+stream = usenet_1, model index = 2, model_name = sea, m_ours = [[         nan          nan]
+ [         nan          nan]
+ [5891.4       2217.2      ]
+ [5866.2       2267.6      ]
+ [5455.2       2136.9202512]
+ [5045.2       1909.6      ]]

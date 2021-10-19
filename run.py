@@ -8,6 +8,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 from strlearn.ensembles import AUE, AWE, OnlineBagging, SEA, WAE
 from strlearn.streams import StreamGenerator
 from scipy.ndimage.filters import gaussian_filter1d
@@ -33,12 +34,13 @@ def run():
     ]
 
     models_names = ['wae', 'awe', 'sea']
-    base_model_name = 'mlp'
+    base_model_name = 'cart'
     base_models = {
         'naive_bayes': GaussianNB,
         'knn': KNeighborsClassifier,
         'svm': functools.partial(SVC, probability=True),
         'mlp': functools.partial(MLPClassifier, learning_rate_init=0.01),
+        'cart': DecisionTreeClassifier
     }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
