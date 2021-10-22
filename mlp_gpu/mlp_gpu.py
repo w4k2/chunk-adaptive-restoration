@@ -3,14 +3,16 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 import functools
+import numpy as np
+from sklearn.base import BaseEstimator, ClassifierMixin
 
 
 class MLPModule(nn.Module):
     def __init__(self, hidden_layer_sizes, activation, num_features, num_outputs) -> None:
         super().__init__()
         layers_list = list()
-        for i in range(len(hidden_layer_sizes)):
-            layers_list.append(nn.Linear(hidden_layer_sizes[i], hidden_layer_sizes[i])),
+        for i in range(len(hidden_layer_sizes)-1):
+            layers_list.append(nn.Linear(hidden_layer_sizes[i], hidden_layer_sizes[i+1])),
             layers_list.append(activation())
         hidden_layers = nn.Sequential(*layers_list)
         self.layers = nn.Sequential(
@@ -25,7 +27,7 @@ class MLPModule(nn.Module):
         return x
 
 
-class MLPClassifierGPU:
+class MLPClassifierGPU(BaseEstimator, ClassifierMixin):
     def __init__(self, hidden_layer_sizes=(100,), activation="relu", *,
                  solver='adam', alpha=0.0001,
                  batch_size='auto', learning_rate="constant",
@@ -43,13 +45,22 @@ class MLPClassifierGPU:
         self.batch_size = batch_size
         self.learning_rate = learning_rate
         self.learning_rate_init = learning_rate_init
+        self.power_t = power_t
         self.max_iter = max_iter  # number of epochs
         self.shuffle = shuffle
+        self.random_state = random_state
         self.tol = tol
+        self.verbose = verbose
+        self.warm_start = warm_start
+        self.momentum = momentum
+        self.nesterovs_momentum = nesterovs_momentum
+        self.early_stopping = early_stopping
+        self.validation_fraction = validation_fraction
         self.beta_1 = beta_1
         self.beta_2 = beta_2
         self.epsilon = epsilon
         self.n_iter_no_change = n_iter_no_change
+        self.max_fun = max_fun
 
     def _build_model(self):
         self.model = MLPModule(self.hidden_layer_sizes, self._get_activation_function(), self.num_features, self.num_outputs)
@@ -64,14 +75,20 @@ class MLPClassifierGPU:
         if not self.is_model_built:
             raise ValueError('Please run fit before calling perdict')
 
+        y_prob = self.predict_proba(X)
+        y_pred = np.argmax(y_prob, axis=1)
+        return y_pred
+
+    def predict_proba(self, X):
+        if not self.is_model_built:
+            raise ValueError('Please run fit before calling perdict')
+
         with torch.no_grad():
             X_tensor = torch.Tensor(X)
             X_tensor = X_tensor.to('cuda')
-            y_pred = self.model(X_tensor)
-            y_pred = torch.softmax(y_pred, dim=1)
-            y_pred = torch.argmax(y_pred, dim=1)
-
-        return y_pred.cpu().numpy()
+            y_prob = self.model(X_tensor)
+            y_prob = torch.softmax(y_prob, dim=1)
+        return y_prob.cpu().numpy()
 
     def fit(self, X, y):
         """Fit the model to data matrix X and target(s) y.

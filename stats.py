@@ -5,7 +5,7 @@ from save_tex_table import *
 
 def main():
     model_names = ['wae', 'awe', 'sea', ]  # 'aue', 'onlinebagging', 'mlp']
-    base_model_name = 'naive_bayes'
+    base_model_name = 'cart'
     metrics_names = ['SamplewiseStabilizationTime', 'MaxPerformanceLoss', 'SamplewiseRestorationTime0.9',
                      'SamplewiseRestorationTime0.8', 'SamplewiseRestorationTime0.7', 'SamplewiseRestorationTime0.6']
 

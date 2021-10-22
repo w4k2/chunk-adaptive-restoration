@@ -1,0 +1,716 @@
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[5.55000000e+04 0.00000000e+00]
+ [7.09382151e-02 0.00000000e+00]
+ [1.17000000e+04 3.20312348e+03]
+ [1.16000000e+04 3.23109888e+03]
+ [1.16000000e+04 3.23109888e+03]
+ [1.16000000e+04 3.23109888e+03]]
+stream = stream_learn_recurring_gradual_1, model index = 0, model_name = wae, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [13327.6         2812.2032359 ]
+ [13327.6         2812.2032359 ]
+ [13327.6         2812.2032359 ]
+ [13319.8         2819.69646593]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [13600.          3773.59245282]
+ [13400.          3852.27205685]
+ [13400.          3852.27205685]
+ [13400.          3852.27205685]]
+stream = stream_learn_recurring_gradual_1, model index = 1, model_name = awe, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [13127.6         2607.59027456]
+ [13027.6         2522.90448491]
+ [13019.8         2530.32965441]
+ [13019.8         2530.32965441]]
+
+
+==================stream_learn_recurring_gradual_1================
+
+
+stream = stream_learn_recurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[5.50000000e+04 0.00000000e+00]
+ [6.39269406e-02 0.00000000e+00]
+ [1.32000000e+04 2.63818119e+03]
+ [1.29000000e+04 2.81780056e+03]
+ [1.29000000e+04 2.81780056e+03]
+ [1.29000000e+04 2.81780056e+03]]
+stream = stream_learn_recurring_gradual_1, model index = 2, model_name = sea, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [14178.2         2996.60156844]
+ [13855.2         2960.24798961]
+ [13855.2         2960.24798961]
+ [13855.2         2960.24798961]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [34600.          1624.80768093]
+ [27200.          2039.60780544]
+ [27200.          2039.60780544]
+ [27200.          2039.60780544]]
+stream = stream_learn_recurring_gradual_2, model index = 0, model_name = wae, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [33619.8         7379.93280186]
+ [26819.8         4177.64145901]
+ [26819.8         4177.64145901]
+ [26812.6         4190.95156737]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [35600.          1854.7236991 ]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]]
+stream = stream_learn_recurring_gradual_2, model index = 1, model_name = awe, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [32419.8         6878.29398616]
+ [27019.8         4481.60330239]
+ [27012.6         4494.33365918]
+ [27012.6         4494.33365918]]
+
+
+==================stream_learn_recurring_gradual_2================
+
+
+stream = stream_learn_recurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [35600.          1019.80390272]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]
+ [27800.          2315.16738056]]
+stream = stream_learn_recurring_gradual_2, model index = 2, model_name = sea, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [33019.8         7031.86804199]
+ [25819.8         4085.61967882]
+ [25812.6         4097.47178636]
+ [25812.6         4097.47178636]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 0, model_name = wae, m_baseline = [[8.00000000e+04 6.00000000e+04]
+ [1.69914131e-02 6.17709492e-03]
+ [1.96000000e+05 1.06883114e+05]
+ [1.96000000e+05 1.06883114e+05]
+ [1.96000000e+05 1.06883114e+05]
+ [1.96000000e+05 1.06883114e+05]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+stream = stream_learn_recurring_gradual_3, model index = 0, model_name = wae, m_ours = [[3.59856000e+05 5.00000000e+03]
+ [1.86066637e-01 3.38218816e-03]
+ [1.98870600e+05 9.63094162e+04]
+ [1.98784200e+05 9.62575511e+04]
+ [1.98784200e+05 9.62575511e+04]
+ [1.98784200e+05 9.62575511e+04]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 1, model_name = awe, m_baseline = [[1.35000000e+05 5.00000000e+03]
+ [1.21396055e-02 1.08389334e-04]
+ [2.14000000e+05 1.07628992e+05]
+ [2.14000000e+05 1.07628992e+05]
+ [2.14000000e+05 1.07628992e+05]
+ [2.14000000e+05 1.07628992e+05]]
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+stream = stream_learn_recurring_gradual_3, model index = 1, model_name = awe, m_ours = [[5.79430000e+04 1.12270000e+04]
+ [3.80341667e-02 7.02819745e-03]
+ [2.10198000e+05 1.00891672e+05]
+ [2.10198000e+05 1.00891672e+05]
+ [2.10198000e+05 1.00891672e+05]
+ [2.10198000e+05 1.00891672e+05]]
+
+
+==================stream_learn_recurring_gradual_3================
+
+
+stream = stream_learn_recurring_gradual_3, model index = 2, model_name = sea, m_baseline = [[1.10000000e+05 0.00000000e+00]
+ [1.50628522e-02 0.00000000e+00]
+ [1.90000000e+05 9.73652916e+04]
+ [1.90000000e+05 9.73652916e+04]
+ [1.90000000e+05 9.73652916e+04]
+ [1.90000000e+05 9.73652916e+04]]
+stream = stream_learn_recurring_gradual_3, model index = 2, model_name = sea, m_ours = [[7.53880000e+04 6.21800000e+03]
+ [7.88564917e-02 9.15918876e-03]
+ [2.00055800e+05 9.69914910e+04]
+ [2.00040200e+05 9.69815807e+04]
+ [2.00040200e+05 9.69815807e+04]
+ [2.00040200e+05 9.69815807e+04]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+stream = stream_learn_recurring_gradual_4, model index = 0, model_name = wae, m_baseline = [[          nan           nan]
+ [          nan           nan]
+ [25100.         3367.4916481]
+ [22500.         3420.5262753]
+ [22500.         3420.5262753]
+ [22500.         3420.5262753]]
+stream = stream_learn_recurring_gradual_4, model index = 0, model_name = wae, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25805.8         5014.62406966]
+ [22191.4         4854.578853  ]
+ [22178.2         4871.57273989]
+ [22178.2         4871.57273989]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+stream = stream_learn_recurring_gradual_4, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [27300.          1029.5630141 ]
+ [22300.          2803.56915378]
+ [22300.          2803.56915378]
+ [22300.          2803.56915378]]
+stream = stream_learn_recurring_gradual_4, model index = 1, model_name = awe, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [27269.2          742.61333142]
+ [19880.4         2741.53545299]
+ [19880.4         2741.53545299]
+ [19880.4         2741.53545299]]
+
+
+==================stream_learn_recurring_gradual_4================
+
+
+stream = stream_learn_recurring_gradual_4, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [27100.           969.53597148]
+ [22000.          3049.5901364 ]
+ [22000.          3049.5901364 ]
+ [22000.          3049.5901364 ]]
+stream = stream_learn_recurring_gradual_4, model index = 2, model_name = sea, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [25266.2         4763.74325085]
+ [20455.2         3018.48110148]
+ [20445.2         3034.00925509]
+ [20445.2         3034.00925509]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 0, model_name = wae, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [15900.          3967.36688498]
+ [13400.          2332.38075794]
+ [13100.          2130.72757527]
+ [13100.          2130.72757527]]
+stream = stream_learn_nonrecurring_gradual_1, model index = 0, model_name = wae, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [14045.2         4381.93703287]
+ [12612.6         3458.68689534]
+ [12512.6         3409.55056276]
+ [12506.          3415.28095477]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 1, model_name = awe, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [16200.          4226.10932182]
+ [13300.          2541.65300543]
+ [12900.          2267.15680975]
+ [12900.          2267.15680975]]
+stream = stream_learn_nonrecurring_gradual_1, model index = 1, model_name = awe, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [14821.6         4365.14676042]
+ [12421.6         2763.72687507]
+ [12005.8         2340.28514502]
+ [12005.8         2340.28514502]]
+
+
+==================stream_learn_nonrecurring_gradual_1================
+
+
+stream = stream_learn_nonrecurring_gradual_1, model index = 2, model_name = sea, m_baseline = [[           nan            nan]
+ [           nan            nan]
+ [14400.          3891.01529167]
+ [12600.          2497.99919936]
+ [12100.          1984.94332413]
+ [12100.          1984.94332413]]
+stream = stream_learn_nonrecurring_gradual_1, model index = 2, model_name = sea, m_ours = [[           nan            nan]
+ [           nan            nan]
+ [14821.6         4009.50199401]
+ [12921.6         3352.34041231]
+ [12778.2         3325.98571254]
+ [12778.2         3325.98571254]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 0, model_name = wae, m_baseline = [[1.75000000e+05 0.00000000e+00]
+ [1.32960894e-01 0.00000000e+00]
+ [3.20000000e+04 5.05964426e+03]
+ [2.76000000e+04 3.32264955e+03]
+ [2.76000000e+04 3.32264955e+03]
+ [2.76000000e+04 3.32264955e+03]]
+stream = stream_learn_nonrecurring_gradual_2, model index = 0, model_name = wae, m_ours = [[1.74557000e+05 0.00000000e+00]
+ [2.88979177e-01 0.00000000e+00]
+ [2.62100000e+04 6.09586256e+03]
+ [2.31708000e+04 2.47475101e+03]
+ [2.31708000e+04 2.47475101e+03]
+ [2.31636000e+04 2.48661091e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 1, model_name = awe, m_baseline = [[1.75000000e+05 0.00000000e+00]
+ [1.35195531e-01 0.00000000e+00]
+ [3.24000000e+04 4.58693798e+03]
+ [2.80000000e+04 3.28633535e+03]
+ [2.80000000e+04 3.28633535e+03]
+ [2.80000000e+04 3.28633535e+03]]
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:262: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:222: RuntimeWarning: invalid value encountered in true_divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean, casting='unsafe',
+/home/jkozal/.local/lib/python3.8/site-packages/numpy/core/_methods.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+stream = stream_learn_nonrecurring_gradual_2, model index = 1, model_name = awe, m_ours = [[1.74557000e+05 0.00000000e+00]
+ [1.87404774e-01 0.00000000e+00]
+ [2.67312000e+04 7.73675362e+03]
+ [2.39312000e+04 5.80228201e+03]
+ [2.39240000e+04 5.80829300e+03]
+ [2.39240000e+04 5.80829300e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_2================
+
+
+stream = stream_learn_nonrecurring_gradual_2, model index = 2, model_name = sea, m_baseline = [[1.74000000e+05 0.00000000e+00]
+ [1.39169473e-01 0.00000000e+00]
+ [3.24000000e+04 4.40908154e+03]
+ [2.68000000e+04 4.21426150e+03]
+ [2.68000000e+04 4.21426150e+03]
+ [2.68000000e+04 4.21426150e+03]]
+stream = stream_learn_nonrecurring_gradual_2, model index = 2, model_name = sea, m_ours = [[1.73557000e+05 0.00000000e+00]
+ [2.51777030e-01 0.00000000e+00]
+ [2.73312000e+04 8.19877531e+03]
+ [2.39312000e+04 5.80228201e+03]
+ [2.39240000e+04 5.80829300e+03]
+ [2.39240000e+04 5.80829300e+03]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+stream = stream_learn_nonrecurring_gradual_3, model index = 0, model_name = wae, m_baseline = [[1.30000000e+05 0.00000000e+00]
+ [4.34640878e-04 0.00000000e+00]
+ [2.22000000e+05 1.68689063e+05]
+ [2.22000000e+05 1.68689063e+05]
+ [2.22000000e+05 1.68689063e+05]
+ [2.22000000e+05 1.68689063e+05]]
+stream = stream_learn_nonrecurring_gradual_3, model index = 0, model_name = wae, m_ours = [[3.34856000e+05 0.00000000e+00]
+ [2.02127660e-01 0.00000000e+00]
+ [2.10225600e+05 1.59501760e+05]
+ [2.10178200e+05 1.59474772e+05]
+ [2.10157600e+05 1.59463060e+05]
+ [2.10157600e+05 1.59463060e+05]]
+
+
+==================stream_learn_nonrecurring_gradual_3================
+
+
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:619: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+/home/jkozal/anaconda3/envs/concept-drift-evaluation/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:619: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+Traceback (most recent call last):
+  File "run.py", line 299, in <module>
+    run()
+  File "run.py", line 131, in run
+    metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
+  File "run.py", line 209, in experiment
+    scores, chunk_sizes, drift_indices, stabilization_indices = test_then_train(variable_size_stream, clf, detector, cfg['chunk_size'], cfg['drift_chunk_size'],
+  File "run.py", line 256, in test_then_train
+    detector.add_element(correct_preds)
+  File "/home/jkozal/Documents/PWr/chunk-adaptive-restoration/concept-drift-evaluation/detectors/fhdsdm.py", line 43, in add_element
+    p_t = sum(self._window_drift) / len(self._window_drift)
+KeyboardInterrupt

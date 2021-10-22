@@ -18,6 +18,7 @@ from evaluators.metrics import MaxPerformanceLoss, SamplewiseStabilizationTime, 
 from streams import VariableChunkStream, StreamWrapper, RecurringInsectsDataset, RecurringUsenetDataset, InsectsDataset
 from config import configs
 from config_real import real_configs
+from mlp_gpu.mlp_gpu import MLPClassifierGPU
 
 
 def run():
@@ -33,58 +34,63 @@ def run():
         'insects_gradual',
     ]
 
-    models_names = ['wae', 'awe', 'sea']
-    base_model_name = 'cart'
+    models_names = [
+        'wae',
+        'awe',
+        'sea'
+    ]
+    base_model_name = 'mlp_gpu'
     base_models = {
         'naive_bayes': GaussianNB,
         'knn': KNeighborsClassifier,
         'svm': functools.partial(SVC, probability=True),
         'mlp': functools.partial(MLPClassifier, learning_rate_init=0.01),
-        'cart': DecisionTreeClassifier
+        'cart': DecisionTreeClassifier,
+        'mlp_gpu': MLPClassifierGPU,
     }
     metrics_baseline = [[] for _ in models_names]
     metrics_ours = [[] for _ in models_names]
-    streams_for_plotting = [
-        'stream_learn_nonrecurring_abrupt_1',
-        'stream_learn_nonrecurring_gradual_1',
-        'stream_learn_nonrecurring_incremental_1',
-        'usenet_1',
-        'insects_abrupt',
-        'insects_gradual',
-        'insects_incremental',
-    ]
-    all_figures = dict()
-    all_axes = dict()
-    for name in streams_for_plotting:
-        fig, axes = plt.subplots(len(models_names))
-        fig.set_size_inches(10.5, 10.5)
-        fig.tight_layout(pad=3.0)
-        all_figures[name] = fig
-        all_axes[name] = axes
+    # streams_for_plotting = [
+    #     'stream_learn_nonrecurring_abrupt_1',
+    #     'stream_learn_nonrecurring_gradual_1',
+    #     'stream_learn_nonrecurring_incremental_1',
+    #     'usenet_1',
+    #     'insects_abrupt',
+    #     'insects_gradual',
+    #     'insects_incremental',
+    # ]
+    # all_figures = dict()
+    # all_axes = dict()
+    # for name in streams_for_plotting:
+    #     fig, axes = plt.subplots(len(models_names))
+    #     fig.set_size_inches(10.5, 10.5)
+    #     fig.tight_layout(pad=3.0)
+    #     all_figures[name] = fig
+    #     all_axes[name] = axes
 
     for stream_name in stream_names:
         for model_index, model_name in enumerate(models_names):
             print(f'\n\n=================={stream_name}================\n\n', flush=True)
             clf = get_model(model_name, base_models[base_model_name])
             axis = None
-            if stream_name in streams_for_plotting:
-                axis = all_axes[stream_name][model_index]
-                axis.set_title(clf.__class__.__name__)
+            # if stream_name in streams_for_plotting:
+            #     axis = all_axes[stream_name][model_index]
+            #     axis.set_title(clf.__class__.__name__)
 
             metrics_vales = experiment(clf, stream_name, variable_chunk_size=False, axis=axis)
             metrics_baseline[model_index].append(metrics_vales)
             print(f'stream = {stream_name}, model index = {model_index}, model_name = {model_name}, m_baseline = {metrics_vales}', flush=True)
 
             clf = get_model(model_name, base_models[base_model_name])
-            if stream_name in streams_for_plotting:
-                axis = all_axes[stream_name][model_index]
-                axis.set_title(clf.__class__.__name__)
+            # if stream_name in streams_for_plotting:
+            #     axis = all_axes[stream_name][model_index]
+            #     axis.set_title(clf.__class__.__name__)
             metrics_vales = experiment(clf, stream_name, variable_chunk_size=True, axis=axis)
             metrics_ours[model_index].append(metrics_vales)
             print(f'stream = {stream_name}, model index = {model_index}, model_name = {model_name}, m_ours = {metrics_vales}', flush=True)
 
-    for name in streams_for_plotting:
-        all_figures[name].savefig(f'plots/{base_model_name}_stream_{name}.png')
+    # for name in streams_for_plotting:
+    #     all_figures[name].savefig(f'plots/{base_model_name}_stream_{name}.png')
 
     """
         metrics_baseline and metrics_ours are [NxMx2] tensor (2 is for mean and std)

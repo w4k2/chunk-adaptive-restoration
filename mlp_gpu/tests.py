@@ -26,8 +26,8 @@ def test_wine():
 
 
 def test_big_random():
-    X = np.random.randn(10000, 20)
-    y = np.random.randint(low=0, high=2, size=10000)
+    X = np.random.randn(1000, 20)
+    y = np.random.randint(low=0, high=2, size=1000)
     X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y)
     acc_sklearn = test_model_sklearn(X_train, y_train, X_test, y_test)
     print('acc_sklearn = ', acc_sklearn)
